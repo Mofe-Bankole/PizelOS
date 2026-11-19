@@ -1,0 +1,37 @@
+---
+// Temporary test page: every piece with its info, to check loading and the data join.
+import Base from "../../layouts/Base.astro";
+import Artwork from "../../components/Artwork.astro";
+import { getWorks } from "../../lib/works";
+
+const works = await getWorks();
+---
+
+<Base title="Asset loading test">
+  <main>
+    <h1>{works.length} pieces</h1>
+    <div class="grid">
+      {works.map((w, i) => (
+        <article>
+          <Artwork id={w.id} alt={`${w.title} for ${w.clientName}`} priority={i < 3} />
+          <p><strong>{w.title}</strong> · {w.clientName}{w.award && ` · 🏆 ${w.award.name}`}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+</Base>
+
+<style>
+  :global(body) { margin: 0; background: #0b0b10; color: #f4f1ff; font-family: system-ui, sans-serif; }
+  main { padding: 24px 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 12px;
+    align-items: start;
+  }
+  /* Lets the browser skip rendering tiles far off-screen: helps low-RAM machines. */
+  article { content-visibility: auto; contain-intrinsic-size: auto 400px; }
+  p { font-size: 13px; color: #8b87a3; margin: 8px 0 16px; }
+  strong { color: #f4f1ff; font-weight: 500; }
+</style>

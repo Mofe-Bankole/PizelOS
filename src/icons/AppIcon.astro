@@ -1,0 +1,52 @@
+---
+import { squirclePath } from "./squircle";
+import type { AppDef } from "./apps";
+
+interface Props {
+  app: AppDef;
+  size?: number | string;
+}
+
+const { app, size = "100%" } = Astro.props;
+const shape = squirclePath(100, 4);
+const uid = `i-${app.id}`;
+const [from, to] = app.gradient;
+---
+
+<svg class="app-icon" viewBox="0 0 100 104" width={size} height={size} aria-hidden="true">
+  <defs>
+    <linearGradient id={`${uid}-bg`} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color={from} />
+      <stop offset="1" stop-color={to} />
+    </linearGradient>
+    <linearGradient id={`${uid}-sheen`} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55" />
+      <stop offset=".42" stop-color="#fff" stop-opacity=".08" />
+      <stop offset=".5" stop-color="#fff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id={`${uid}-rim`} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".85" />
+      <stop offset=".5" stop-color="#fff" stop-opacity=".12" />
+      <stop offset="1" stop-color="#fff" stop-opacity=".4" />
+    </linearGradient>
+    <radialGradient id={`${uid}-shadow`} cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#000" stop-opacity=".32" />
+      <stop offset="1" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id={`${uid}-clip`}><path d={shape} /></clipPath>
+  </defs>
+  <ellipse cx="50" cy="97" rx="40" ry="6" fill={`url(#${uid}-shadow)`} />
+  <path d={shape} fill={`url(#${uid}-bg)`} />
+  <g clip-path={`url(#${uid}-clip)`}>
+    <g set:html={app.glyph} />
+    <path d={shape} fill={`url(#${uid}-sheen)`} />
+  </g>
+  <path d={squirclePath(100, 4.6)} fill="none" stroke={`url(#${uid}-rim)`} stroke-width="1.2" />
+</svg>
+
+<style>
+  .app-icon {
+    display: block;
+    overflow: visible;
+  }
+</style>

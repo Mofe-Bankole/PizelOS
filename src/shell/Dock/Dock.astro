@@ -1,0 +1,136 @@
+---
+import AppIcon from "../../icons/AppIcon.astro";
+import { apps, trash } from "../../icons/apps";
+---
+
+<nav class="dock" aria-label="Dock">
+  <div class="dock-plate glass" aria-hidden="true"></div>
+  <ul class="dock-row">
+    {apps.map(app => (
+      <li class="dock-item" data-app={app.id}>
+        <a
+          class="dock-button"
+          href={app.href}
+          target={app.external ? "_blank" : undefined}
+          rel={app.external ? "noopener" : undefined}
+          aria-label={app.name}
+          data-name={app.name}
+          draggable="false"
+        >
+          <span class="dock-scale"><span class="dock-bounce"><AppIcon app={app} /></span></span>
+        </a>
+        <span class="dock-indicator" aria-hidden="true"></span>
+      </li>
+    ))}
+    <li class="dock-separator" aria-hidden="true"></li>
+    <li class="dock-item" data-app={trash.id}>
+      <button class="dock-button" type="button" aria-label={trash.name} data-name={trash.name}>
+        <span class="dock-scale"><span class="dock-bounce"><AppIcon app={trash} /></span></span>
+      </button>
+    </li>
+  </ul>
+  <div class="dock-tooltip glass glass-strong" role="tooltip" aria-hidden="true"></div>
+</nav>
+
+<script>
+  import { initDock } from "./dock";
+  initDock(document.querySelector(".dock")!);
+</script>
+
+<style>
+  .dock {
+    position: fixed;
+    left: 50%;
+    bottom: var(--dock-bottom);
+    translate: -50% 0;
+    z-index: 800;
+    height: var(--dock-h);
+  }
+  .dock-plate {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--dock-radius);
+    transform-origin: left center;
+    will-change: transform;
+  }
+  .dock-row {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: var(--dock-gap);
+    height: 100%;
+    margin: 0;
+    padding: var(--dock-pad-y) var(--dock-pad-x);
+    list-style: none;
+  }
+  .dock-item {
+    position: relative;
+    width: var(--dock-icon);
+    height: var(--dock-icon);
+    flex: none;
+    will-change: transform;
+  }
+  .dock-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .dock-scale {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-origin: bottom left;
+    will-change: transform;
+  }
+  .dock-bounce {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .dock-button:focus-visible .dock-bounce {
+    outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent);
+    outline-offset: 2px;
+    border-radius: 24%;
+  }
+  .dock-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: calc(var(--dock-pad-y) * -1 + var(--dock-indicator-offset));
+    width: var(--dock-indicator);
+    height: var(--dock-indicator);
+    margin-left: calc(var(--dock-indicator) / -2);
+    border-radius: 50%;
+    background: var(--dock-indicator-color);
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  .dock-item.is-running .dock-indicator {
+    opacity: 1;
+  }
+  .dock-separator {
+    align-self: center;
+    width: var(--dock-separator-w);
+    height: var(--dock-separator-h);
+    background: var(--dock-separator);
+    flex: none;
+    will-change: transform;
+  }
+  .dock-tooltip {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: var(--dock-tooltip-h);
+    padding: 0 var(--dock-tooltip-pad-x);
+    border-radius: var(--dock-tooltip-radius);
+    display: flex;
+    align-items: center;
+    font-size: var(--dock-tooltip-text);
+    font-weight: 500;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+</style>

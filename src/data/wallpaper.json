@@ -1,0 +1,58 @@
+{
+  "active": "placeholder-silk",
+  "items": {
+    "placeholder-silk": {
+      "name": "placeholder-silk",
+      "appearance": "light",
+      "width": 5120,
+      "height": 3200,
+      "aspect": 1.6,
+      "color": "#d8c8b8",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAAJcklEQVR4AQCBAH7/AODTrP/h1K3/4tav/+PXsf/j17P/4taz/+DUsv/cz6//18qs/9LFqf/Nwaf/yr6m/8i8pv/Hu6f/xrqo/8W5qP/Ctqf/vrKl/7isoP+xpZr/qp6U/6OXjf+dkYj/mIyE/5WJgf+UiIH/lYmB/5aKg/+YjIT/mo2G/5uPh/+ckIj/AIEAfv8A39Or/+DUrP/h1a7/4taw/+PXsv/i1rL/39Ox/9vPr//Wyqz/0cWp/8zApv/JvaX/x7ul/8a6pv/Fuaf/xLen/8G1pv+9saP/t6uf/7Ckmf+pnZP/opaM/5yQh/+Xi4P/lYmB/5SIgP+UiIH/loqC/5iLhP+ZjYb/m46H/5uPiP8AgQB+/wDd0an/3tKq/+DTrP/h1a//4dWw/+DUsf/e0bD/2c2t/9TIqv/Pw6f/y7+l/8i7pP/FuaP/xLik/8O3pf/BtaX/v7Kk/7quof+1qZ3/rqKX/6eakf+glIv/mo6G/5aKgv+Uh4D/k4d//5SHgP+ViYL/l4uE/5mNhv+ajof/m4+I/wCBAH7/ANvPp//c0Kj/3dGq/9/SrP/f067/3tKu/9vPrf/Xy6v/0sao/83Bpf/JvaP/xbmh/8O3of/BtaL/wLSi/76yov+7r6H/t6ue/7Glmv+rnpT/pJeO/52RiP+YjIT/lIiA/5KGf/+ShX//k4aA/5SIgv+WioT/mIyG/5mNh/+ajoj/AIEAfv8A2Myk/9nNpf/azqf/3M+p/9zQq//bz6z/2Myr/9TIqf/Qw6b/y76j/8a6oP/Ctp//wLSf/76yn/+9sJ//u66f/7ernv+zp5v/raGX/6ebkf+glIv/mo6G/5WJgv+Shn//kIR+/5CEfv+RhYD/k4eC/5WJhP+Xi4b/mY2H/5mNiP8AgQB+/wDUyKH/1cmi/9fKpP/YzKb/2Myo/9fLqP/Vyaj/0cWm/8zAo//Hu6D/w7ae/7+znP+8sJz/uq6c/7isnP+2qpz/s6ea/6+il/+pnZP/o5aO/5yQif+XioT/koaA/5CDfv+Ogn7/j4N+/5CEgP+ShoL/lYiF/5aKh/+YjIj/mYyJ/wCBAH7/ANDEnf/RxZ//0sah/9THo//UyKT/08el/9HEpP/NwaL/yLyg/8O3nf+/spv/u6+Z/7ismf+2qpn/tKiZ/7KlmP+uopf/qp6U/6SYkP+ekov/mIyH/5OHgv+Pg3//jYF+/42Afv+NgX//j4OB/5GFg/+Th4X/lYmH/5eKif+Xi4n/AIEAfv8Ay7+a/8zAm//NwZ3/z8Kf/8/Dof/OwqH/zL+h/8i8n//Dt5z/vrKa/7qumP+2qpb/s6eW/7Gllv+vo5b/rKCV/6mdlP+kmJH/n5ON/5mNif+UiIX/j4OB/4yAfv+Kfn3/in5+/4t/f/+NgYL/j4OE/5GFhv+Th4j/lIiJ/5WJiv8AgQB+/wDGupf/x7uY/8i8mv/JvZz/yb2d/8i8nv/Gup3/wrab/76ymf+5rZf/taiV/7Glk/+uopP/rJ+T/6mdk/+nmpL/o5eQ/5+Tjv+ajor/lIiG/4+Dg/+Lf4D/iHx+/4d7ff+He37/iXyA/4p+gv+MgIT/joKG/5CEiP+RhIn/kYWJ/wCBAH7/AMG1lP/CtZX/w7aW/8O3mP/Et5r/wraa/8C0mv+8sJj/uKuW/7Onk/+uopH/q5+Q/6icj/+lmY//o5eP/6CUj/+dkY3/mIyL/5SHh/+OgoT/in6A/4Z6fv+Ed3z/g3d8/4N3ff+EeH//hnqB/4h8g/+JfYX/in6G/4t/h/+Lf4f/AIEAfv8Au6+R/7ywkv+9sZP/vrGV/72xlv+8sJf/ua2W/7aplP+xpZL/rKCP/6icjv+kmIz/oZWM/56SjP+ckIz/mY2L/5aKiv+RhYf/jYCE/4h8gf+Dd37/gHR8/35yev99cXr/fXF7/35yff+Ac3//gXWA/4J2gv+DdoL/g3eD/4N3g/8AgQB+/wC2qo//t6qQ/7erkf+4q5L/t6uT/7apk/+zppL/r6KR/6qejv+lmYz/oZSK/52RiP+ajYj/l4uI/5SIiP+RhYf/joKG/4p9g/+FeYD/gHR9/3xwev94bHj/dmp3/3Zpd/92anj/dmp5/3dre/94bHz/eGx9/3lsff94bH3/eGx9/wCBAH7/ALGljf+xpY7/sqaP/7KmkP+xpZH/r6OQ/6ygj/+onI3/o5eK/56SiP+ZjYb/lYmF/5KGhP+Pg4T/jICD/4l9g/+GeYH/gXV//3xwfP94bHn/c2d2/3BkdP9uYnP/bWFz/21hdP9tYXT/bWF1/21hdv9tYXb/bWB1/2xgdf9sX3X/AIEAfv8ArKCL/62gjP+toY3/raCO/6ufjv+pnY7/ppmM/6GViv+ckIf/l4qE/5KGgv+OgoH/in6A/4d7f/+EeH//gXV+/31xff95bXr/dGh3/29jdP9rX3H/Z1tv/2VZbv9kV27/Y1du/2NXbv9iVm7/YlVu/2FUbf9fU2z/XlJs/15Sa/8AgQB+/wConIr/qZyL/6mcjP+onIz/p5qM/6SYi/+glIn/m4+H/5aJhP+QhIH/i39+/4d7ff+Dd3z/gHR7/31xe/95bXr/dWl4/3Fldv9sYHP/Z1tv/2JWbP9fU2r/XFBp/1pOaP9ZTWj/WExo/1dLZ/9WSmb/VEhl/1JGY/9RRWL/UERh/wCBAH7/AKWZiv+lmYr/pZmL/6SYi/+jlov/oJOJ/5uPh/+WioT/kISB/4t/fv+GeXv/gXV6/31xef96bnj/d2p3/3Nndv9vYnT/al5x/2VZbv9gU2v/W09o/1dLZv9USGT/UkZj/1FEYv9PQ2L/TkFg/0w/X/9JPV3/Rztb/0U5Wf9EOFj/AIEAfv8Ao5eJ/6OXiv+jl4r/opaK/6CUiv+dkIj/mIyG/5OHg/+NgX//h3t8/4J1ef99cXf/eW12/3Vpdf9yZnT/bmJz/2pecf9lWW7/X1Nr/1pOaP9VSWX/UUVi/05CYP9MQF//Sj5e/0g8Xf9GOlv/RDhZ/0E1V/8+MlX/PDBT/zsvUv8BgQB+/wCilon/opaJ/6KViv+glIr/npKJ/5uPh/+WioX/kYWC/4t/fv+FeXv/f3N4/3tvdv93anX/c2d0/29jc/9sX3L/Z1tw/2JWbf9dUWn/V0tm/1NGY/9OQmD/Sz9e/0k9Xf9HO1z/RTla/0I2Wf9ANFb/PTFU/zouUf84LE//NipO/2RbEjqMY2lKAAAAAElFTkSuQmCC",
+      "blurred": "placeholder-silk/blur.ad3b54f6.webp",
+      "menubar": {
+        "left": "light",
+        "right": "dark"
+      },
+      "variants": [
+        {
+          "w": 1920,
+          "avif": "placeholder-silk/1920.ad3b54f6.avif",
+          "webp": "placeholder-silk/1920.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/1920.ad3b54f6.jpg"
+        },
+        {
+          "w": 2560,
+          "avif": "placeholder-silk/2560.ad3b54f6.avif",
+          "webp": "placeholder-silk/2560.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/2560.ad3b54f6.jpg"
+        },
+        {
+          "w": 3024,
+          "avif": "placeholder-silk/3024.ad3b54f6.avif",
+          "webp": "placeholder-silk/3024.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/3024.ad3b54f6.jpg"
+        },
+        {
+          "w": 3456,
+          "avif": "placeholder-silk/3456.ad3b54f6.avif",
+          "webp": "placeholder-silk/3456.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/3456.ad3b54f6.jpg"
+        },
+        {
+          "w": 3840,
+          "avif": "placeholder-silk/3840.ad3b54f6.avif",
+          "webp": "placeholder-silk/3840.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/3840.ad3b54f6.jpg"
+        },
+        {
+          "w": 5120,
+          "avif": "placeholder-silk/5120.ad3b54f6.avif",
+          "webp": "placeholder-silk/5120.ad3b54f6.webp",
+          "jpeg": "placeholder-silk/5120.ad3b54f6.jpg"
+        }
+      ],
+      "source": "wallpapers/placeholder-silk.svg"
+    }
+  }
+}

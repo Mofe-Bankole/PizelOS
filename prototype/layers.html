@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layer Breakdown Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0b10;
+    --ink: #f4f1ff;
+    --muted: #8b87a3;
+    --line: #2a2838;
+    --panel: #14131c;
+    --lime: #c6ff3d;
+    --pink: #ff4fd8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--ink); font-family: "Space Grotesk", system-ui, sans-serif; }
+  body { overflow-x: hidden; }
+  a { color: inherit; }
+
+  /* ---------- Intro ---------- */
+  .intro { min-height: 100svh; display: grid; place-content: center; text-align: center; padding: 24px 16px; gap: 20px; position: relative; }
+  .intro .kicker { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .intro h1 { font-family: Unbounded, sans-serif; font-weight: 800; font-size: clamp(44px, 11vw, 160px); line-height: .9; letter-spacing: -.03em; }
+  .intro h1 span { color: var(--lime); }
+  .intro p { color: var(--muted); font-size: clamp(16px, 2vw, 20px); max-width: 36ch; margin: 0 auto; }
+  .skip { justify-self: center; border: 1px solid var(--line); padding: 10px 18px; border-radius: 999px; text-decoration: none; font-size: 14px; transition: border-color .2s; }
+  .skip:hover { border-color: var(--lime); }
+  .cue { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); font-size: 12px; letter-spacing: .2em; color: var(--muted); text-transform: uppercase; }
+
+  /* ---------- Breakdown ---------- */
+  .breakdown { height: 100svh; display: grid; grid-template-columns: 1fr 280px; align-items: center; gap: 40px; padding: 0 6vw; position: relative; overflow: hidden; }
+  .bd-head { position: absolute; top: 32px; left: 6vw; }
+  .bd-head .kicker { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+  .bd-head h2 { font-family: Unbounded, sans-serif; font-weight: 500; font-size: clamp(18px, 2.2vw, 28px); margin-top: 6px; }
+
+  .stage { perspective: 2000px; display: grid; place-items: center; height: 100%; }
+  .stack { position: relative; width: min(62vh, 46vw); aspect-ratio: 1; transform-style: preserve-3d; }
+  .layer { position: absolute; inset: 0; transform-style: preserve-3d; }
+  .layer .art { position: absolute; }
+  .art svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .layer .frame { position: absolute; inset: 0; border: 2px dashed rgba(255,255,255,.45); border-radius: 4px; opacity: 0; }
+  .layer .tag { position: absolute; left: 0; top: 0; transform: translateY(-130%); background: var(--lime); color: #0b0b10; font-weight: 700; font-size: clamp(11px, 1.3vw, 15px); padding: 4px 10px; border-radius: 4px; white-space: nowrap; opacity: 0; }
+  .layer .tag b { opacity: .55; margin-right: 6px; }
+
+  /* Fake Photoshop layers panel */
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-size: 14px; }
+  .panel-head { display: flex; justify-content: space-between; padding: 4px 6px 10px; border-bottom: 1px solid var(--line); margin-bottom: 8px; font-size: 12px; color: var(--muted); }
+  .panel-head strong { color: var(--ink); font-weight: 500; }
+  .rows { list-style: none; display: grid; gap: 4px; }
+  .row { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border: 1px solid rgba(198,255,61,0); background-color: rgba(198,255,61,0); border-radius: 6px; opacity: .35; }
+  .row .eye { width: 16px; height: 16px; color: var(--muted); flex: none; }
+  .thumb { width: 36px; height: 36px; position: relative; border-radius: 3px; overflow: hidden; flex: none;
+           background: repeating-conic-gradient(#2a2838 0 25%, #1c1b26 0 50%) 0 0 / 10px 10px; }
+  .thumb .art { position: absolute; }
+  .caption { margin-top: 14px; padding: 0 6px 4px; color: var(--muted); font-size: 13px; line-height: 1.5; opacity: 0; transform: translateY(16px); }
+  .caption strong { color: var(--lime); }
+
+  /* ---------- Work grid placeholder ---------- */
+  .work { padding: 120px 6vw 160px; }
+  .work h2 { font-family: Unbounded, sans-serif; font-weight: 800; font-size: clamp(32px, 6vw, 72px); margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .tile { aspect-ratio: 1; border-radius: 12px; display: flex; align-items: flex-end; padding: 14px; font-size: 13px; font-weight: 500; color: #0b0b10; }
+
+  @media (max-width: 760px) {
+    .breakdown { grid-template-columns: 1fr; grid-template-rows: 1fr auto; gap: 12px; padding: 90px 16px 20px; }
+    .bd-head { left: 16px; top: 24px; }
+    .stack { width: min(78vw, 46vh); }
+    .panel { font-size: 13px; }
+    .rows { grid-template-columns: 1fr 1fr; }
+    .row { padding: 5px 6px; gap: 8px; }
+    .thumb { width: 28px; height: 28px; }
+    .row .eye { display: none; }
+    .caption { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<section class="intro">
+  <span class="kicker">Web3 · Memes · Visual chaos</span>
+  <h1>DESIGNER<span>.</span></h1>
+  <p>Placeholder intro. Scroll to see how one post gets built, layer by layer.</p>
+  <a class="skip" href="#work">Skip to the work →</a>
+  <span class="cue">Scroll</span>
+</section>
+
+<section class="breakdown" id="breakdown">
+  <div class="bd-head">
+    <div class="kicker">Anatomy of a post</div>
+    <h2 id="piece-title"></h2>
+  </div>
+  <div class="stage"><div class="stack" id="stack"></div></div>
+  <aside class="panel">
+    <div class="panel-head"><strong>Layers</strong><span>Normal · 100%</span></div>
+    <ul class="rows" id="rows"></ul>
+    <p class="caption" id="caption"><strong>4 layers.</strong> One post that sent. Every piece starts as a stack like this.</p>
+  </aside>
+</section>
+
+<section class="work" id="work">
+  <h2>The work</h2>
+  <div class="grid" id="grid"></div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ============================================================
+   PLACEHOLDER ART
+   In the real build each layer is a trimmed .webp from the PSD
+   script; here they're inline SVGs so the prototype needs no files.
+   ============================================================ */
+function bgSvg() {
+  let grid = "";
+  [652, 672, 700, 740, 800, 880, 990].forEach(y => grid += `<line x1="0" y1="${y}" x2="1000" y2="${y}"/>`);
+  for (let k = -8; k <= 8; k++) grid += `<line x1="${500 + k * 30}" y1="640" x2="${500 + k * 190}" y2="1000"/>`;
+  let stars = "", s = 7;
+  const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < 40; i++) stars += `<circle cx="${rnd() * 1000}" cy="${rnd() * 420}" r="${1 + rnd() * 2.5}" fill="#fff" opacity="${.3 + rnd() * .6}"/>`;
+  return `<svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a0b3d"/><stop offset=".6" stop-color="#7b2cbf"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient>
+      <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe66d"/><stop offset="1" stop-color="#ff4f8b"/></linearGradient>
+      <clipPath id="sunclip"><circle cx="500" cy="560" r="260"/></clipPath>
+    </defs>
+    <rect width="1000" height="1000" fill="url(#sky)"/>
+    ${stars}
+    <circle cx="500" cy="560" r="260" fill="url(#sun)"/>
+    <g clip-path="url(#sunclip)" fill="#a531d6"><rect y="555" width="1000" height="7"/><rect y="583" width="1000" height="11"/><rect y="613" width="1000" height="15"/></g>
+    <rect y="640" width="1000" height="360" fill="#14062e"/>
+    <g stroke="#ff4fd8" stroke-opacity=".55" stroke-width="2">${grid}</g>
+  </svg>`;
+}
+
+const mascotSvg = () => `<svg viewBox="0 0 500 620">
+  <ellipse cx="250" cy="600" rx="170" ry="16" fill="#000" opacity=".35"/>
+  <path d="M250 40 C410 40 470 170 470 330 C470 500 380 590 250 590 C120 590 30 500 30 330 C30 170 90 40 250 40Z" fill="#c6ff3d" stroke="#0b0b10" stroke-width="10"/>
+  <path d="M250 42 C250 10 280 0 300 6 C290 20 270 30 250 42Z" fill="#7bd12a" stroke="#0b0b10" stroke-width="7"/>
+  <ellipse cx="250" cy="430" rx="125" ry="115" fill="#ecffbd"/>
+  <rect x="92" y="205" width="146" height="84" rx="18" fill="#0b0b10"/>
+  <rect x="262" y="205" width="146" height="84" rx="18" fill="#0b0b10"/>
+  <rect x="226" y="230" width="48" height="14" fill="#0b0b10"/>
+  <path d="M115 222 l40 0 l-22 40 l-40 0z M285 222 l40 0 l-22 40 l-40 0z" fill="#fff" opacity=".35"/>
+  <ellipse cx="130" cy="335" rx="30" ry="16" fill="#ff7ad9" opacity=".7"/>
+  <ellipse cx="370" cy="335" rx="30" ry="16" fill="#ff7ad9" opacity=".7"/>
+  <path d="M185 340 Q250 410 315 340" stroke="#0b0b10" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>`;
+
+function fxSvg() {
+  const coin = (x, y, r, rot) => `<g transform="translate(${x} ${y}) rotate(${rot})">
+    <circle r="${r}" fill="#ffd23f" stroke="#0b0b10" stroke-width="6"/>
+    <circle r="${r * .7}" fill="none" stroke="#e6a800" stroke-width="5"/>
+    <text y="${r * .36}" text-anchor="middle" font-family="Unbounded" font-weight="800" font-size="${r}" fill="#0b0b10">$</text></g>`;
+  const spark = (x, y, sc) => `<path transform="translate(${x} ${y}) scale(${sc})" d="M0 -40 Q6 -6 40 0 Q6 6 0 40 Q-6 6 -40 0 Q-6 -6 0 -40Z" fill="#fff"/>`;
+  return `<svg viewBox="0 0 840 600">
+    <ellipse cx="420" cy="330" rx="330" ry="250" fill="none" stroke="#c6ff3d" stroke-width="6" stroke-dasharray="4 22" stroke-linecap="round" opacity=".8"/>
+    ${coin(80, 120, 52, -18)}${coin(760, 90, 44, 14)}${coin(720, 420, 58, 22)}${coin(110, 460, 38, -8)}
+    ${spark(230, 40, 1)}${spark(620, 230, .7)}${spark(40, 300, .6)}${spark(800, 260, .5)}${spark(560, 30, .55)}
+  </svg>`;
+}
+
+const textSvg = () => `<svg viewBox="0 0 880 220">
+  <text x="450" y="170" text-anchor="middle" textLength="800" lengthAdjust="spacingAndGlyphs" font-family="Unbounded" font-weight="800" font-size="160" fill="#0b0b10">WAGMI</text>
+  <text x="440" y="160" text-anchor="middle" textLength="800" lengthAdjust="spacingAndGlyphs" font-family="Unbounded" font-weight="800" font-size="160" fill="#fff" stroke="#0b0b10" stroke-width="10" paint-order="stroke">WAGMI</text>
+</svg>`;
+
+/* ============================================================
+   MANIFEST: same shape the PSD script will output.
+   Layers listed bottom → top; x/y/w/h are % of the canvas.
+   ============================================================ */
+const manifest = {
+  slug: "blob-launch",
+  title: "$BLOB launch post",
+  canvas: { w: 1000, h: 1000 },
+  layers: [
+    { name: "Background", x: 0,  y: 0,  w: 100, h: 100, svg: bgSvg() },
+    { name: "Mascot",     x: 25, y: 26, w: 50,  h: 62,  svg: mascotSvg() },
+    { name: "FX",         x: 8,  y: 12, w: 84,  h: 60,  svg: fxSvg() },
+    { name: "Text",       x: 6,  y: 74, w: 88,  h: 22,  svg: textSvg() },
+  ],
+};
+
+/* ---------- Render ---------- */
+const stack = document.getElementById("stack");
+const rowsEl = document.getElementById("rows");
+document.getElementById("piece-title").textContent = manifest.title;
+
+const eye = `<svg class="eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>`;
+const place = l => `left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%`;
+
+const layerEls = [], rowEls = [];
+manifest.layers.forEach((l, i) => {
+  const el = document.createElement("div");
+  el.className = "layer";
+  el.innerHTML = `<div class="frame"></div><div class="art" style="${place(l)}">${l.svg}</div><div class="tag"><b>0${i + 1}</b>${l.name}</div>`;
+  stack.appendChild(el);
+  layerEls.push(el);
+
+  const row = document.createElement("li");
+  row.className = "row";
+  row.innerHTML = `${eye}<div class="thumb"><div class="art" style="${place(l)}">${l.svg}</div></div><span>${l.name}</span>`;
+  rowsEl.prepend(row);               // Photoshop lists top layer first
+  rowEls[i] = row;
+});
+
+const tiles = [["Meme", "#c6ff3d"], ["Banner", "#ff4fd8"], ["PFP", "#7b5cff"], ["Sticker", "#ffd23f"], ["Launch", "#5ce1ff"], ["Meme", "#ff8a3d"], ["Mascot", "#c6ff3d"], ["Banner", "#ff4fd8"]];
+document.getElementById("grid").innerHTML = tiles.map(([t, c]) => `<div class="tile" style="background:${c}">${t}</div>`).join("");
+
+/* ---------- Animation ---------- */
+gsap.registerPlugin(ScrollTrigger);
+const mm = gsap.matchMedia();
+
+mm.add({
+  motion: "(prefers-reduced-motion: no-preference)",
+  small: "(max-width: 760px)",
+}, ctx => {
+  const { motion, small } = ctx.conditions;
+
+  // Reduced motion: static stack, every layer listed as visible.
+  if (!motion) {
+    gsap.set(rowEls, { opacity: 1 });
+    gsap.set("#caption", { opacity: 1, y: 0 });
+    return;
+  }
+
+  gsap.from(".intro > *:not(.cue)", { y: 40, opacity: 0, duration: 1, stagger: .1, ease: "power3.out" });
+  ScrollTrigger.batch(".tile", {
+    onEnter: b => gsap.from(b, { y: 60, opacity: 0, duration: .8, stagger: .06, ease: "power3.out" }),
+    once: true,
+  });
+
+  const gap = () => stack.offsetWidth * (small ? .22 : .3);
+  const frames = layerEls.map(l => l.querySelector(".frame"));
+  const tags = layerEls.map(l => l.querySelector(".tag"));
+  const on = { backgroundColor: "rgba(198,255,61,0.14)", borderColor: "rgba(198,255,61,0.6)" };
+  const off = { backgroundColor: "rgba(198,255,61,0)", borderColor: "rgba(198,255,61,0)" };
+
+  gsap.set(layerEls, { z: i => i });  // tiny offsets so coplanar layers sort correctly
+
+  const tl = gsap.timeline({
+    defaults: { ease: "power2.inOut" },
+    scrollTrigger: {
+      trigger: "#breakdown",
+      start: "top top",
+      end: "+=300%",
+      pin: true,
+      scrub: 1,
+      invalidateOnRefresh: true,
+    },
+  });
+
+  // 1. Tilt the finished piece into an isometric view
+  tl.to(stack, { rotateX: 58, rotateZ: -38, scale: small ? .62 : .7, y: () => stack.offsetWidth * .2, duration: 1 });
+
+  // 2. Lift each layer off the stack, bottom → top, lighting up its panel row
+  layerEls.forEach((el, i) => {
+    const at = .8 + i * .4;
+    tl.to(el, { z: () => i * gap(), duration: .8 }, at)
+      .to(frames[i], { opacity: 1, duration: .4 }, at)
+      .to(tags[i], { opacity: 1, duration: .4 }, at + .3)
+      .to(rowEls[i], { opacity: 1, ...on, duration: .3 }, at);
+    if (i > 0) tl.to(rowEls[i - 1], { ...off, duration: .3 }, at);
+  });
+
+  // 3. Hold the exploded view
+  tl.to({}, { duration: .8 });
+
+  // 4. Collapse back into the finished piece
+  tl.addLabel("collapse")
+    .to(tags, { opacity: 0, duration: .3 }, "collapse")
+    .to(frames, { opacity: 0, duration: .4 }, "collapse")
+    .to(rowEls, { ...off, duration: .3 }, "collapse")
+    .to(layerEls, { z: i => i, duration: 1, stagger: { each: .08, from: "end" } }, "collapse")
+    .to(stack, { rotateX: 0, rotateZ: 0, scale: 1, y: 0, duration: 1 }, "collapse+=.4")
+    .to("#caption", { opacity: 1, y: 0, duration: .5 }, ">-.3");
+});
+</script>
+</body>
+</html>

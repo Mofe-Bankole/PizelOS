@@ -1,0 +1,5466 @@
+{
+  "generatedAt": "2026-11-19T13:45:17.152Z",
+  "base": "/media",
+  "items": {
+    "ads/audi-creative-ad-3": {
+      "id": "ads/audi-creative-ad-3",
+      "source": {
+        "file": "ads/AUDI CREATIVE AD 3.png",
+        "size": 9987889,
+        "mtimeMs": 1708000030000,
+        "hash": "3a45332f"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "ZBgSDwKYd4ivh3dleHh3eHh5pz0F12AC",
+      "color": "#e8e8d8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "ads/audi-creative-ad-3/480.3a45332f.avif"
+          },
+          {
+            "w": 960,
+            "src": "ads/audi-creative-ad-3/960.3a45332f.avif"
+          },
+          {
+            "w": 1080,
+            "src": "ads/audi-creative-ad-3/1080.3a45332f.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "ads/audi-creative-ad-3/480.3a45332f.webp"
+          },
+          {
+            "w": 960,
+            "src": "ads/audi-creative-ad-3/960.3a45332f.webp"
+          },
+          {
+            "w": 1080,
+            "src": "ads/audi-creative-ad-3/1080.3a45332f.webp"
+          }
+        ]
+      }
+    },
+    "ads/fear-of-god-ad": {
+      "id": "ads/fear-of-god-ad",
+      "source": {
+        "file": "ads/Fear Of God AD.jpg",
+        "size": 766120,
+        "mtimeMs": 1710695540000,
+        "hash": "a9737f36"
+      },
+      "width": 1153,
+      "height": 1154,
+      "thumbhash": "W0kKDwKsZnZoeXdmmHqI91iHab9CcGQA",
+      "color": "#382828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "ads/fear-of-god-ad/480.a9737f36.avif"
+          },
+          {
+            "w": 960,
+            "src": "ads/fear-of-god-ad/960.a9737f36.avif"
+          },
+          {
+            "w": 1153,
+            "src": "ads/fear-of-god-ad/1153.a9737f36.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "ads/fear-of-god-ad/480.a9737f36.webp"
+          },
+          {
+            "w": 960,
+            "src": "ads/fear-of-god-ad/960.a9737f36.webp"
+          },
+          {
+            "w": 1153,
+            "src": "ads/fear-of-god-ad/1153.a9737f36.webp"
+          }
+        ]
+      }
+    },
+    "ads/malaria-ad": {
+      "id": "ads/malaria-ad",
+      "source": {
+        "file": "ads/Malaria ad.png",
+        "size": 38687014,
+        "mtimeMs": 1728418698000,
+        "hash": "6a3832d6"
+      },
+      "width": 4252,
+      "height": 4252,
+      "thumbhash": "FAgGBwA1aHgomXdwebiJR3h42AuxvSAK",
+      "color": "#484848",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "ads/malaria-ad/480.6a3832d6.avif"
+          },
+          {
+            "w": 960,
+            "src": "ads/malaria-ad/960.6a3832d6.avif"
+          },
+          {
+            "w": 1600,
+            "src": "ads/malaria-ad/1600.6a3832d6.avif"
+          },
+          {
+            "w": 2560,
+            "src": "ads/malaria-ad/2560.6a3832d6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "ads/malaria-ad/480.6a3832d6.webp"
+          },
+          {
+            "w": 960,
+            "src": "ads/malaria-ad/960.6a3832d6.webp"
+          },
+          {
+            "w": 1600,
+            "src": "ads/malaria-ad/1600.6a3832d6.webp"
+          },
+          {
+            "w": 2560,
+            "src": "ads/malaria-ad/2560.6a3832d6.webp"
+          }
+        ]
+      }
+    },
+    "ads/oraimo-creative-ad": {
+      "id": "ads/oraimo-creative-ad",
+      "source": {
+        "file": "ads/Oraimo creative ad.png",
+        "size": 49356870,
+        "mtimeMs": 1728925792000,
+        "hash": "b461920d"
+      },
+      "width": 4252,
+      "height": 4252,
+      "thumbhash": "CvgJBwAHqYaId4eDa2eXiHeIeAHY6H8C",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "ads/oraimo-creative-ad/480.b461920d.avif"
+          },
+          {
+            "w": 960,
+            "src": "ads/oraimo-creative-ad/960.b461920d.avif"
+          },
+          {
+            "w": 1600,
+            "src": "ads/oraimo-creative-ad/1600.b461920d.avif"
+          },
+          {
+            "w": 2560,
+            "src": "ads/oraimo-creative-ad/2560.b461920d.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "ads/oraimo-creative-ad/480.b461920d.webp"
+          },
+          {
+            "w": 960,
+            "src": "ads/oraimo-creative-ad/960.b461920d.webp"
+          },
+          {
+            "w": 1600,
+            "src": "ads/oraimo-creative-ad/1600.b461920d.webp"
+          },
+          {
+            "w": 2560,
+            "src": "ads/oraimo-creative-ad/2560.b461920d.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade": {
+      "id": "airdrop-arcade/airdrop-arcade",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE.psd",
+        "size": 339362,
+        "mtimeMs": 1761217388000,
+        "hash": "62420271"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "PAgKBIC3mGh3iHiPdIgAAAAAAA==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade/480.62420271.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade/960.62420271.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade/1600.62420271.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade/480.62420271.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade/960.62420271.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade/1600.62420271.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-carousel": {
+      "id": "airdrop-arcade/airdrop-arcade-carousel",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE CAROUSEL.psd",
+        "size": 41485986,
+        "mtimeMs": 1761225016000,
+        "hash": "d5f09515"
+      },
+      "width": 8400,
+      "height": 900,
+      "thumbhash": "rwaOCYIOLX+Gh4hVgGUNlvfoiIeId4g=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/480.d5f09515.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/960.d5f09515.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/1600.d5f09515.avif"
+          },
+          {
+            "w": 2560,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/2560.d5f09515.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/480.d5f09515.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/960.d5f09515.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/1600.d5f09515.webp"
+          },
+          {
+            "w": 2560,
+            "src": "airdrop-arcade/airdrop-arcade-carousel/2560.d5f09515.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-logo2": {
+      "id": "airdrop-arcade/airdrop-arcade-logo2",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE LOGO2.png",
+        "size": 35337,
+        "mtimeMs": 1761229088000,
+        "hash": "d1beaee0"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "PQgGBIDJhXiHeIhvk3gAAAAAAA==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/480.d1beaee0.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/960.d1beaee0.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/1600.d1beaee0.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/480.d1beaee0.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/960.d1beaee0.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-logo2/1600.d1beaee0.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-page-5": {
+      "id": "airdrop-arcade/airdrop-arcade-page-5",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE  PAGE 5.psd",
+        "size": 180476012,
+        "mtimeMs": 1761708798000,
+        "hash": "93b709d6"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "mCUObIaPZIl0iHindnhgd/dXdQ==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/480.93b709d6.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/960.93b709d6.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/1600.93b709d6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/480.93b709d6.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/960.93b709d6.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-page-5/1600.93b709d6.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-pg1": {
+      "id": "airdrop-arcade/airdrop-arcade-pg1",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE PG1.psd",
+        "size": 153410443,
+        "mtimeMs": 1761708510000,
+        "hash": "4af295bc"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "+QcGBIBm+ZeFdYl8iY/nj4IB1w==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/480.4af295bc.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/960.4af295bc.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/1600.4af295bc.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/480.4af295bc.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/960.4af295bc.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg1/1600.4af295bc.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-pg2": {
+      "id": "airdrop-arcade/airdrop-arcade-pg2",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE PG2.psd",
+        "size": 43997821,
+        "mtimeMs": 1761708594000,
+        "hash": "4bb77f93"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "ahQKLIpQZnZliHdlmIZgdfQimA==",
+      "color": "#88c8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/480.4bb77f93.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/960.4bb77f93.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/1600.4bb77f93.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/480.4bb77f93.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/960.4bb77f93.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg2/1600.4bb77f93.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-pg3": {
+      "id": "airdrop-arcade/airdrop-arcade-pg3",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE PG3.psd",
+        "size": 144946837,
+        "mtimeMs": 1761708646000,
+        "hash": "1d985173"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "egcGFIKlx5hzd4h+p5+SYP7RWw==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/480.1d985173.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/960.1d985173.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/1600.1d985173.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/480.1d985173.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/960.1d985173.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg3/1600.1d985173.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade-pg4": {
+      "id": "airdrop-arcade/airdrop-arcade-pg4",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE PG4.psd",
+        "size": 72622269,
+        "mtimeMs": 1761708716000,
+        "hash": "6a3150f7"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "OggGBIB09YqBWJt5h24AAAAAAA==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/480.6a3150f7.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/960.6a3150f7.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/1600.6a3150f7.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/480.6a3150f7.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/960.6a3150f7.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade-pg4/1600.6a3150f7.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/airdrop-arcade2": {
+      "id": "airdrop-arcade/airdrop-arcade2",
+      "source": {
+        "file": "airdrop arcade/AIRDROP ARCADE2.psd",
+        "size": 354847,
+        "mtimeMs": 1761217392000,
+        "hash": "e628436c"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "PQgGBIDJhXiHeIhvk3gAAAAAAA==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade2/480.e628436c.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade2/960.e628436c.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade2/1600.e628436c.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/airdrop-arcade2/480.e628436c.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/airdrop-arcade2/960.e628436c.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/airdrop-arcade2/1600.e628436c.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/arcadeairdrop-pg1": {
+      "id": "airdrop-arcade/arcadeairdrop-pg1",
+      "source": {
+        "file": "airdrop arcade/ArcadeAIRDROP pg1.png",
+        "size": 912030,
+        "mtimeMs": 1761218706000,
+        "hash": "ac2ad961"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "+QcGBIBm+ZeFdYl8iY/nj4IB1w==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/480.ac2ad961.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/960.ac2ad961.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/1600.ac2ad961.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/480.ac2ad961.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/960.ac2ad961.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg1/1600.ac2ad961.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/arcadeairdrop-pg2": {
+      "id": "airdrop-arcade/arcadeairdrop-pg2",
+      "source": {
+        "file": "airdrop arcade/ArcadeAIRDROP pg2.png",
+        "size": 335192,
+        "mtimeMs": 1761218620000,
+        "hash": "4c5e3ff5"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "ahQKLIpQZnZliHdlmIZgdfQimA==",
+      "color": "#88c8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/480.4c5e3ff5.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/960.4c5e3ff5.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/1600.4c5e3ff5.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/480.4c5e3ff5.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/960.4c5e3ff5.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg2/1600.4c5e3ff5.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/arcadeairdrop-pg3": {
+      "id": "airdrop-arcade/arcadeairdrop-pg3",
+      "source": {
+        "file": "airdrop arcade/ArcadeAIRDROP pg3.png",
+        "size": 962174,
+        "mtimeMs": 1761218534000,
+        "hash": "d2d5a427"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "uAcGFIKlx5hzd4h+p5+SYP7hWw==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/480.d2d5a427.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/960.d2d5a427.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/1600.d2d5a427.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/480.d2d5a427.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/960.d2d5a427.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg3/1600.d2d5a427.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/arcadeairdrop-pg4": {
+      "id": "airdrop-arcade/arcadeairdrop-pg4",
+      "source": {
+        "file": "airdrop arcade/ArcadeAIRDROP pg4.png",
+        "size": 897905,
+        "mtimeMs": 1761221878000,
+        "hash": "776b0648"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "+AcGBIB09YqBWJt5h26fggnWZw==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/480.776b0648.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/960.776b0648.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/1600.776b0648.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/480.776b0648.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/960.776b0648.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg4/1600.776b0648.webp"
+          }
+        ]
+      }
+    },
+    "airdrop-arcade/arcadeairdrop-pg5": {
+      "id": "airdrop-arcade/arcadeairdrop-pg5",
+      "source": {
+        "file": "airdrop arcade/ArcadeAIRDROP pg5.png",
+        "size": 1029760,
+        "mtimeMs": 1761224208000,
+        "hash": "d688b2ca"
+      },
+      "width": 1600,
+      "height": 900,
+      "thumbhash": "lyUObIaPVIl0iHindnhgd/dXdQ==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/480.d688b2ca.avif"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/960.d688b2ca.avif"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/1600.d688b2ca.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/480.d688b2ca.webp"
+          },
+          {
+            "w": 960,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/960.d688b2ca.webp"
+          },
+          {
+            "w": 1600,
+            "src": "airdrop-arcade/arcadeairdrop-pg5/1600.d688b2ca.webp"
+          }
+        ]
+      }
+    },
+    "dicey/dicey-artwork": {
+      "id": "dicey/dicey-artwork",
+      "source": {
+        "file": "dicey/Dicey Artwork.png",
+        "size": 441233,
+        "mtimeMs": 1764479788000,
+        "hash": "4d909822"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "GPgFHwY52odQcHiDhkmIZ7hodYcHiHYA",
+      "color": "#286868",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "dicey/dicey-artwork/480.4d909822.avif"
+          },
+          {
+            "w": 960,
+            "src": "dicey/dicey-artwork/960.4d909822.avif"
+          },
+          {
+            "w": 1080,
+            "src": "dicey/dicey-artwork/1080.4d909822.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "dicey/dicey-artwork/480.4d909822.webp"
+          },
+          {
+            "w": 960,
+            "src": "dicey/dicey-artwork/960.4d909822.webp"
+          },
+          {
+            "w": 1080,
+            "src": "dicey/dicey-artwork/1080.4d909822.webp"
+          }
+        ]
+      }
+    },
+    "dicey/dicey-banner-artwork": {
+      "id": "dicey/dicey-banner-artwork",
+      "source": {
+        "file": "dicey/Dicey Banner Artwork.png",
+        "size": 723464,
+        "mtimeMs": 1769098580000,
+        "hash": "01c0c6db"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "UBkGEoS0yAZkmBeKSoB4B6c=",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "dicey/dicey-banner-artwork/480.01c0c6db.avif"
+          },
+          {
+            "w": 960,
+            "src": "dicey/dicey-banner-artwork/960.01c0c6db.avif"
+          },
+          {
+            "w": 1500,
+            "src": "dicey/dicey-banner-artwork/1500.01c0c6db.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "dicey/dicey-banner-artwork/480.01c0c6db.webp"
+          },
+          {
+            "w": 960,
+            "src": "dicey/dicey-banner-artwork/960.01c0c6db.webp"
+          },
+          {
+            "w": 1500,
+            "src": "dicey/dicey-banner-artwork/1500.01c0c6db.webp"
+          }
+        ]
+      }
+    },
+    "dicey/magic-lab-meme-bounty5": {
+      "id": "dicey/magic-lab-meme-bounty5",
+      "source": {
+        "file": "dicey/Magic Lab Meme bounty5.png",
+        "size": 535356,
+        "mtimeMs": 1764352336000,
+        "hash": "65614d05"
+      },
+      "width": 1500,
+      "height": 1800,
+      "thumbhash": "6ecFFgL2p5d3d5iIaXuHnHbXd3hf/jg=",
+      "color": "#98a8b8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "dicey/magic-lab-meme-bounty5/480.65614d05.avif"
+          },
+          {
+            "w": 960,
+            "src": "dicey/magic-lab-meme-bounty5/960.65614d05.avif"
+          },
+          {
+            "w": 1500,
+            "src": "dicey/magic-lab-meme-bounty5/1500.65614d05.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "dicey/magic-lab-meme-bounty5/480.65614d05.webp"
+          },
+          {
+            "w": 960,
+            "src": "dicey/magic-lab-meme-bounty5/960.65614d05.webp"
+          },
+          {
+            "w": 1500,
+            "src": "dicey/magic-lab-meme-bounty5/1500.65614d05.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-chocolate-goody": {
+      "id": "durex-art/durex-chocolate-goody",
+      "source": {
+        "file": "durex art/DUREX- Chocolate goody.psd",
+        "size": 15908715,
+        "mtimeMs": 1642850182000,
+        "hash": "cfffae90"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "4HQBHgSYCLVYl2gY13Gec5x4CXeQcAc=",
+      "color": "#2888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-chocolate-goody/480.cfffae90.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-chocolate-goody/960.cfffae90.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-chocolate-goody/1080.cfffae90.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-chocolate-goody/480.cfffae90.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-chocolate-goody/960.cfffae90.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-chocolate-goody/1080.cfffae90.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-fathers-day": {
+      "id": "durex-art/durex-fathers-day",
+      "source": {
+        "file": "durex art/DUREX-Fathers Day.psd",
+        "size": 4437249,
+        "mtimeMs": 1642530544000,
+        "hash": "d8f400b7"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "Y3UFFgQYZ4h4iAeomIeIh5mIGIeAgQg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-fathers-day/480.d8f400b7.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-fathers-day/960.d8f400b7.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-fathers-day/1080.d8f400b7.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-fathers-day/480.d8f400b7.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-fathers-day/960.d8f400b7.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-fathers-day/1080.d8f400b7.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-last-long-and-prosper": {
+      "id": "durex-art/durex-last-long-and-prosper",
+      "source": {
+        "file": "durex art/DUREX- Last long and prosper.psd",
+        "size": 7691389,
+        "mtimeMs": 1642478740000,
+        "hash": "2996bed6"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "YoUFHgQKo5l4eBiVbISJlql3FodgcQg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-last-long-and-prosper/480.2996bed6.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-last-long-and-prosper/960.2996bed6.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-last-long-and-prosper/1080.2996bed6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-last-long-and-prosper/480.2996bed6.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-last-long-and-prosper/960.2996bed6.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-last-long-and-prosper/1080.2996bed6.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-no-caption-needed": {
+      "id": "durex-art/durex-no-caption-needed",
+      "source": {
+        "file": "durex art/DUREX- No Caption needed.psd",
+        "size": 7694584,
+        "mtimeMs": 1642423550000,
+        "hash": "3bb01a94"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "opUFLgY4aLdYiAiYl4CNecdIB4VwUAg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-caption-needed/480.3bb01a94.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-caption-needed/960.3bb01a94.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-caption-needed/1080.3bb01a94.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-caption-needed/480.3bb01a94.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-caption-needed/960.3bb01a94.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-caption-needed/1080.3bb01a94.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-no-loose-gurad": {
+      "id": "durex-art/durex-no-loose-gurad",
+      "source": {
+        "file": "durex art/DUREX- No loose gurad.psd",
+        "size": 33091505,
+        "mtimeMs": 1642419322000,
+        "hash": "5d39afd2"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "X4UFHgS2aod4dtkZlma5cJ2ZGHeAgQc=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-loose-gurad/480.5d39afd2.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-loose-gurad/960.5d39afd2.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-loose-gurad/1080.5d39afd2.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-loose-gurad/480.5d39afd2.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-loose-gurad/960.5d39afd2.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-loose-gurad/1080.5d39afd2.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-no-replacement-for-contraceptives": {
+      "id": "durex-art/durex-no-replacement-for-contraceptives",
+      "source": {
+        "file": "durex art/DUREX- No replacement for Contraceptives.psd",
+        "size": 4221415,
+        "mtimeMs": 1642526018000,
+        "hash": "47d90d32"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "I3UFFgIYeHeIeAi4h4mHiGd4GIeAgQg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/480.47d90d32.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/960.47d90d32.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/1080.47d90d32.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/480.47d90d32.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/960.47d90d32.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-no-replacement-for-contraceptives/1080.47d90d32.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-not-there": {
+      "id": "durex-art/durex-not-there",
+      "source": {
+        "file": "durex art/DUREX-Not there.psd",
+        "size": 3545252,
+        "mtimeMs": 1642530956000,
+        "hash": "be549387"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "I3UFFgIYiHiIiAi4eIiIiIeIGIeAgQg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-not-there/480.be549387.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-not-there/960.be549387.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-not-there/1080.be549387.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-not-there/480.be549387.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-not-there/960.be549387.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-not-there/1080.be549387.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-nutella-and-durex": {
+      "id": "durex-art/durex-nutella-and-durex",
+      "source": {
+        "file": "durex art/DUREX- Nutella& Durex.psd",
+        "size": 5547061,
+        "mtimeMs": 1642842206000,
+        "hash": "4885088b"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "Y4UFFgQIeHeIeAioh4iIh5h4CIeAcAg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-nutella-and-durex/480.4885088b.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-nutella-and-durex/960.4885088b.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-nutella-and-durex/1080.4885088b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-nutella-and-durex/480.4885088b.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-nutella-and-durex/960.4885088b.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-nutella-and-durex/1080.4885088b.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-p-or-l": {
+      "id": "durex-art/durex-p-or-l",
+      "source": {
+        "file": "durex art/DUREX- P OR L.psd",
+        "size": 8701999,
+        "mtimeMs": 1642527876000,
+        "hash": "d4702859"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "ooUFJgYLlYd4iCe1and5l3h4R3dwYwc=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-p-or-l/480.d4702859.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-p-or-l/960.d4702859.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-p-or-l/1080.d4702859.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-p-or-l/480.d4702859.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-p-or-l/960.d4702859.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-p-or-l/1080.d4702859.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-protection": {
+      "id": "durex-art/durex-protection",
+      "source": {
+        "file": "durex art/DUREX-Protection.psd",
+        "size": 7441124,
+        "mtimeMs": 1642529776000,
+        "hash": "bfe5a697"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "opUFJgY0jtVJlQm6ZGC9iqaYCIaBYBg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-protection/480.bfe5a697.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-protection/960.bfe5a697.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-protection/1080.bfe5a697.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-protection/480.bfe5a697.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-protection/960.bfe5a697.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-protection/1080.bfe5a697.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-spot-the-difference": {
+      "id": "durex-art/durex-spot-the-difference",
+      "source": {
+        "file": "durex art/DUREX- Spot the difference.psd",
+        "size": 6046488,
+        "mtimeMs": 1642841316000,
+        "hash": "a91bdf8e"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "Y3UFFgQXiXeIdwi4h4iIiId4GIiAgQg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-spot-the-difference/480.a91bdf8e.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-spot-the-difference/960.a91bdf8e.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-spot-the-difference/1080.a91bdf8e.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-spot-the-difference/480.a91bdf8e.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-spot-the-difference/960.a91bdf8e.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-spot-the-difference/1080.a91bdf8e.webp"
+          }
+        ]
+      }
+    },
+    "durex-art/durex-valentine-cliches-1": {
+      "id": "durex-art/durex-valentine-cliches-1",
+      "source": {
+        "file": "durex art/DUREX- Valentine cliches 1.psd",
+        "size": 7577722,
+        "mtimeMs": 1642837904000,
+        "hash": "fbce5e29"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "YoUBHgYZJHyIdwhm23iYk3yYB4dwcAg=",
+      "color": "#3888c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-valentine-cliches-1/480.fbce5e29.avif"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-valentine-cliches-1/960.fbce5e29.avif"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-valentine-cliches-1/1080.fbce5e29.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "durex-art/durex-valentine-cliches-1/480.fbce5e29.webp"
+          },
+          {
+            "w": 960,
+            "src": "durex-art/durex-valentine-cliches-1/960.fbce5e29.webp"
+          },
+          {
+            "w": 1080,
+            "src": "durex-art/durex-valentine-cliches-1/1080.fbce5e29.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-banner-1": {
+      "id": "final-whistle/final-whistle-banner-1",
+      "source": {
+        "file": "final_whistle/Final Whistle Banner 1.png",
+        "size": 501154,
+        "mtimeMs": 1783490002000,
+        "hash": "6fc1a7a5"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "p2aFIooPA4lEWJCAhAY4aAkJh4d4iHc=",
+      "color": "#78b8c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-banner-1/480.6fc1a7a5.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-banner-1/960.6fc1a7a5.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-banner-1/1500.6fc1a7a5.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-banner-1/480.6fc1a7a5.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-banner-1/960.6fc1a7a5.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-banner-1/1500.6fc1a7a5.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-banner-2": {
+      "id": "final-whistle/final-whistle-banner-2",
+      "source": {
+        "file": "final_whistle/Final Whistle Banner 2.png",
+        "size": 1665413,
+        "mtimeMs": 1783339774000,
+        "hash": "f3a7934b"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "U+kJEoIKd4d3eBjHCVpsTzk=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-banner-2/480.f3a7934b.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-banner-2/960.f3a7934b.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-banner-2/1500.f3a7934b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-banner-2/480.f3a7934b.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-banner-2/960.f3a7934b.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-banner-2/1500.f3a7934b.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo-dark": {
+      "id": "final-whistle/final-whistle-logo-dark",
+      "source": {
+        "file": "final_whistle/Final Whistle logo Dark.psd",
+        "size": 412693,
+        "mtimeMs": 1783341142000,
+        "hash": "c883d3df"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "i/cJBIA5ZpeHd3hwm3gwdwh35w==",
+      "color": "#181828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-dark/480.c883d3df.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-dark/960.c883d3df.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-dark/1500.c883d3df.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-dark/480.c883d3df.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-dark/960.c883d3df.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-dark/1500.c883d3df.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo-dark-nobg": {
+      "id": "final-whistle/final-whistle-logo-dark-nobg",
+      "source": {
+        "file": "final_whistle/Final Whistle logo Dark NOBG.png",
+        "size": 29472,
+        "mtimeMs": 1783341164000,
+        "hash": "0a926aa6"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "u/eBA4ARQv93iNgwdwhzh0lmh3dgi9c=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/480.0a926aa6.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/960.0a926aa6.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/1500.0a926aa6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/480.0a926aa6.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/960.0a926aa6.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-dark-nobg/1500.0a926aa6.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo-light": {
+      "id": "final-whistle/final-whistle-logo-light",
+      "source": {
+        "file": "final_whistle/Final Whistle logo Light.png",
+        "size": 39139,
+        "mtimeMs": 1783341430000,
+        "hash": "e1034fad"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "+/cJBIDHiHh4iIePdIfHeG+M9w==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-light/480.e1034fad.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-light/960.e1034fad.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-light/1500.e1034fad.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-light/480.e1034fad.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-light/960.e1034fad.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-light/1500.e1034fad.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo-light-nobg": {
+      "id": "final-whistle/final-whistle-logo-light-nobg",
+      "source": {
+        "file": "final_whistle/Final Whistle logo Light NOBG.png",
+        "size": 30044,
+        "mtimeMs": 1783341560000,
+        "hash": "7a83ece4"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "j/eBA4ARvQCIdyffiPd8d0lmh3dgi9c=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-light-nobg/480.7a83ece4.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-light-nobg/960.7a83ece4.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-light-nobg/1500.7a83ece4.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo-light-nobg/480.7a83ece4.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo-light-nobg/960.7a83ece4.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo-light-nobg/1500.7a83ece4.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1": {
+      "id": "final-whistle/final-whistle-logo1",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1.psd",
+        "size": 2243346,
+        "mtimeMs": 1783102928000,
+        "hash": "be13856e"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "/wcCBILGeXl3iHefY4jGd5+DCA==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1/480.be13856e.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1/960.be13856e.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1/1500.be13856e.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1/480.be13856e.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1/960.be13856e.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1/1500.be13856e.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1-presentation": {
+      "id": "final-whistle/final-whistle-logo1-presentation",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1 Presentation.png",
+        "size": 59150,
+        "mtimeMs": 1783166910000,
+        "hash": "cd113993"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "CQgGBIAZd5eId3hwjXUAAAAAAA==",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation/480.cd113993.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation/960.cd113993.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation/1500.cd113993.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation/480.cd113993.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation/960.cd113993.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation/1500.cd113993.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1-presentation2": {
+      "id": "final-whistle/final-whistle-logo1-presentation2",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1 Presentation2.png",
+        "size": 99600,
+        "mtimeMs": 1783166946000,
+        "hash": "5b93b8ce"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "WjcFBII5iGiHeLpwnIauemBgOA==",
+      "color": "#28a868",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation2/480.5b93b8ce.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation2/960.5b93b8ce.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation2/1500.5b93b8ce.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation2/480.5b93b8ce.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation2/960.5b93b8ce.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation2/1500.5b93b8ce.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1-presentation3": {
+      "id": "final-whistle/final-whistle-logo1-presentation3",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1 Presentation3.png",
+        "size": 1793817,
+        "mtimeMs": 1783167012000,
+        "hash": "9ba9b990"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "EAgKBIAZZ3eEeHdwjHjmgF8M1w==",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation3/480.9ba9b990.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation3/960.9ba9b990.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation3/1500.9ba9b990.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation3/480.9ba9b990.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation3/960.9ba9b990.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation3/1500.9ba9b990.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1-presentation4": {
+      "id": "final-whistle/final-whistle-logo1-presentation4",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1 Presentation4.png",
+        "size": 1766295,
+        "mtimeMs": 1783167002000,
+        "hash": "a54e4cc6"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "EQgKBIA4ZniZhneQenkf8v11iw==",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation4/480.a54e4cc6.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation4/960.a54e4cc6.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation4/1500.a54e4cc6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation4/480.a54e4cc6.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation4/960.a54e4cc6.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation4/1500.a54e4cc6.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo1-presentation5": {
+      "id": "final-whistle/final-whistle-logo1-presentation5",
+      "source": {
+        "file": "final_whistle/Final Whistle logo1 Presentation5.png",
+        "size": 1277831,
+        "mtimeMs": 1783167084000,
+        "hash": "d46ae2ff"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "DwgKBIA4Z3eGh3dwi3gGiHaQiA==",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation5/480.d46ae2ff.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation5/960.d46ae2ff.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation5/1500.d46ae2ff.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo1-presentation5/480.d46ae2ff.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo1-presentation5/960.d46ae2ff.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo1-presentation5/1500.d46ae2ff.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo2": {
+      "id": "final-whistle/final-whistle-logo2",
+      "source": {
+        "file": "final_whistle/Final Whistle logo2.png",
+        "size": 93783,
+        "mtimeMs": 1783170966000,
+        "hash": "5dc2ea77"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "jPcFDIIJZ4eGiHhwjXhLd8B0Bw==",
+      "color": "#181828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2/480.5dc2ea77.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2/960.5dc2ea77.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2/1500.5dc2ea77.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2/480.5dc2ea77.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2/960.5dc2ea77.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2/1500.5dc2ea77.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo2-2": {
+      "id": "final-whistle/final-whistle-logo2-2",
+      "source": {
+        "file": "final_whistle/Final Whistle logo2-2.png",
+        "size": 94708,
+        "mtimeMs": 1783170952000,
+        "hash": "b7a8bf10"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "XVoHDIQJZ4eGiHhwjHj2eW+f9w==",
+      "color": "#e82828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2-2/480.b7a8bf10.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2-2/960.b7a8bf10.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2-2/1500.b7a8bf10.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2-2/480.b7a8bf10.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2-2/960.b7a8bf10.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2-2/1500.b7a8bf10.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/final-whistle-logo2-3": {
+      "id": "final-whistle/final-whistle-logo2-3",
+      "source": {
+        "file": "final_whistle/Final Whistle logo2-3.png",
+        "size": 66149,
+        "mtimeMs": 1783171562000,
+        "hash": "79b524d4"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "mVgWLJB1eIegd4h4iHl8UNgGhA==",
+      "color": "#181828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2-3/480.79b524d4.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2-3/960.79b524d4.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2-3/1500.79b524d4.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/final-whistle-logo2-3/480.79b524d4.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/final-whistle-logo2-3/960.79b524d4.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/final-whistle-logo2-3/1500.79b524d4.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/fw-icon-black": {
+      "id": "final-whistle/fw-icon-black",
+      "source": {
+        "file": "final_whistle/FW ICON Black.png",
+        "size": 25117,
+        "mtimeMs": 1783508764000,
+        "hash": "1c69e785"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "mveFBQAjWOd4l3Vc+Rl6gIEHF5l3iICNqA==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-icon-black/480.1c69e785.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-icon-black/960.1c69e785.avif"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-icon-black/1080.1c69e785.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-icon-black/480.1c69e785.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-icon-black/960.1c69e785.webp"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-icon-black/1080.1c69e785.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/fw-icon-white": {
+      "id": "final-whistle/fw-icon-white",
+      "source": {
+        "file": "final_whistle/FW ICON White.png",
+        "size": 25654,
+        "mtimeMs": 1783508814000,
+        "hash": "956c9752"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "6/eFBQAjpxiHaIqjBvaFb1/4F5l3iICNqA==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-icon-white/480.956c9752.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-icon-white/960.956c9752.avif"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-icon-white/1080.956c9752.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-icon-white/480.956c9752.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-icon-white/960.956c9752.webp"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-icon-white/1080.956c9752.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/fw-logo-mark": {
+      "id": "final-whistle/fw-logo-mark",
+      "source": {
+        "file": "final_whistle/FW Logo Mark.psd",
+        "size": 532826,
+        "mtimeMs": 1783340680000,
+        "hash": "d7478dea"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "TfcNBwBZaGd3d4hweYmI6Gh3BHKnMHcO",
+      "color": "#181828",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark/480.d7478dea.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark/960.d7478dea.avif"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark/1080.d7478dea.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark/480.d7478dea.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark/960.d7478dea.webp"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark/1080.d7478dea.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/fw-logo-mark2": {
+      "id": "final-whistle/fw-logo-mark2",
+      "source": {
+        "file": "final_whistle/FW Logo Mark2.png",
+        "size": 29452,
+        "mtimeMs": 1783341902000,
+        "hash": "894c4db6"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "9vcJBwCnh4iIiHePhXd3J5eIe4r4p4cP",
+      "color": "#e8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark2/480.894c4db6.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark2/960.894c4db6.avif"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark2/1080.894c4db6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark2/480.894c4db6.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark2/960.894c4db6.webp"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark2/1080.894c4db6.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/fw-logo-mark3": {
+      "id": "final-whistle/fw-logo-mark3",
+      "source": {
+        "file": "final_whistle/FW Logo Mark3.png",
+        "size": 26936,
+        "mtimeMs": 1783342182000,
+        "hash": "6e0672cb"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "J8UFFwJYaHd3d3hweoiI2Gd3hHUHWHcA",
+      "color": "#6878d8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark3/480.6e0672cb.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark3/960.6e0672cb.avif"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark3/1080.6e0672cb.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/fw-logo-mark3/480.6e0672cb.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/fw-logo-mark3/960.6e0672cb.webp"
+          },
+          {
+            "w": 1080,
+            "src": "final-whistle/fw-logo-mark3/1080.6e0672cb.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/pipo-presentation-designs": {
+      "id": "final-whistle/pipo-presentation-designs",
+      "source": {
+        "file": "final_whistle/PIPO PRESENTATION DESIGNS.png",
+        "size": 384578,
+        "mtimeMs": 1783517888000,
+        "hash": "8bffd2a9"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "tOcFBIBoh2d8eHiPh3MGdm5Q+A==",
+      "color": "#e8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation-designs/480.8bffd2a9.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation-designs/960.8bffd2a9.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation-designs/1500.8bffd2a9.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation-designs/480.8bffd2a9.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation-designs/960.8bffd2a9.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation-designs/1500.8bffd2a9.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/pipo-presentation1": {
+      "id": "final-whistle/pipo-presentation1",
+      "source": {
+        "file": "final_whistle/PIPO PRESENTATION1.psd",
+        "size": 5864501,
+        "mtimeMs": 1783580648000,
+        "hash": "1909fe7d"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "t+cFBIBQZuuHfGbfqF11RS919Q==",
+      "color": "#e8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation1/480.1909fe7d.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation1/960.1909fe7d.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation1/1500.1909fe7d.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation1/480.1909fe7d.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation1/960.1909fe7d.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation1/1500.1909fe7d.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/pipo-presentation2": {
+      "id": "final-whistle/pipo-presentation2",
+      "source": {
+        "file": "final_whistle/PIPO PRESENTATION2.psd",
+        "size": 7815489,
+        "mtimeMs": 1783580868000,
+        "hash": "3440dffa"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "tucFBIBAVcqHfHbeqFxkVS9k9Q==",
+      "color": "#e8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation2/480.3440dffa.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation2/960.3440dffa.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation2/1500.3440dffa.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation2/480.3440dffa.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation2/960.3440dffa.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation2/1500.3440dffa.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/pipo-presentation3": {
+      "id": "final-whistle/pipo-presentation3",
+      "source": {
+        "file": "final_whistle/PIPO PRESENTATION3.psd",
+        "size": 14341305,
+        "mtimeMs": 1783581268000,
+        "hash": "7df7dcf5"
+      },
+      "width": 1500,
+      "height": 900,
+      "thumbhash": "9ucFBIBgqd2ZbGbOh0rPEfULMQ==",
+      "color": "#e8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation3/480.7df7dcf5.avif"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation3/960.7df7dcf5.avif"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation3/1500.7df7dcf5.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/pipo-presentation3/480.7df7dcf5.webp"
+          },
+          {
+            "w": 960,
+            "src": "final-whistle/pipo-presentation3/960.7df7dcf5.webp"
+          },
+          {
+            "w": 1500,
+            "src": "final-whistle/pipo-presentation3/1500.7df7dcf5.webp"
+          }
+        ]
+      }
+    },
+    "final-whistle/twitter-profile-pic1": {
+      "id": "final-whistle/twitter-profile-pic1",
+      "source": {
+        "file": "final_whistle/Twitter Profile Pic1.png",
+        "size": 23999,
+        "mtimeMs": 1783342662000,
+        "hash": "e610ad9b"
+      },
+      "width": 512,
+      "height": 512,
+      "thumbhash": "aNUFFwBIaGeIiHiAe3mI2Fd4g4QISHgA",
+      "color": "#6878d8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "final-whistle/twitter-profile-pic1/480.e610ad9b.avif"
+          },
+          {
+            "w": 512,
+            "src": "final-whistle/twitter-profile-pic1/512.e610ad9b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "final-whistle/twitter-profile-pic1/480.e610ad9b.webp"
+          },
+          {
+            "w": 512,
+            "src": "final-whistle/twitter-profile-pic1/512.e610ad9b.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design-colour-choice": {
+      "id": "fluxion/brand-design-colour-choice",
+      "source": {
+        "file": "fluxion/Brand design colour choice.png",
+        "size": 204429,
+        "mtimeMs": 1780993546000,
+        "hash": "f7a06e36"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "yscFDgZ4aLdxd2eniGGJd9f4V/hxhR8=",
+      "color": "#081808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design-colour-choice/480.f7a06e36.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design-colour-choice/960.f7a06e36.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design-colour-choice/1080.f7a06e36.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design-colour-choice/480.f7a06e36.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design-colour-choice/960.f7a06e36.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design-colour-choice/1080.f7a06e36.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design-laptop": {
+      "id": "fluxion/brand-design-laptop",
+      "source": {
+        "file": "fluxion/Brand design laptop.png",
+        "size": 586610,
+        "mtimeMs": 1781002248000,
+        "hash": "c50e25ea"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "yccFBgR4eGegd+iIh2iHZqhYGvGWM28=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design-laptop/480.c50e25ea.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design-laptop/960.c50e25ea.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design-laptop/1080.c50e25ea.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design-laptop/480.c50e25ea.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design-laptop/960.c50e25ea.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design-laptop/1080.c50e25ea.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design1": {
+      "id": "fluxion/brand-design1",
+      "source": {
+        "file": "fluxion/Brand design1.png",
+        "size": 30187,
+        "mtimeMs": 1780989310000,
+        "hash": "0cbf1294"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "PwiCBAARmUaoiGZvBwAAAABwgXmHCNiICw==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design1/480.0cbf1294.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design1/960.0cbf1294.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design1/1080.0cbf1294.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design1/480.0cbf1294.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design1/960.0cbf1294.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design1/1080.0cbf1294.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design2": {
+      "id": "fluxion/brand-design2",
+      "source": {
+        "file": "fluxion/Brand design2.png",
+        "size": 23046,
+        "mtimeMs": 1780989336000,
+        "hash": "1ab1ab84"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "hxeCBAARCXB3eOaICWqHD4aHh3eICId4Dg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design2/480.1ab1ab84.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design2/960.1ab1ab84.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design2/1080.1ab1ab84.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design2/480.1ab1ab84.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design2/960.1ab1ab84.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design2/1080.1ab1ab84.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design3": {
+      "id": "fluxion/brand-design3",
+      "source": {
+        "file": "fluxion/Brand design3.png",
+        "size": 561998,
+        "mtimeMs": 1780992746000,
+        "hash": "a3b6e6d6"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "zLcFDgZ3iadQiHeXmHmHjmUZaPaBZh8=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design3/480.a3b6e6d6.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design3/960.a3b6e6d6.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design3/1080.a3b6e6d6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design3/480.a3b6e6d6.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design3/960.a3b6e6d6.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design3/1080.a3b6e6d6.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design4": {
+      "id": "fluxion/brand-design4",
+      "source": {
+        "file": "fluxion/Brand design4.psd",
+        "size": 8210471,
+        "mtimeMs": 1780990034000,
+        "hash": "2fc9cdbc"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "x8cFDganeIhweNiHeGiHiHiHWPeCdS8=",
+      "color": "#081808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design4/480.2fc9cdbc.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design4/960.2fc9cdbc.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design4/1080.2fc9cdbc.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design4/480.2fc9cdbc.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design4/960.2fc9cdbc.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design4/1080.2fc9cdbc.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design5": {
+      "id": "fluxion/brand-design5",
+      "source": {
+        "file": "fluxion/Brand design5.png",
+        "size": 225554,
+        "mtimeMs": 1780990534000,
+        "hash": "69369c3b"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "xscFBgYXmHiHeAfId4h3enZ36IePjvg=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5/480.69369c3b.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5/960.69369c3b.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5/1080.69369c3b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5/480.69369c3b.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5/960.69369c3b.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5/1080.69369c3b.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design5-3d-logo": {
+      "id": "fluxion/brand-design5-3d-logo",
+      "source": {
+        "file": "fluxion/Brand design5- 3D LOGO.png",
+        "size": 960934,
+        "mtimeMs": 1780992914000,
+        "hash": "e64d8d9f"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "YGeBBAAjyeYWKZawXwn7Xt91gWaHCLiJBw==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-3d-logo/480.e64d8d9f.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-3d-logo/960.e64d8d9f.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-3d-logo/1080.e64d8d9f.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-3d-logo/480.e64d8d9f.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-3d-logo/960.e64d8d9f.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-3d-logo/1080.e64d8d9f.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design5-twitter-header": {
+      "id": "fluxion/brand-design5-twitter-header",
+      "source": {
+        "file": "fluxion/Brand design5-Twitter header.png",
+        "size": 632600,
+        "mtimeMs": 1781021510000,
+        "hash": "bf5bbbb0"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "y7cFBgQXh0eid7eHiBiGkb+oWfeShS8=",
+      "color": "#081808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-twitter-header/480.bf5bbbb0.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-twitter-header/960.bf5bbbb0.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-twitter-header/1080.bf5bbbb0.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-twitter-header/480.bf5bbbb0.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-twitter-header/960.bf5bbbb0.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-twitter-header/1080.bf5bbbb0.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design5-typography": {
+      "id": "fluxion/brand-design5-typography",
+      "source": {
+        "file": "fluxion/Brand design5- typography.png",
+        "size": 29979,
+        "mtimeMs": 1781001688000,
+        "hash": "34481ff3"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "//eBBAARjIB3eHOH+Ih3n3iHdnaICJd4Dg==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-typography/480.34481ff3.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-typography/960.34481ff3.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-typography/1080.34481ff3.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design5-typography/480.34481ff3.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design5-typography/960.34481ff3.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design5-typography/1080.34481ff3.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/brand-design6": {
+      "id": "fluxion/brand-design6",
+      "source": {
+        "file": "fluxion/Brand design6.png",
+        "size": 874020,
+        "mtimeMs": 1780992836000,
+        "hash": "4978e0d6"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "yscJDgYnaHiHiAe4mIh4eIiX2IePjfg=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design6/480.4978e0d6.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design6/960.4978e0d6.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design6/1080.4978e0d6.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/brand-design6/480.4978e0d6.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/brand-design6/960.4978e0d6.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/brand-design6/1080.4978e0d6.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/fluxion-mascot-design1": {
+      "id": "fluxion/fluxion-mascot-design1",
+      "source": {
+        "file": "fluxion/Fluxion Mascot design1.png",
+        "size": 222562,
+        "mtimeMs": 1781011382000,
+        "hash": "18055b3b"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "oreBBAAjh3iHqFiHoOYHpoN/gGqYB8h6Cg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design1/480.18055b3b.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design1/960.18055b3b.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design1/1080.18055b3b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design1/480.18055b3b.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design1/960.18055b3b.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design1/1080.18055b3b.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/fluxion-mascot-design2": {
+      "id": "fluxion/fluxion-mascot-design2",
+      "source": {
+        "file": "fluxion/Fluxion Mascot design2.png",
+        "size": 209603,
+        "mtimeMs": 1781016444000,
+        "hash": "e12c73e4"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "4MeFBAAjeHeHt1eHgMcHiIN/gGqYB8h6Cg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design2/480.e12c73e4.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design2/960.e12c73e4.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design2/1080.e12c73e4.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design2/480.e12c73e4.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design2/960.e12c73e4.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design2/1080.e12c73e4.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/fluxion-mascot-design3": {
+      "id": "fluxion/fluxion-mascot-design3",
+      "source": {
+        "file": "fluxion/Fluxion Mascot design3.png",
+        "size": 228041,
+        "mtimeMs": 1781020578000,
+        "hash": "f2829be3"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "oseBBAAjhmeHqFmZgPYIp3J/gGmYB8h5Cg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design3/480.f2829be3.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design3/960.f2829be3.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design3/1080.f2829be3.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design3/480.f2829be3.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design3/960.f2829be3.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design3/1080.f2829be3.webp"
+          }
+        ]
+      }
+    },
+    "fluxion/fluxion-mascot-design4": {
+      "id": "fluxion/fluxion-mascot-design4",
+      "source": {
+        "file": "fluxion/Fluxion Mascot design4.png",
+        "size": 209371,
+        "mtimeMs": 1781026272000,
+        "hash": "29ce0866"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "o8eBBAAjuHaHqCeZcPQIyXN/gGqYB8h6Cg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design4/480.29ce0866.avif"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design4/960.29ce0866.avif"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design4/1080.29ce0866.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "fluxion/fluxion-mascot-design4/480.29ce0866.webp"
+          },
+          {
+            "w": 960,
+            "src": "fluxion/fluxion-mascot-design4/960.29ce0866.webp"
+          },
+          {
+            "w": 1080,
+            "src": "fluxion/fluxion-mascot-design4/1080.29ce0866.webp"
+          }
+        ]
+      }
+    },
+    "la-familiar/lafamilia-art-design": {
+      "id": "la-familiar/lafamilia-art-design",
+      "source": {
+        "file": "la familiar/Lafamilia art design.png",
+        "size": 309598,
+        "mtimeMs": 1771593778000,
+        "hash": "5a6df02c"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "JRuGJAYqN4h4F8eDf/p3to92g0SIB4d3Aw==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "la-familiar/lafamilia-art-design/480.5a6df02c.avif"
+          },
+          {
+            "w": 960,
+            "src": "la-familiar/lafamilia-art-design/960.5a6df02c.avif"
+          },
+          {
+            "w": 1080,
+            "src": "la-familiar/lafamilia-art-design/1080.5a6df02c.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "la-familiar/lafamilia-art-design/480.5a6df02c.webp"
+          },
+          {
+            "w": 960,
+            "src": "la-familiar/lafamilia-art-design/960.5a6df02c.webp"
+          },
+          {
+            "w": 1080,
+            "src": "la-familiar/lafamilia-art-design/1080.5a6df02c.webp"
+          }
+        ]
+      }
+    },
+    "la-familiar/lastmint-art": {
+      "id": "la-familiar/lastmint-art",
+      "source": {
+        "file": "la familiar/Lastmint art.jpg",
+        "size": 564402,
+        "mtimeMs": 1754291246000,
+        "hash": "ebfd7fee"
+      },
+      "width": 1200,
+      "height": 1200,
+      "thumbhash": "r8YFHwT0Y2ohlVhReBmFhpeDfANVdYAN",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "la-familiar/lastmint-art/480.ebfd7fee.avif"
+          },
+          {
+            "w": 960,
+            "src": "la-familiar/lastmint-art/960.ebfd7fee.avif"
+          },
+          {
+            "w": 1200,
+            "src": "la-familiar/lastmint-art/1200.ebfd7fee.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "la-familiar/lastmint-art/480.ebfd7fee.webp"
+          },
+          {
+            "w": 960,
+            "src": "la-familiar/lastmint-art/960.ebfd7fee.webp"
+          },
+          {
+            "w": 1200,
+            "src": "la-familiar/lastmint-art/1200.ebfd7fee.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/21": {
+      "id": "magic-eden/21",
+      "source": {
+        "file": "magic eden/21.png",
+        "size": 735042,
+        "mtimeMs": 1774029842000,
+        "hash": "99057dae"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "YecJJgplZ/lleLlWiZVliVemhZCICEg=",
+      "color": "#585868",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/21/480.99057dae.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/21/960.99057dae.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/21/1080.99057dae.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/21/480.99057dae.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/21/960.99057dae.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/21/1080.99057dae.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/22": {
+      "id": "magic-eden/22",
+      "source": {
+        "file": "magic eden/22.png",
+        "size": 800461,
+        "mtimeMs": 1774620106000,
+        "hash": "fadc3a7e"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "JrcJPghZeMd3eFiXh4B3hoZnd4Vgtwk=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/22/480.fadc3a7e.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/22/960.fadc3a7e.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/22/1080.fadc3a7e.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/22/480.fadc3a7e.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/22/960.fadc3a7e.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/22/1080.fadc3a7e.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/23-1": {
+      "id": "magic-eden/23-1",
+      "source": {
+        "file": "magic eden/23-1.png",
+        "size": 716681,
+        "mtimeMs": 1775397324000,
+        "hash": "2c9b691d"
+      },
+      "width": 735,
+      "height": 650,
+      "thumbhash": "3wgGDoS1gWmbipecpvhoiHZ/K+TwcHc=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/23-1/480.2c9b691d.avif"
+          },
+          {
+            "w": 735,
+            "src": "magic-eden/23-1/735.2c9b691d.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/23-1/480.2c9b691d.webp"
+          },
+          {
+            "w": 735,
+            "src": "magic-eden/23-1/735.2c9b691d.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/23-2": {
+      "id": "magic-eden/23-2",
+      "source": {
+        "file": "magic eden/23-2.png",
+        "size": 315790,
+        "mtimeMs": 1775411482000,
+        "hash": "29ff4a81"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "VjcGJgjIdjeGqvh2WId3hshIaXlw+iY=",
+      "color": "#383838",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/23-2/480.29ff4a81.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/23-2/960.29ff4a81.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/23-2/1080.29ff4a81.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/23-2/480.29ff4a81.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/23-2/960.29ff4a81.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/23-2/1080.29ff4a81.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/24": {
+      "id": "magic-eden/24",
+      "source": {
+        "file": "magic eden/24.png",
+        "size": 1519666,
+        "mtimeMs": 1775963980000,
+        "hash": "647afbf8"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "5QgKJgb1uuiGeLlIaJeGeGV4uZCZDJg=",
+      "color": "#c8e8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/24/480.647afbf8.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/24/960.647afbf8.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/24/1080.647afbf8.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/24/480.647afbf8.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/24/960.647afbf8.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/24/1080.647afbf8.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/26": {
+      "id": "magic-eden/26",
+      "source": {
+        "file": "magic eden/26.png",
+        "size": 965043,
+        "mtimeMs": 1777035528000,
+        "hash": "84611bf2"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "HggKJgxYZvhHSDdneJd2ineX93GMX7c=",
+      "color": "#38a8e8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/26/480.84611bf2.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26/960.84611bf2.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26/1080.84611bf2.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/26/480.84611bf2.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26/960.84611bf2.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26/1080.84611bf2.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/26-2": {
+      "id": "magic-eden/26-2",
+      "source": {
+        "file": "magic eden/26-2.png",
+        "size": 773422,
+        "mtimeMs": 1777107634000,
+        "hash": "6918110b"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "oSgKLgxlhaeGhvdoZ4qXdnlnWIGQRQg=",
+      "color": "#a85848",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/26-2/480.6918110b.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26-2/960.6918110b.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26-2/1080.6918110b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/26-2/480.6918110b.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26-2/960.6918110b.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26-2/1080.6918110b.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/26-3": {
+      "id": "magic-eden/26-3",
+      "source": {
+        "file": "magic eden/26-3.png",
+        "size": 498416,
+        "mtimeMs": 1777124424000,
+        "hash": "2f3506e9"
+      },
+      "width": 1080,
+      "height": 1600,
+      "thumbhash": "LggKBQCml5OIqImHhm/HiAAAAAAA",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/26-3/480.2f3506e9.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26-3/960.2f3506e9.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26-3/1080.2f3506e9.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/26-3/480.2f3506e9.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/26-3/960.2f3506e9.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/26-3/1080.2f3506e9.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/27": {
+      "id": "magic-eden/27",
+      "source": {
+        "file": "magic eden/27.png",
+        "size": 701504,
+        "mtimeMs": 1777706444000,
+        "hash": "64a65798"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "ZTkKDgKpaYmIiAdmlnd4g4hnBZRSQKk=",
+      "color": "#e8e8c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/27/480.64a65798.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27/960.64a65798.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27/1080.64a65798.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/27/480.64a65798.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27/960.64a65798.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27/1080.64a65798.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/27-1": {
+      "id": "magic-eden/27-1",
+      "source": {
+        "file": "magic eden/27-1.png",
+        "size": 553261,
+        "mtimeMs": 1777706214000,
+        "hash": "458f2703"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "ZCkKDgS5WYuJhwhWl3h4golnKHmARfg=",
+      "color": "#e8e8c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-1/480.458f2703.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-1/960.458f2703.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-1/1080.458f2703.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-1/480.458f2703.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-1/960.458f2703.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-1/1080.458f2703.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/27-2": {
+      "id": "magic-eden/27-2",
+      "source": {
+        "file": "magic eden/27-2.png",
+        "size": 856242,
+        "mtimeMs": 1777711682000,
+        "hash": "f43e645f"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "4igKFgKXdlmHdzh4mI6HcGh4YGN3FPc=",
+      "color": "#e8e8c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-2/480.f43e645f.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-2/960.f43e645f.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-2/1080.f43e645f.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-2/480.f43e645f.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-2/960.f43e645f.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-2/1080.f43e645f.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/27-3": {
+      "id": "magic-eden/27-3",
+      "source": {
+        "file": "magic eden/27-3.png",
+        "size": 1295307,
+        "mtimeMs": 1777725038000,
+        "hash": "a6ac0ea0"
+      },
+      "width": 1080,
+      "height": 1350,
+      "thumbhash": "oBgKDgSGimaIiAd5iHl3doh2ySCsBdY=",
+      "color": "#e8e8c8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-3/480.a6ac0ea0.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-3/960.a6ac0ea0.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-3/1080.a6ac0ea0.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/27-3/480.a6ac0ea0.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/27-3/960.a6ac0ea0.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/27-3/1080.a6ac0ea0.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/benpool-vs-tarzerine": {
+      "id": "magic-eden/benpool-vs-tarzerine",
+      "source": {
+        "file": "magic eden/BENPOOL VS TARZERINE.png",
+        "size": 14150972,
+        "mtimeMs": 1763187598000,
+        "hash": "643b8258"
+      },
+      "width": 3073,
+      "height": 3843,
+      "thumbhash": "HBgODgTHp/jYhyeYd4V3isiIym2vMLY=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/benpool-vs-tarzerine/480.643b8258.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/benpool-vs-tarzerine/960.643b8258.avif"
+          },
+          {
+            "w": 1600,
+            "src": "magic-eden/benpool-vs-tarzerine/1600.643b8258.avif"
+          },
+          {
+            "w": 2560,
+            "src": "magic-eden/benpool-vs-tarzerine/2560.643b8258.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/benpool-vs-tarzerine/480.643b8258.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/benpool-vs-tarzerine/960.643b8258.webp"
+          },
+          {
+            "w": 1600,
+            "src": "magic-eden/benpool-vs-tarzerine/1600.643b8258.webp"
+          },
+          {
+            "w": 2560,
+            "src": "magic-eden/benpool-vs-tarzerine/2560.643b8258.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/magic-eden-art": {
+      "id": "magic-eden/magic-eden-art",
+      "source": {
+        "file": "magic eden/Magic Eden Art.png",
+        "size": 1910960,
+        "mtimeMs": 1755682138000,
+        "hash": "3e52e7df"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "5uYGKoR4WJhviYhoiGAmago=",
+      "color": "#e838e8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-eden-art/480.3e52e7df.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-eden-art/960.3e52e7df.avif"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/magic-eden-art/1500.3e52e7df.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-eden-art/480.3e52e7df.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-eden-art/960.3e52e7df.webp"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/magic-eden-art/1500.3e52e7df.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/magic-lab-meme-bounty4": {
+      "id": "magic-eden/magic-lab-meme-bounty4",
+      "source": {
+        "file": "magic eden/Magic Lab Meme bounty4.jpg",
+        "size": 2247361,
+        "mtimeMs": 1763813492000,
+        "hash": "c8d44a0a"
+      },
+      "width": 1200,
+      "height": 1600,
+      "thumbhash": "6ygGDQT9x5aohJm4NGdYeDRbQKYG",
+      "color": "#e8d8b8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-lab-meme-bounty4/480.c8d44a0a.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-lab-meme-bounty4/960.c8d44a0a.avif"
+          },
+          {
+            "w": 1200,
+            "src": "magic-eden/magic-lab-meme-bounty4/1200.c8d44a0a.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-lab-meme-bounty4/480.c8d44a0a.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-lab-meme-bounty4/960.c8d44a0a.webp"
+          },
+          {
+            "w": 1200,
+            "src": "magic-eden/magic-lab-meme-bounty4/1200.c8d44a0a.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/magic-lab-meme-bounty5": {
+      "id": "magic-eden/magic-lab-meme-bounty5",
+      "source": {
+        "file": "magic eden/Magic Lab Meme bounty5.png",
+        "size": 535356,
+        "mtimeMs": 1764352336000,
+        "hash": "65614d05"
+      },
+      "width": 1500,
+      "height": 1800,
+      "thumbhash": "6ecFFgL2p5d3d5iIaXuHnHbXd3hf/jg=",
+      "color": "#98a8b8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-lab-meme-bounty5/480.65614d05.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-lab-meme-bounty5/960.65614d05.avif"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/magic-lab-meme-bounty5/1500.65614d05.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/magic-lab-meme-bounty5/480.65614d05.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/magic-lab-meme-bounty5/960.65614d05.webp"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/magic-lab-meme-bounty5/1500.65614d05.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/meme16": {
+      "id": "magic-eden/meme16",
+      "source": {
+        "file": "magic eden/meme16.png",
+        "size": 1030051,
+        "mtimeMs": 1771167692000,
+        "hash": "b0bdd701"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "ZVkKHgb3qYdXeDc4Z4J4h1Z3V3CJtPc=",
+      "color": "#f8f8e8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/meme16/480.b0bdd701.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/meme16/960.b0bdd701.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/meme16/1080.b0bdd701.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/meme16/480.b0bdd701.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/meme16/960.b0bdd701.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/meme16/1080.b0bdd701.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/new-art-recovered": {
+      "id": "magic-eden/new-art-recovered",
+      "source": {
+        "file": "magic eden/NEW ART-Recovered.psd",
+        "size": 507528798,
+        "mtimeMs": 1761175894000,
+        "hash": "ea79cb5b"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "jygKDgR4hwh4h4hod4d4dZqItpZwaQg=",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/new-art-recovered/480.ea79cb5b.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/new-art-recovered/960.ea79cb5b.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/new-art-recovered/1080.ea79cb5b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/new-art-recovered/480.ea79cb5b.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/new-art-recovered/960.ea79cb5b.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/new-art-recovered/1080.ea79cb5b.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/new-art1": {
+      "id": "magic-eden/new-art1",
+      "source": {
+        "file": "magic eden/NEW ART1.png",
+        "size": 1841856,
+        "mtimeMs": 1761057468000,
+        "hash": "f4ce809f"
+      },
+      "width": 1080,
+      "height": 1250,
+      "thumbhash": "jygKDgR4hwh4h4hod4d4dZqItpZwaQg=",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/new-art1/480.f4ce809f.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/new-art1/960.f4ce809f.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/new-art1/1080.f4ce809f.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/new-art1/480.f4ce809f.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/new-art1/960.f4ce809f.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/new-art1/1080.f4ce809f.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/rise-of-the-mages": {
+      "id": "magic-eden/rise-of-the-mages",
+      "source": {
+        "file": "magic eden/rise of the Mages.png",
+        "size": 653704,
+        "mtimeMs": 1771790298000,
+        "hash": "2eebf292"
+      },
+      "width": 1080,
+      "height": 1450,
+      "thumbhash": "4YYKBQJXZ412CGhIl3lVaVG1oCoF",
+      "color": "#782878",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/rise-of-the-mages/480.2eebf292.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/rise-of-the-mages/960.2eebf292.avif"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/rise-of-the-mages/1080.2eebf292.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/rise-of-the-mages/480.2eebf292.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/rise-of-the-mages/960.2eebf292.webp"
+          },
+          {
+            "w": 1080,
+            "src": "magic-eden/rise-of-the-mages/1080.2eebf292.webp"
+          }
+        ]
+      }
+    },
+    "magic-eden/season4-new-year": {
+      "id": "magic-eden/season4-new-year",
+      "source": {
+        "file": "magic eden/Season4 new year.png",
+        "size": 488964,
+        "mtimeMs": 1767106170000,
+        "hash": "e7d00a65"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "IzcKGoJfaIdCeUiZXFD1Zmc=",
+      "color": "#584888",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "magic-eden/season4-new-year/480.e7d00a65.avif"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/season4-new-year/960.e7d00a65.avif"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/season4-new-year/1500.e7d00a65.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "magic-eden/season4-new-year/480.e7d00a65.webp"
+          },
+          {
+            "w": 960,
+            "src": "magic-eden/season4-new-year/960.e7d00a65.webp"
+          },
+          {
+            "w": 1500,
+            "src": "magic-eden/season4-new-year/1500.e7d00a65.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omakase-official-logo": {
+      "id": "omakaze/omakase-official-logo",
+      "source": {
+        "file": "omakaze/OMAKASE OFFICIAL LOGO.psd",
+        "size": 619380,
+        "mtimeMs": 1779527468000,
+        "hash": "3003f19b"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "dwcKHoDWmZhwm4iKd7doZ4eH1nBK82U=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omakase-official-logo/480.3003f19b.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omakase-official-logo/960.3003f19b.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omakase-official-logo/1250.3003f19b.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omakase-official-logo/480.3003f19b.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omakase-official-logo/960.3003f19b.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omakase-official-logo/1250.3003f19b.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1": {
+      "id": "omakaze/omkz-1",
+      "source": {
+        "file": "omakaze/OMKZ 1.png",
+        "size": 583198,
+        "mtimeMs": 1777556502000,
+        "hash": "0058a650"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "4mgKPo5neId/fIp5eXmHp1iLh3lwaQg=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1/480.0058a650.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1/960.0058a650.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1/1250.0058a650.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1/480.0058a650.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1/960.0058a650.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1/1250.0058a650.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original": {
+      "id": "omakaze/omkz-1-original",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL.png",
+        "size": 34917,
+        "mtimeMs": 1777567260000,
+        "hash": "bae33f3a"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "NwgOBoCYl4h4d4d/hnaIKJd4AAAAAAA=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original/480.bae33f3a.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original/960.bae33f3a.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original/1250.bae33f3a.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original/480.bae33f3a.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original/960.bae33f3a.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original/1250.bae33f3a.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-1": {
+      "id": "omakaze/omkz-1-original-variant-1",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 1.png",
+        "size": 31097,
+        "mtimeMs": 1777725638000,
+        "hash": "e1255d08"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "OAgOBoCXl5h4d4ePhnaIKJeJAAAAAAA=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-1/480.e1255d08.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-1/960.e1255d08.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-1/1250.e1255d08.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-1/480.e1255d08.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-1/960.e1255d08.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-1/1250.e1255d08.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-2": {
+      "id": "omakaze/omkz-1-original-variant-2",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 2.png",
+        "size": 29256,
+        "mtimeMs": 1777728858000,
+        "hash": "87801baf"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "OQgOBoCnl4iHh3ePhYaHF6eHAAAAAAA=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-2/480.87801baf.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-2/960.87801baf.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-2/1250.87801baf.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-2/480.87801baf.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-2/960.87801baf.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-2/1250.87801baf.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-2-1": {
+      "id": "omakaze/omkz-1-original-variant-2-1",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 2-1.png",
+        "size": 390676,
+        "mtimeMs": 1777729680000,
+        "hash": "fd65a0c1"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "pTgSJoqGeIePeIh2h6douGiMgcAZCJw=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-2-1/480.fd65a0c1.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-2-1/960.fd65a0c1.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-2-1/1250.fd65a0c1.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-2-1/480.fd65a0c1.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-2-1/960.fd65a0c1.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-2-1/1250.fd65a0c1.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-3": {
+      "id": "omakaze/omkz-1-original-variant-3",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 3.png",
+        "size": 28417,
+        "mtimeMs": 1777728850000,
+        "hash": "41469de0"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "OQgOBoCnl4iHh3ePhYaHF6eHAAAAAAA=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-3/480.41469de0.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-3/960.41469de0.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-3/1250.41469de0.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-3/480.41469de0.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-3/960.41469de0.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-3/1250.41469de0.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-3-1": {
+      "id": "omakaze/omkz-1-original-variant-3-1",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 3-1.png",
+        "size": 389232,
+        "mtimeMs": 1777729328000,
+        "hash": "860b33c7"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "pTgSJoqGeIePeIh2h6douGiMgcAZCJw=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-3-1/480.860b33c7.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-3-1/960.860b33c7.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-3-1/1250.860b33c7.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-3-1/480.860b33c7.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-3-1/960.860b33c7.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-3-1/1250.860b33c7.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-1-original-variant-4-1": {
+      "id": "omakaze/omkz-1-original-variant-4-1",
+      "source": {
+        "file": "omakaze/OMKZ 1 ORIGINAL variant 4-1.png",
+        "size": 350269,
+        "mtimeMs": 1777741060000,
+        "hash": "dd8f2374"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "WRsHLoxXV3iKeIeAiol3+FiHqIePevg=",
+      "color": "#d82808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-4-1/480.dd8f2374.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-4-1/960.dd8f2374.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-4-1/1250.dd8f2374.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-1-original-variant-4-1/480.dd8f2374.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-1-original-variant-4-1/960.dd8f2374.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-1-original-variant-4-1/1250.dd8f2374.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-2": {
+      "id": "omakaze/omkz-2",
+      "source": {
+        "file": "omakaze/OMKZ 2.png",
+        "size": 356834,
+        "mtimeMs": 1777567940000,
+        "hash": "006f9d40"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "cjoKBoiYp5eGiHh/hrVnN5iEC5B/lQc=",
+      "color": "#f8f8a8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-2/480.006f9d40.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-2/960.006f9d40.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-2/1250.006f9d40.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-2/480.006f9d40.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-2/960.006f9d40.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-2/1250.006f9d40.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-3": {
+      "id": "omakaze/omkz-3",
+      "source": {
+        "file": "omakaze/OMKZ 3.png",
+        "size": 13099,
+        "mtimeMs": 1777570430000,
+        "hash": "e714df44"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "yPcJBoJYd3d3iIdwioh451h2zWnfh/c=",
+      "color": "#080818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3/480.e714df44.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3/960.e714df44.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3/1250.e714df44.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3/480.e714df44.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3/960.e714df44.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3/1250.e714df44.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-3-variant1": {
+      "id": "omakaze/omkz-3-variant1",
+      "source": {
+        "file": "omakaze/OMKZ 3 variant1.png",
+        "size": 22814,
+        "mtimeMs": 1777741018000,
+        "hash": "985d3537"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "x/cJBoJZd3d3iIhgioh451h2vXjfh/c=",
+      "color": "#080818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant1/480.985d3537.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant1/960.985d3537.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant1/1250.985d3537.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant1/480.985d3537.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant1/960.985d3537.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant1/1250.985d3537.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-3-variant1-icon": {
+      "id": "omakaze/omkz-3-variant1-icon",
+      "source": {
+        "file": "omakaze/OMKZ 3 variant1 ICON.png",
+        "size": 22416,
+        "mtimeMs": 1778170616000,
+        "hash": "f8c2e5d2"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "x/cJBoJZd3d3iIhgiph451l2noffh/c=",
+      "color": "#080818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant1-icon/480.f8c2e5d2.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant1-icon/960.f8c2e5d2.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant1-icon/1250.f8c2e5d2.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant1-icon/480.f8c2e5d2.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant1-icon/960.f8c2e5d2.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant1-icon/1250.f8c2e5d2.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-3-variant2": {
+      "id": "omakaze/omkz-3-variant2",
+      "source": {
+        "file": "omakaze/OMKZ 3 variant2.png",
+        "size": 15247,
+        "mtimeMs": 1781892942000,
+        "hash": "3bd911a0"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "XhaCDIAiYSaKduILBnyHkHiHhXaIB5d4Dg==",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant2/480.3bd911a0.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant2/960.3bd911a0.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant2/1250.3bd911a0.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant2/480.3bd911a0.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant2/960.3bd911a0.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant2/1250.3bd911a0.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-3-variant2-1": {
+      "id": "omakaze/omkz-3-variant2-1",
+      "source": {
+        "file": "omakaze/OMKZ 3 variant2-1.png",
+        "size": 17846,
+        "mtimeMs": 1777740030000,
+        "hash": "d2f20096"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "efgNHoKYl4eIh4d/hnaHJ5iIOnjwhuc=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant2-1/480.d2f20096.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant2-1/960.d2f20096.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant2-1/1250.d2f20096.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-3-variant2-1/480.d2f20096.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-3-variant2-1/960.d2f20096.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-3-variant2-1/1250.d2f20096.webp"
+          }
+        ]
+      }
+    },
+    "omakaze/omkz-logo-1": {
+      "id": "omakaze/omkz-logo-1",
+      "source": {
+        "file": "omakaze/OMKZ LOGO 1.psd",
+        "size": 1161343,
+        "mtimeMs": 1777991796000,
+        "hash": "2bab1273"
+      },
+      "width": 1250,
+      "height": 1080,
+      "thumbhash": "OQgOBoCnl4iHh3ePhYaHF6eHAAAAAAA=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-logo-1/480.2bab1273.avif"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-logo-1/960.2bab1273.avif"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-logo-1/1250.2bab1273.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "omakaze/omkz-logo-1/480.2bab1273.webp"
+          },
+          {
+            "w": 960,
+            "src": "omakaze/omkz-logo-1/960.2bab1273.webp"
+          },
+          {
+            "w": 1250,
+            "src": "omakaze/omkz-logo-1/1250.2bab1273.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/adeventures-of-sonunu-art1": {
+      "id": "sonunu-art-bounty/adeventures-of-sonunu-art1",
+      "source": {
+        "file": "Sonunu art bounty/Adeventures of Sonunu Art1.jpg",
+        "size": 2030423,
+        "mtimeMs": 1759591814000,
+        "hash": "45f7f037"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "bbcFPwhZyrWPdpd5ayanx3iGglcHZoQA",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/480.45f7f037.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/960.45f7f037.avif"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/1080.45f7f037.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/480.45f7f037.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/960.45f7f037.webp"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art1/1080.45f7f037.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/adeventures-of-sonunu-art2": {
+      "id": "sonunu-art-bounty/adeventures-of-sonunu-art2",
+      "source": {
+        "file": "Sonunu art bounty/Adeventures of Sonunu Art2.jpg",
+        "size": 2125683,
+        "mtimeMs": 1759505904000,
+        "hash": "3353c00f"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "YugFHwjHfYfNhnc5p/mUepZVNm2Pl7AG",
+      "color": "#78a858",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/480.3353c00f.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/960.3353c00f.avif"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/1080.3353c00f.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/480.3353c00f.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/960.3353c00f.webp"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art2/1080.3353c00f.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/adeventures-of-sonunu-art3": {
+      "id": "sonunu-art-bounty/adeventures-of-sonunu-art3",
+      "source": {
+        "file": "Sonunu art bounty/Adeventures of Sonunu Art3.jpg",
+        "size": 2015645,
+        "mtimeMs": 1759594350000,
+        "hash": "00886346"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "6dYNNwj3h4l5lYiZZ4d4l3h2lgtXaHAE",
+      "color": "#78b8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/480.00886346.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/960.00886346.avif"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/1080.00886346.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/480.00886346.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/960.00886346.webp"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art3/1080.00886346.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/adeventures-of-sonunu-art4": {
+      "id": "sonunu-art-bounty/adeventures-of-sonunu-art4",
+      "source": {
+        "file": "Sonunu art bounty/Adeventures of Sonunu Art4.jpg",
+        "size": 2037953,
+        "mtimeMs": 1759679292000,
+        "hash": "3cbdca08"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "LMcFHwatlIeFd7dfpoaGaHdomxQHWHQA",
+      "color": "#88c8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/480.3cbdca08.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/960.3cbdca08.avif"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/1080.3cbdca08.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/480.3cbdca08.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/960.3cbdca08.webp"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art4/1080.3cbdca08.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/adeventures-of-sonunu-art5": {
+      "id": "sonunu-art-bounty/adeventures-of-sonunu-art5",
+      "source": {
+        "file": "Sonunu art bounty/Adeventures of Sonunu Art5.jpg",
+        "size": 1863918,
+        "mtimeMs": 1759763498000,
+        "hash": "a96f0377"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "17YVFwh4h4hwh4iIiIeHZ3eJiPjXaH8I",
+      "color": "#181818",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/480.a96f0377.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/960.a96f0377.avif"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/1080.a96f0377.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/480.a96f0377.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/960.a96f0377.webp"
+          },
+          {
+            "w": 1080,
+            "src": "sonunu-art-bounty/adeventures-of-sonunu-art5/1080.a96f0377.webp"
+          }
+        ]
+      }
+    },
+    "sonunu-art-bounty/art-carousel-slides": {
+      "id": "sonunu-art-bounty/art-carousel-slides",
+      "source": {
+        "file": "Sonunu art bounty/ART CAROUSEL SLIDES.psd",
+        "size": 26694877,
+        "mtimeMs": 1759763554000,
+        "hash": "934279b7"
+      },
+      "width": 5800,
+      "height": 1080,
+      "thumbhash": "ZseJEYQOTX/FlXlvUZAkA/f4h4eHh3g=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/art-carousel-slides/480.934279b7.avif"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/art-carousel-slides/960.934279b7.avif"
+          },
+          {
+            "w": 1600,
+            "src": "sonunu-art-bounty/art-carousel-slides/1600.934279b7.avif"
+          },
+          {
+            "w": 2560,
+            "src": "sonunu-art-bounty/art-carousel-slides/2560.934279b7.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "sonunu-art-bounty/art-carousel-slides/480.934279b7.webp"
+          },
+          {
+            "w": 960,
+            "src": "sonunu-art-bounty/art-carousel-slides/960.934279b7.webp"
+          },
+          {
+            "w": 1600,
+            "src": "sonunu-art-bounty/art-carousel-slides/1600.934279b7.webp"
+          },
+          {
+            "w": 2560,
+            "src": "sonunu-art-bounty/art-carousel-slides/2560.934279b7.webp"
+          }
+        ]
+      }
+    },
+    "suisend/ss-icon-for-x": {
+      "id": "suisend/ss-icon-for-x",
+      "source": {
+        "file": "suisend/SS ICON FOR X.png",
+        "size": 819503,
+        "mtimeMs": 1782475548000,
+        "hash": "b764696d"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "zMgNHwQWiZmYh4iAfXiHiIeHaXEK6VcP",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "suisend/ss-icon-for-x/480.b764696d.avif"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-icon-for-x/960.b764696d.avif"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-icon-for-x/1080.b764696d.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "suisend/ss-icon-for-x/480.b764696d.webp"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-icon-for-x/960.b764696d.webp"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-icon-for-x/1080.b764696d.webp"
+          }
+        ]
+      }
+    },
+    "suisend/ss-logo": {
+      "id": "suisend/ss-logo",
+      "source": {
+        "file": "suisend/SS LOGO.png",
+        "size": 586611,
+        "mtimeMs": 1782475206000,
+        "hash": "290fb706"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "BegFDwKJZ3a4iIhyiop4+GiH0p1/IgYH",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "suisend/ss-logo/480.290fb706.avif"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-logo/960.290fb706.avif"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-logo/1080.290fb706.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "suisend/ss-logo/480.290fb706.webp"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-logo/960.290fb706.webp"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-logo/1080.290fb706.webp"
+          }
+        ]
+      }
+    },
+    "suisend/ss-logo-no-bg": {
+      "id": "suisend/ss-logo-no-bg",
+      "source": {
+        "file": "suisend/SS LOGO no bg.png",
+        "size": 28713400,
+        "mtimeMs": 1782751422000,
+        "hash": "52729795"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "b7mBBQARQMuHePeLh7+ICHR3ekaHeGCI5w==",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "suisend/ss-logo-no-bg/480.52729795.avif"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-logo-no-bg/960.52729795.avif"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-logo-no-bg/1080.52729795.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "suisend/ss-logo-no-bg/480.52729795.webp"
+          },
+          {
+            "w": 960,
+            "src": "suisend/ss-logo-no-bg/960.52729795.webp"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/ss-logo-no-bg/1080.52729795.webp"
+          }
+        ]
+      }
+    },
+    "suisend/suisend-banner-design": {
+      "id": "suisend/suisend-banner-design",
+      "source": {
+        "file": "suisend/SuiSend Banner design.png",
+        "size": 503798,
+        "mtimeMs": 1782476130000,
+        "hash": "5d64c3be"
+      },
+      "width": 1500,
+      "height": 500,
+      "thumbhash": "SdgJEoKKZobImAfH/OlFYII=",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "suisend/suisend-banner-design/480.5d64c3be.avif"
+          },
+          {
+            "w": 960,
+            "src": "suisend/suisend-banner-design/960.5d64c3be.avif"
+          },
+          {
+            "w": 1500,
+            "src": "suisend/suisend-banner-design/1500.5d64c3be.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "suisend/suisend-banner-design/480.5d64c3be.webp"
+          },
+          {
+            "w": 960,
+            "src": "suisend/suisend-banner-design/960.5d64c3be.webp"
+          },
+          {
+            "w": 1500,
+            "src": "suisend/suisend-banner-design/1500.5d64c3be.webp"
+          }
+        ]
+      }
+    },
+    "suisend/suisend-new-month": {
+      "id": "suisend/suisend-new-month",
+      "source": {
+        "file": "suisend/SuiSend New Month.png",
+        "size": 854533,
+        "mtimeMs": 1782758148000,
+        "hash": "744a53ae"
+      },
+      "width": 1080,
+      "height": 1080,
+      "thumbhash": "BegBDwI1xYn0l4d6i4d6mViFRVmfWgkG",
+      "color": "#080808",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "suisend/suisend-new-month/480.744a53ae.avif"
+          },
+          {
+            "w": 960,
+            "src": "suisend/suisend-new-month/960.744a53ae.avif"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/suisend-new-month/1080.744a53ae.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "suisend/suisend-new-month/480.744a53ae.webp"
+          },
+          {
+            "w": 960,
+            "src": "suisend/suisend-new-month/960.744a53ae.webp"
+          },
+          {
+            "w": 1080,
+            "src": "suisend/suisend-new-month/1080.744a53ae.webp"
+          }
+        ]
+      }
+    },
+    "zoot-memes/zoot-meme-entry": {
+      "id": "zoot-memes/zoot-meme-entry",
+      "source": {
+        "file": "ZOOT MEMES/Zoot meme entry.png",
+        "size": 705845,
+        "mtimeMs": 1783333844000,
+        "hash": "c98dbee1"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "YegFHgrWRvgJKRcZN3p2dbaI1nBzj9c=",
+      "color": "#f8e8a8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry/480.c98dbee1.avif"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry/960.c98dbee1.avif"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry/1080.c98dbee1.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry/480.c98dbee1.webp"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry/960.c98dbee1.webp"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry/1080.c98dbee1.webp"
+          }
+        ]
+      }
+    },
+    "zoot-memes/zoot-meme-entry-2": {
+      "id": "zoot-memes/zoot-meme-entry-2",
+      "source": {
+        "file": "ZOOT MEMES/Zoot meme entry 2.png",
+        "size": 702935,
+        "mtimeMs": 1783362698000,
+        "hash": "573474b8"
+      },
+      "width": 1080,
+      "height": 1375,
+      "thumbhash": "aBcGBgLoyJaHiKeHh392jqf3qPcyMIg=",
+      "color": "#f8f8f8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry-2/480.573474b8.avif"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry-2/960.573474b8.avif"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry-2/1080.573474b8.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry-2/480.573474b8.webp"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry-2/960.573474b8.webp"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry-2/1080.573474b8.webp"
+          }
+        ]
+      }
+    },
+    "zoot-memes/zoot-meme-entry1": {
+      "id": "zoot-memes/zoot-meme-entry1",
+      "source": {
+        "file": "ZOOT MEMES/Zoot meme entry1.png",
+        "size": 705845,
+        "mtimeMs": 1783333830000,
+        "hash": "c98dbee1"
+      },
+      "width": 1080,
+      "height": 1200,
+      "thumbhash": "YegFHgrWRvgJKRcZN3p2dbaI1nBzj9c=",
+      "color": "#f8e8a8",
+      "variants": {
+        "avif": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry1/480.c98dbee1.avif"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry1/960.c98dbee1.avif"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry1/1080.c98dbee1.avif"
+          }
+        ],
+        "webp": [
+          {
+            "w": 480,
+            "src": "zoot-memes/zoot-meme-entry1/480.c98dbee1.webp"
+          },
+          {
+            "w": 960,
+            "src": "zoot-memes/zoot-meme-entry1/960.c98dbee1.webp"
+          },
+          {
+            "w": 1080,
+            "src": "zoot-memes/zoot-meme-entry1/1080.c98dbee1.webp"
+          }
+        ]
+      }
+    }
+  },
+  "skipped": [
+    {
+      "file": "Sonunu art bounty/debug.log",
+      "reason": "ignored .log"
+    },
+    {
+      "file": "final_whistle/FINAL WHISTLE LOGO PRESENTATION 1.pdf",
+      "reason": "ignored .pdf"
+    },
+    {
+      "file": "final_whistle/FINAL WHISTLE LOGO PRESENTATION 2.pdf",
+      "reason": "ignored .pdf"
+    },
+    {
+      "file": "fluxion/debug.log",
+      "reason": "ignored .log"
+    }
+  ]
+}

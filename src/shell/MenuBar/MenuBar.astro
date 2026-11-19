@@ -1,0 +1,128 @@
+---
+import Menu from "../Menu/Menu.astro";
+import Monogram from "../../icons/Monogram.astro";
+import { appMenus, systemMenu } from "./menus";
+import wallpapers from "../../data/wallpaper.json";
+
+const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
+const menus = [systemMenu, ...appMenus];
+---
+
+<header class="menubar" data-tone-left={w.menubar.left} data-tone-right={w.menubar.right}>
+  <nav class="menubar-left" aria-label="Menu bar">
+    {menus.map(menu => (
+      <div class="menubar-slot">
+        <button
+          type="button"
+          class:list={["menubar-title", { "is-system": menu.id === "system", "is-bold": menu.bold }]}
+          id={`menu-title-${menu.id}`}
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-controls={`menu-${menu.id}`}
+          data-menu={menu.id}
+        >
+          {menu.id === "system" ? <Monogram size={15} /> : menu.label}
+          {menu.id === "system" && <span class="visually-hidden">Pizelxx menu</span>}
+        </button>
+        <Menu menu={menu} />
+      </div>
+    ))}
+  </nav>
+
+  <div class="menubar-right">
+    <a class="menubar-status" href="https://x.com/Pizelxx" target="_blank" rel="noopener" aria-label="Pizelxx on X">
+      <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M1.5 1.5h4.1l3.2 4.4 3.8-4.4h1.7L9.6 6.8l5 7.7h-4.1L7.1 9.8l-4 4.7H1.4l4.9-5.6Z" /></svg>
+    </a>
+    <button class="menubar-status" type="button" aria-label="Search work" data-action="spotlight">
+      <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.6" /><path d="m10.3 10.3 4 4" stroke-linecap="round" /></svg>
+    </button>
+    <button class="menubar-status" type="button" aria-label="Control Center" data-action="control-center">
+      <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="4.6" rx="2.3" /><circle cx="12.2" cy="4.8" r="1.3" fill="currentColor" stroke="none" /><rect x="1.5" y="8.9" width="13" height="4.6" rx="2.3" /><circle cx="3.8" cy="11.2" r="1.3" fill="currentColor" stroke="none" /></svg>
+    </button>
+    <time class="menubar-clock" data-clock></time>
+  </div>
+</header>
+
+<script>
+  import { initMenuBar } from "./menubar";
+  initMenuBar(document.querySelector(".menubar")!);
+</script>
+
+<style>
+  .menubar {
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: var(--menubar-h);
+    padding: 0 var(--menubar-right-margin) 0 var(--menubar-pad-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--menubar-text);
+    font-weight: var(--menubar-weight);
+    z-index: 900;
+  }
+  .menubar-left,
+  .menubar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .menubar[data-tone-left="light"] .menubar-left,
+  .menubar[data-tone-right="light"] .menubar-right {
+    color: var(--menubar-text-dark);
+    text-shadow: var(--menubar-shadow-dark);
+    --pill: var(--menubar-pill-dark);
+  }
+  .menubar[data-tone-left="dark"] .menubar-left,
+  .menubar[data-tone-right="dark"] .menubar-right {
+    color: var(--menubar-text-light);
+    text-shadow: var(--menubar-shadow-light);
+    --pill: var(--menubar-pill);
+  }
+  .menubar-slot {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .menubar-title {
+    height: var(--menubar-item-h);
+    padding: 0 var(--menubar-item-pad-x);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .menubar-title.is-bold {
+    font-weight: var(--menubar-weight-app);
+  }
+  .menubar-title.is-system {
+    padding: 0 calc(var(--menubar-item-pad-x) + 1px);
+  }
+  .menubar-title.is-system svg {
+    filter: drop-shadow(var(--menubar-shadow-light));
+  }
+  .menubar-title[aria-expanded="true"] {
+    background: var(--pill);
+  }
+  .menubar-right {
+    gap: var(--menubar-status-gap);
+  }
+  .menubar-status {
+    display: grid;
+    place-items: center;
+    height: var(--menubar-item-h);
+    min-width: 22px;
+    border-radius: 999px;
+    padding: 0 3px;
+  }
+  .menubar-status svg {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.15));
+  }
+  .menubar-clock {
+    margin-left: calc(var(--menubar-clock-gap) - var(--menubar-status-gap));
+    padding: 0 6px;
+    font-variant-numeric: tabular-nums;
+    white-space: pre;
+  }
+</style>

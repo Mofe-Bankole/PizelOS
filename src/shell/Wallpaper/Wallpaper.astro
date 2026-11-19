@@ -1,0 +1,52 @@
+---
+import wallpapers from "../../data/wallpaper.json";
+import pickScript from "./pick.inline.js?raw";
+
+const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
+const base = "/wallpaper/";
+const data = { base, aspect: w.aspect, variants: w.variants };
+const fallback = w.variants.find(v => v.w >= 1920) ?? w.variants[0];
+---
+
+<div
+  class="wallpaper"
+  style={`--wallpaper-color:${w.color};--wallpaper-placeholder:url("${w.placeholder}")`}
+  data-wallpaper={JSON.stringify(data)}
+  aria-hidden="true"
+>
+  <picture>
+    <source type="image/avif" data-format="avif" />
+    <source type="image/webp" data-format="webp" />
+    <img alt="" decoding="async" fetchpriority="high" draggable="false" />
+  </picture>
+  <noscript><img class="noscript" src={base + fallback.jpeg} alt="" /></noscript>
+</div>
+<script is:inline set:html={pickScript} />
+
+<style>
+  .wallpaper {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: var(--wallpaper-color) var(--wallpaper-placeholder) center / cover no-repeat;
+    overflow: hidden;
+  }
+  .wallpaper img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity var(--wallpaper-fade) ease-out;
+  }
+  .wallpaper:global(.is-loaded) img,
+  .wallpaper img.noscript {
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wallpaper img {
+      transition-duration: 1ms;
+    }
+  }
+</style>

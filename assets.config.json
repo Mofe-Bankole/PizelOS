@@ -1,0 +1,17 @@
+{
+  "source": "artwork",
+  "out": "public/media",
+  "data": "src/data/media.json",
+  "content": "src/content/works",
+  "projects": "src/content/projects",
+
+  "widths": [480, 960, 1600, 2560],
+  "avif": { "quality": 55, "effort": 4 },
+  "webp": { "quality": 80 },
+
+  "layerMaxSize": 2048,
+  "layered": [],
+
+  "ignoreExtensions": [".log", ".pdf"],
+  "concurrency": 2
+}

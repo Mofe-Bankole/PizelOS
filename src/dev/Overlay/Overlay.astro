@@ -1,0 +1,80 @@
+<div class="ref-overlay" hidden>
+  <img class="ref-image" alt="" draggable="false" />
+</div>
+
+<form class="ref-panel" hidden>
+  <strong>Reference overlay</strong>
+  <label>Image <select name="src"><option value="">— drop a file or pick —</option></select></label>
+  <label>Opacity <input name="opacity" type="range" min="0" max="1" step="0.05" value="0.5" /></label>
+  <label>pt per px <input name="scale" type="number" min="0.1" max="4" step="0.01" value="1.5" /></label>
+  <label>Anchor
+    <select name="anchor">
+      <option value="top-left">Top left</option>
+      <option value="top-center">Top centre</option>
+      <option value="top-right">Top right</option>
+      <option value="bottom-center">Bottom centre</option>
+      <option value="center">Centre</option>
+    </select>
+  </label>
+  <label><input name="difference" type="checkbox" /> Difference blend</label>
+  <output name="offset">offset 0, 0</output>
+  <small>` show/hide · Alt+` panel · arrows nudge (Shift ×10) · 0 reset</small>
+</form>
+
+<script>
+  if (import.meta.env.DEV) {
+    const refs = import.meta.glob("/references/*.{png,jpg,jpeg,webp}", { query: "?url", import: "default", eager: true }) as Record<string, string>;
+    import("./overlay").then(m => m.initOverlay(refs));
+  }
+</script>
+
+<style>
+  .ref-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99998;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .ref-overlay[hidden],
+  .ref-panel[hidden] {
+    display: none;
+  }
+  .ref-image {
+    position: absolute;
+    max-width: none;
+    image-rendering: auto;
+  }
+  .ref-panel {
+    position: fixed;
+    top: 40px;
+    right: 16px;
+    z-index: 99999;
+    display: grid;
+    gap: 8px;
+    width: 260px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(20, 20, 24, 0.86);
+    color: #fff;
+    font: 12px/1.3 system-ui, sans-serif;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    user-select: none;
+  }
+  .ref-panel label {
+    display: grid;
+    gap: 4px;
+  }
+  .ref-panel select,
+  .ref-panel input[type="number"] {
+    font: inherit;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+  }
+  .ref-panel small {
+    opacity: 0.6;
+  }
+</style>
