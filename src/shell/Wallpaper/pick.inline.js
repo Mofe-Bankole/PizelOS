@@ -10,7 +10,7 @@
     var w = Math.max(innerWidth, innerHeight * data.aspect);
     var dpr = window.devicePixelRatio || 1;
     var save = navigator.connection && navigator.connection.saveData;
-    var px = Math.ceil(w * dpr);
+    var px = Math.ceil(w * dpr - 1);
     return save ? Math.min(px, data.variants[0].w) : px;
   }
 
@@ -25,8 +25,15 @@
     if (v.w <= current) return;
     current = v.w;
     sources.forEach(function (s) { s.srcset = data.base + v[s.getAttribute("data-format")]; });
-    img.src = data.base + v.jpeg;
+    img.src = data.base + v[data.fallback];
     root.setAttribute("data-width", v.w);
+    pixelate(v);
+  }
+
+  function pixelate(v) {
+    if (!data.pixel) return;
+    var shown = Math.max(innerWidth, innerHeight * data.aspect) * (window.devicePixelRatio || 1);
+    img.style.imageRendering = shown >= v.w - 1 ? "pixelated" : "auto";
   }
 
   function loaded() {
@@ -38,7 +45,13 @@
   apply();
 
   var t;
-  addEventListener("resize", function () { clearTimeout(t); t = setTimeout(apply, 200); });
+  addEventListener("resize", function () {
+    clearTimeout(t);
+    t = setTimeout(function () {
+      apply();
+      for (var i = 0; i < data.variants.length; i++) if (data.variants[i].w === current) pixelate(data.variants[i]);
+    }, 200);
+  });
   (function watchDpr() {
     var mq = matchMedia("(resolution: " + (window.devicePixelRatio || 1) + "dppx)");
     mq.addEventListener("change", function () { apply(); watchDpr(); }, { once: true });

@@ -10,13 +10,18 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const OUT = path.join(ROOT, "public/wallpaper");
 const DATA = path.join(ROOT, "src/data/wallpaper.json");
 const WIDTHS = [1920, 2560, 3024, 3456, 3840, 5120];
-const FORMATS = { avif: { quality: 60, effort: 4 }, webp: { quality: 84 }, jpeg: { quality: 86, mozjpeg: true } } as const;
+const PHOTO_FORMATS: Record<string, object> = { avif: { quality: 60, effort: 4 }, webp: { quality: 84 }, jpeg: { quality: 86, mozjpeg: true } };
+const PIXEL_FORMATS: Record<string, object> = { webp: { lossless: true, effort: 6 }, png: { palette: true, colours: 2, compressionLevel: 9, effort: 10 } };
 
-const [input, appearance = "light"] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const pixel = args.includes("--pixel");
+const activate = !args.includes("--no-activate");
+const [input, appearance = "light"] = args.filter(a => !a.startsWith("--"));
 if (!input) {
-  console.error("usage: npm run wallpaper -- <image.heic|.jpg|.png|.svg> [light|dark]");
+  console.error("usage: npm run wallpaper -- <image.heic|.jpg|.png|.svg> [light|dark] [--pixel] [--no-activate]");
   process.exit(1);
 }
+const FORMATS = pixel ? PIXEL_FORMATS : PHOTO_FORMATS;
 
 const name = slugify(path.basename(input, path.extname(input)));
 const ext = path.extname(input).toLowerCase();
@@ -31,9 +36,10 @@ if (ext === ".heic" || ext === ".heif") {
   if (extracted.length > 1) console.log(`HEIC holds ${extracted.length} images; using ${extracted[0]}. Others: ${extracted.slice(1).join(", ")}`);
 }
 
-const load = () => sharp(source, { limitInputPixels: false, density: ext === ".svg" ? 231 : undefined })
-  .resize({ width: 5120, withoutEnlargement: ext !== ".svg" })
-  .removeAlpha();
+const load = () => {
+  const img = sharp(source, { limitInputPixels: false, density: ext === ".svg" ? 231 : undefined }).removeAlpha();
+  return pixel ? img.greyscale().threshold(128) : img.resize({ width: 5120, withoutEnlargement: ext !== ".svg" });
+};
 
 const master = await load().png().toBuffer({ resolveWithObject: true });
 const { width, height } = master.info;
@@ -42,13 +48,14 @@ const dir = path.join(OUT, name);
 await fs.rm(dir, { recursive: true, force: true });
 await fs.mkdir(dir, { recursive: true });
 
-const variants: { w: number; avif: string; webp: string; jpeg: string }[] = [];
-for (const w of WIDTHS.filter(w => w <= width)) {
-  const resized = sharp(master.data).resize({ width: w });
-  const entry = { w } as (typeof variants)[number];
-  for (const [fmt, opts] of Object.entries(FORMATS) as [keyof typeof FORMATS, object][]) {
+const sizes = pixel ? [width, width * 2] : WIDTHS.filter(w => w <= width);
+const variants: ({ w: number } & Record<string, string | number>)[] = [];
+for (const w of sizes) {
+  const resized = sharp(master.data).resize({ width: w, kernel: pixel ? "nearest" : "lanczos3" });
+  const entry: (typeof variants)[number] = { w };
+  for (const [fmt, opts] of Object.entries(FORMATS)) {
     const file = `${name}/${w}.${hash}.${fmt === "jpeg" ? "jpg" : fmt}`;
-    await resized.clone().toFormat(fmt, opts).toFile(path.join(OUT, file));
+    await resized.clone().toFormat(fmt as keyof sharp.FormatEnum, opts).toFile(path.join(OUT, file));
     entry[fmt] = file;
   }
   variants.push(entry);
@@ -75,12 +82,16 @@ const luminance = async (left: number, w: number) => {
 };
 const half = Math.round(width / 2);
 const tone = (l: number) => (l > 0.6 ? "light" : "dark");
-const menubar = { left: tone(await luminance(0, half)), right: tone(await luminance(half, width - half)) };
+const strip = await sharp(master.data).extract({ left: 0, top: 0, width, height: Math.max(8, Math.round(height * 0.03)) }).greyscale().stats();
+const busy = strip.channels[0].stdev / 255 > 0.12;
+const menubar = { left: tone(await luminance(0, half)), right: tone(await luminance(half, width - half)), busy };
 
 const existing = await fs.readFile(DATA, "utf8").then(JSON.parse).catch(() => ({ active: name, items: {} }));
 existing.items[name] = {
   name,
   appearance,
+  pixel,
+  formats: Object.keys(FORMATS),
   width,
   height,
   aspect: +(width / height).toFixed(5),
@@ -91,7 +102,7 @@ existing.items[name] = {
   variants,
   source: path.relative(ROOT, path.resolve(input)),
 };
-existing.active ??= name;
+if (activate) existing.active = name;
 await fs.mkdir(path.dirname(DATA), { recursive: true });
 await fs.writeFile(DATA, JSON.stringify(existing, null, 2));
 console.log(`${name}: ${variants.length} sizes, menu bar text over left/right = ${menubar.left === "light" ? "dark" : "light"}/${menubar.right === "light" ? "dark" : "light"}`);

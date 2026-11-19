@@ -2,9 +2,15 @@
 import wallpapers from "../../data/wallpaper.json";
 import pickScript from "./pick.inline.js?raw";
 
-const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
+const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items] as {
+  aspect: number; color: string; placeholder: string; pixel?: boolean; formats?: string[];
+  variants: ({ w: number } & Record<string, string | number>)[];
+};
 const base = "/wallpaper/";
-const data = { base, aspect: w.aspect, variants: w.variants };
+const formats = w.formats ?? ["avif", "webp", "jpeg"];
+const fallbackFormat = formats[formats.length - 1];
+const sourceFormats = formats.slice(0, -1);
+const data = { base, aspect: w.aspect, variants: w.variants, fallback: fallbackFormat, pixel: !!w.pixel };
 const fallback = w.variants.find(v => v.w >= 1920) ?? w.variants[0];
 ---
 
@@ -15,11 +21,10 @@ const fallback = w.variants.find(v => v.w >= 1920) ?? w.variants[0];
   aria-hidden="true"
 >
   <picture>
-    <source type="image/avif" data-format="avif" />
-    <source type="image/webp" data-format="webp" />
+    {sourceFormats.map(f => <source type={`image/${f}`} data-format={f} />)}
     <img alt="" decoding="async" fetchpriority="high" draggable="false" />
   </picture>
-  <noscript><img class="noscript" src={base + fallback.jpeg} alt="" /></noscript>
+  <noscript><img class="noscript" src={base + fallback[fallbackFormat]} alt="" /></noscript>
 </div>
 <script is:inline set:html={pickScript} />
 

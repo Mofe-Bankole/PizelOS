@@ -18,3 +18,9 @@ npm-debug.log*
 # Apple reference screenshots — local comparison only, never ship
 references/
 public/wallpaper/
+
+# third-party wallpaper sources — rights unconfirmed, keep out of the public repo
+wallpapers/*.jpg
+wallpapers/*.jpeg
+wallpapers/*.png
+wallpapers/*.heic

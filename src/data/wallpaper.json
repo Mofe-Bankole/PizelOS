@@ -1,5 +1,5 @@
 {
-  "active": "placeholder-silk",
+  "active": "lain-dither",
   "items": {
     "placeholder-silk": {
       "name": "placeholder-silk",
@@ -53,6 +53,39 @@
         }
       ],
       "source": "wallpapers/placeholder-silk.svg"
+    },
+    "lain-dither": {
+      "name": "lain-dither",
+      "appearance": "dark",
+      "pixel": true,
+      "formats": [
+        "webp",
+        "png"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "aspect": 1.77778,
+      "color": "#080808",
+      "placeholder": "data:image/png;base64,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",
+      "blurred": "lain-dither/blur.59365754.webp",
+      "menubar": {
+        "left": "dark",
+        "right": "dark",
+        "busy": true
+      },
+      "variants": [
+        {
+          "w": 1920,
+          "webp": "lain-dither/1920.59365754.webp",
+          "png": "lain-dither/1920.59365754.png"
+        },
+        {
+          "w": 3840,
+          "webp": "lain-dither/3840.59365754.webp",
+          "png": "lain-dither/3840.59365754.png"
+        }
+      ],
+      "source": "wallpapers/lain-dither.jpg"
     }
   }
 }
