@@ -1,5 +1,7 @@
 import { num, px } from "../../tokens/read";
 import { Spring, reducedMotion, springEasing } from "../Motion/spring";
+import { recordFrame } from "../Glass/quality";
+import { liquefy } from "../Glass/liquid";
 
 interface Slot {
   el: HTMLElement;
@@ -62,18 +64,15 @@ export function initDock(dock: HTMLElement) {
     const scales = slots.map(s => (s.icon ? 1 + (magnify - 1) * Math.max(0, I) * falloff(p - s.center) : 1));
     const extras = scales.map(s => base * (s - 1));
 
-    let cumAtPointer = 0;
-    slots.forEach((s, i) => {
-      const width = s.icon ? base : s.el.offsetWidth;
-      cumAtPointer += extras[i] * Math.min(Math.max((p - s.left) / width, 0), 1);
-    });
+    const total = extras.reduce((a, b) => a + b, 0);
+    const half = total / 2;
 
     let cum = 0;
     let tipX = 0;
     let tipY = 0;
     slots.forEach((s, i) => {
-      const shift = cum - cumAtPointer;
-      s.el.style.transform = `translate3d(${shift}px,0,0)`;
+      const shift = cum - half;
+      s.el.style.transform = shift === 0 ? "" : `translate3d(${shift}px,0,0)`;
       if (s.scaleEl) s.scaleEl.style.transform = scales[i] === 1 ? "" : `scale(${scales[i]})`;
       if (s.el === hovered) {
         tipX = s.left + shift + (base * scales[i]) / 2;
@@ -82,10 +81,9 @@ export function initDock(dock: HTMLElement) {
       cum += extras[i];
     });
 
-    const total = cum;
     const sx = (plateWidth + total) / plateWidth;
-    plate.style.transform = `translate3d(${-cumAtPointer}px,0,0) scaleX(${sx})`;
-    plate.style.borderRadius = `${radius / sx}px / ${radius}px`;
+    plate.style.transform = total === 0 ? "" : `translate3d(${-half}px,0,0) scaleX(${sx})`;
+    plate.style.borderRadius = total === 0 ? "" : `${radius / sx}px / ${radius}px`;
 
     if (hovered) {
       const name = hovered.querySelector<HTMLElement>("[data-name]")?.dataset.name ?? "";
@@ -102,6 +100,7 @@ export function initDock(dock: HTMLElement) {
     pointer.step(dt);
     intensity.step(dt);
     render();
+    recordFrame(dt);
     if (pointer.settled && intensity.settled) {
       raf = 0;
       return;
@@ -172,6 +171,7 @@ export function initDock(dock: HTMLElement) {
 
   measure();
   render();
+  liquefy(plate);
   addEventListener("resize", () => {
     measure();
     render();

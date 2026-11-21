@@ -1,5 +1,5 @@
 :root {
-  --font-ui: -apple-system, BlinkMacSystemFont, "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "SF Pro Display", "Inter Variable", "Inter", system-ui, sans-serif;
   --hairline: 1px;
 
   --accent: #0a7cff;
@@ -39,18 +39,33 @@
   --menu-separator-margin: 5px 10px;
   --menu-icon: 14px;
 
-  --glass-blur: 26px;
-  --glass-saturate: 1.9;
-  --glass-blur-medium: 18px;
-  --glass-blur-low: 0px;
-  --glass-tint: rgba(255, 255, 255, 0.16);
-  --glass-tint-strong: rgba(250, 247, 243, 0.62);
-  --glass-rim: rgba(255, 255, 255, 0.62);
-  --glass-rim-soft: rgba(255, 255, 255, 0.22);
-  --glass-edge: rgba(0, 0, 0, 0.08);
-  --glass-shadow: 0 8px 28px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --glass-blur: 14px;
+  --glass-blur-strong: 30px;
+  --glass-saturate: 1.8;
+  --glass-brightness: 1.06;
+  --glass-tint: rgba(255, 255, 255, 0.07);
+  --glass-tint-strong: rgba(250, 248, 245, 0.58);
+  --glass-opaque: rgb(236, 234, 232);
+  --glass-inner-glow: 14px;
+  --glass-inner-glow-color: rgba(255, 255, 255, 0.14);
+  --glass-rim-top: rgba(255, 255, 255, 0.5);
+  --glass-rim-width: 1px;
+  --glass-rim-angle: 155deg;
+  --glass-rim-bright: rgba(255, 255, 255, 0.85);
+  --glass-rim-mid: rgba(255, 255, 255, 0.28);
+  --glass-rim-low: rgba(255, 255, 255, 0.06);
+  --glass-rim-back: rgba(255, 255, 255, 0.45);
+  --glass-specular: rgba(255, 255, 255, 0.22);
+  --glass-sheen-top: rgba(255, 255, 255, 0.1);
+  --glass-sheen-bottom: rgba(255, 255, 255, 0.05);
+  --glass-edge: rgba(0, 0, 0, 0.1);
+  --glass-shadow: 0 10px 34px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
   --glass-text: rgba(0, 0, 0, 0.86);
   --glass-text-dim: rgba(0, 0, 0, 0.32);
+
+  --liquid-bezel: 18px;
+  --liquid-strength: 46;
+  --liquid-blur: 3px;
 
   --dock-icon: 52px;
   --dock-gap: calc(var(--dock-icon) * 0.27);
@@ -96,11 +111,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-appearance="light"]) {
-    --glass-tint: rgba(30, 30, 36, 0.22);
-    --glass-tint-strong: rgba(36, 36, 42, 0.62);
-    --glass-rim: rgba(255, 255, 255, 0.32);
-    --glass-rim-soft: rgba(255, 255, 255, 0.08);
-    --glass-edge: rgba(0, 0, 0, 0.4);
+    --glass-tint: rgba(28, 28, 34, 0.12);
+    --glass-tint-strong: rgba(34, 34, 40, 0.6);
+    --glass-opaque: rgb(40, 40, 46);
+    --glass-inner-glow-color: rgba(255, 255, 255, 0.07);
+    --glass-rim-top: rgba(255, 255, 255, 0.3);
+    --glass-rim-bright: rgba(255, 255, 255, 0.55);
+    --glass-rim-mid: rgba(255, 255, 255, 0.16);
+    --glass-rim-low: rgba(255, 255, 255, 0.03);
+    --glass-rim-back: rgba(255, 255, 255, 0.25);
+    --glass-specular: rgba(255, 255, 255, 0.1);
+    --glass-sheen-top: rgba(255, 255, 255, 0.05);
+    --glass-edge: rgba(0, 0, 0, 0.45);
     --glass-text: rgba(255, 255, 255, 0.92);
     --glass-text-dim: rgba(255, 255, 255, 0.3);
     --dock-separator: rgba(255, 255, 255, 0.22);
@@ -109,11 +131,18 @@
 }
 
 :root[data-appearance="dark"] {
-  --glass-tint: rgba(30, 30, 36, 0.22);
-  --glass-tint-strong: rgba(36, 36, 42, 0.62);
-  --glass-rim: rgba(255, 255, 255, 0.32);
-  --glass-rim-soft: rgba(255, 255, 255, 0.08);
-  --glass-edge: rgba(0, 0, 0, 0.4);
+  --glass-tint: rgba(28, 28, 34, 0.12);
+  --glass-tint-strong: rgba(34, 34, 40, 0.6);
+  --glass-opaque: rgb(40, 40, 46);
+  --glass-inner-glow-color: rgba(255, 255, 255, 0.07);
+  --glass-rim-top: rgba(255, 255, 255, 0.3);
+  --glass-rim-bright: rgba(255, 255, 255, 0.55);
+  --glass-rim-mid: rgba(255, 255, 255, 0.16);
+  --glass-rim-low: rgba(255, 255, 255, 0.03);
+  --glass-rim-back: rgba(255, 255, 255, 0.25);
+  --glass-specular: rgba(255, 255, 255, 0.1);
+  --glass-sheen-top: rgba(255, 255, 255, 0.05);
+  --glass-edge: rgba(0, 0, 0, 0.45);
   --glass-text: rgba(255, 255, 255, 0.92);
   --glass-text-dim: rgba(255, 255, 255, 0.3);
   --dock-separator: rgba(255, 255, 255, 0.22);

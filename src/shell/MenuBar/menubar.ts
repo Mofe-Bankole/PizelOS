@@ -1,4 +1,6 @@
 import { reducedMotion } from "../Motion/spring";
+import { liquefy } from "../Glass/liquid";
+import { px } from "../../tokens/read";
 
 export function initMenuBar(bar: HTMLElement) {
   const titles = [...bar.querySelectorAll<HTMLButtonElement>(".menubar-title")];
@@ -65,6 +67,7 @@ export function initMenuBar(bar: HTMLElement) {
     });
 
     const menu = menuOf(t);
+    liquefy(menu, { bezel: 10, strength: 22, blur: px("--glass-blur-strong") });
     menu.addEventListener("pointermove", e => {
       const item = (e.target as HTMLElement).closest<HTMLElement>(".menu-item");
       if (item && item.getAttribute("aria-disabled") !== "true") setActive(menu, item);
