@@ -1,0 +1,19 @@
+---
+import Window from "../../shell/Window/Window.astro";
+---
+
+<Window id="notfound" app="work" url="" title="File not found">
+  <div class="empty-state notfound">
+    <svg viewBox="0 0 120 100" width="96" height="80" aria-hidden="true">
+      <path d="M8 22c0-5 3-8 8-8h28c3 0 4.6 1 6.3 3l3.4 4H104c5 0 8 3 8 8v54c0 5-3 8-8 8H16c-5 0-8-3-8-8Z" fill="var(--folder-back-bottom)" />
+      <path d="M6 40c0-4.4 3.2-7 7.5-7h93c4.3 0 7.5 2.6 7.5 7l-2.6 45c-.3 4.6-3.4 7-7.8 7H16.4c-4.4 0-7.5-2.4-7.8-7Z" fill="var(--folder-front-bottom)" />
+      <text x="60" y="76" text-anchor="middle" font-size="34" font-weight="700" fill="#fff" font-family="var(--font-display)">?</text>
+    </svg>
+    <strong>This file couldn't be found</strong>
+    <span data-missing-path></span>
+    <a class="tb-button tb-solo" href="/work">Open Work</a>
+  </div>
+</Window>
+<script is:inline>
+  document.querySelectorAll("[data-missing-path]").forEach(function (n) { n.textContent = location.pathname; });
+</script>

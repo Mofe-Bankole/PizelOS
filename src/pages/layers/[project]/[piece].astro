@@ -2,17 +2,20 @@
 import Desktop from "../../../shell/Desktop/Desktop.astro";
 import Layers from "../../../apps/layers/Layers.astro";
 import { getWorks } from "../../../lib/works";
+import { ogCard } from "../../../lib/media";
 
 export async function getStaticPaths() {
   return (await getWorks({ includeHidden: true }))
     .filter(w => w.media.layers)
     .map(w => {
       const [project, piece] = w.id.split("/");
-      return { params: { project, piece }, props: { title: w.title } };
+      return { params: { project, piece }, props: { id: w.id, title: w.title } };
     });
 }
 
-const { project, piece } = Astro.params;
+const { id, title } = Astro.props;
 ---
 
-<Desktop title={`${Astro.props.title} layers — Pizelxx`}><Layers id={`${project}/${piece}`} /></Desktop>
+<Desktop title={`${title} layers — Pizelxx`} description={`How ${title} was built, layer by layer.`} image={ogCard(id)}>
+  <Layers id={id} />
+</Desktop>

@@ -79,7 +79,7 @@ function focus(win: Win | null, updateUrl = true) {
   wins.forEach(w => w.el.classList.toggle("is-focused", w === win));
   if (win) {
     win.el.style.zIndex = String(++z);
-    if (updateUrl && location.pathname !== win.el.dataset.url) history.replaceState({ url: win.el.dataset.url }, "", win.el.dataset.url);
+    if (updateUrl && win.el.dataset.url && location.pathname !== win.el.dataset.url) history.replaceState({ url: win.el.dataset.url }, "", win.el.dataset.url);
   }
   document.dispatchEvent(new CustomEvent("shell:focus", { detail: win ? { app: win.app, id: win.id, title: win.el.dataset.title } : null }));
   document.addEventListener("shell:booted", e => {

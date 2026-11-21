@@ -14,6 +14,7 @@ export const windowSizes: Record<string, WindowSize> = {
   about: { w: 780, h: 520, minW: 480, minH: 320 },
   contact: { w: 640, h: 540, minW: 420, minH: 380 },
   trash: { w: 560, h: 380, minW: 360, minH: 260 },
+  notfound: { w: 520, h: 320, minW: 360, minH: 260 },
 };
 
 export const routeApps = ["work", "gallery", "layers", "trophies", "about", "contact", "trash"];

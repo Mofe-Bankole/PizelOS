@@ -16,7 +16,7 @@ const dbl = async sel => {
   }
 };
 
-await b.goto(base + "/");
+await b.goto(base + "/?boot=0");
 await log("start");
 await click('.dock-item[data-app="work"] .dock-button'); await b.sleep(1200);
 await log("dock → Work"); await b.shot(`${out}/w1-work.png`);
@@ -50,7 +50,7 @@ await click('.dock-item[data-app="contact"] .dock-button'); await b.sleep(900);
 await log("dock → restore contact");
 await b.eval(`history.back()`); await b.sleep(1200);
 await log("history.back()");
-await b.goto(base + "/work/magic-eden", 2500);
+await b.goto(base + "/work/magic-eden?boot=0", 2500);
 await log("direct load /work/magic-eden");
 await b.shot(`${out}/w-direct.png`);
 console.log("page errors:", JSON.stringify(b.logs));

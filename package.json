@@ -9,7 +9,10 @@
     "preview": "astro preview",
     "assets": "node scripts/process-assets.ts",
     "assets:inspect": "node scripts/inspect-psd.ts",
-    "wallpaper": "node scripts/process-wallpaper.ts"
+    "wallpaper": "node scripts/process-wallpaper.ts",
+    "build:site": "astro build && rm -rf dist/test dist/og-card",
+    "deploy": "node scripts/dev/make-og.mjs --cards-only && npm run build:site && wrangler pages deploy dist --project-name pizelos --branch main --commit-dirty=true",
+    "og": "astro build && node scripts/dev/make-og.mjs"
   },
   "dependencies": {
     "astro": "^7.4.13",
@@ -21,6 +24,7 @@
     "p-limit": "^7.3.3",
     "sharp": "^0.35.5",
     "thumbhash": "^0.1.1",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "wrangler": "^4.166.0"
   }
 }

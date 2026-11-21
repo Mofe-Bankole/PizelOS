@@ -8,6 +8,7 @@ export interface Variant { w: number; src: string }
 export interface LayerItem { name: string; src: string; x: number; y: number; w: number; h: number; opacity: number; blend?: string }
 export interface MediaItem {
   id: string;
+  source: { hash: string };
   width: number;
   height: number;
   thumbhash: string;
@@ -32,6 +33,11 @@ export function getMedia(id: string): MediaItem {
 export const findMedia = (id: string): MediaItem | undefined => items[id];
 
 export const allMedia = () => Object.values(items);
+
+export const ogCard = (id: string) => {
+  const m = items[id];
+  return m ? `/og/work/${id}.${m.source.hash}.jpg` : undefined;
+};
 
 export const srcset = (vs: Variant[]) => vs.map(v => `${mediaUrl(v.src)} ${v.w}w`).join(", ");
 

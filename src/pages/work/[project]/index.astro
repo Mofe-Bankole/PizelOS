@@ -2,15 +2,20 @@
 import Desktop from "../../../shell/Desktop/Desktop.astro";
 import Finder from "../../../apps/finder/Finder.astro";
 import { getProjects, getWorks } from "../../../lib/works";
+import { ogCard } from "../../../lib/media";
 
 export async function getStaticPaths() {
   const works = await getWorks();
   return (await getProjects())
-    .filter(p => works.some(w => w.project.id === p.id))
-    .map(p => ({ params: { project: p.id }, props: { name: p.name } }));
+    .map(p => ({ p, pieces: works.filter(w => w.project.id === p.id) }))
+    .filter(({ pieces }) => pieces.length)
+    .map(({ p, pieces }) => ({ params: { project: p.id }, props: { name: p.name, cover: pieces[0].id, count: pieces.length } }));
 }
 
 const { project } = Astro.params;
+const { name, cover, count } = Astro.props;
 ---
 
-<Desktop title={`${Astro.props.name} — Pizelxx`}><Finder project={project} /></Desktop>
+<Desktop title={`${name} — Pizelxx`} description={`${count} pieces Pizelxx made for ${name}.`} image={ogCard(cover)} imageAlt={`Work for ${name} by Pizelxx`}>
+  <Finder project={project} />
+</Desktop>

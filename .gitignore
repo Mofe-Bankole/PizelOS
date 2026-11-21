@@ -24,3 +24,6 @@ wallpapers/*.jpg
 wallpapers/*.jpeg
 wallpapers/*.png
 wallpapers/*.heic
+
+# generated link-preview cards for pieces (rebuilt by npm run og)
+public/og/work/
