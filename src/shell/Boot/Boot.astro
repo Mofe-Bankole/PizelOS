@@ -120,6 +120,8 @@ const config = {
   }
 
   .lock-date {
+    font-family: var(--font-display);
+    letter-spacing: var(--track-22);
     font-size: var(--lock-date-size);
     font-weight: var(--lock-date-weight);
     color: var(--lock-clock-color);
@@ -128,11 +130,11 @@ const config = {
 
   .lock-clock {
     margin-top: -0.06em;
-    font-family: ui-rounded, "SF Pro Rounded", var(--font-ui);
+    font-family: var(--font-rounded);
     font-size: var(--lock-clock-size);
     font-weight: var(--lock-clock-weight);
     line-height: 1;
-    letter-spacing: -0.02em;
+    letter-spacing: var(--track-display);
     font-variant-numeric: tabular-nums;
     color: var(--lock-clock-color);
     mix-blend-mode: plus-lighter;
@@ -160,6 +162,7 @@ const config = {
   .lock-name {
     margin-top: 2px;
     font-size: var(--lock-name-size);
+    letter-spacing: var(--track-13);
     font-weight: 600;
     text-shadow: var(--lock-text-shadow);
   }

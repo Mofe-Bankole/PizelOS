@@ -1,5 +1,16 @@
 :root {
-  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "SF Pro Display", "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Display", "Inter Variable", "Inter", system-ui, sans-serif;
+  --font-rounded: ui-rounded, "SF Pro Rounded", var(--font-display);
+  --trk: 1;
+  --track-11: calc(0.0048em * var(--trk));
+  --track-12: calc(0.0005em * var(--trk));
+  --track-13: calc(-0.0032em * var(--trk));
+  --track-14: calc(-0.0062em * var(--trk));
+  --track-15: calc(-0.0088em * var(--trk));
+  --track-22: calc(-0.0183em * var(--trk));
+  --track-26: calc(-0.0203em * var(--trk));
+  --track-display: calc(-0.0223em * var(--trk));
   --hairline: 1px;
 
   --accent: #0a7cff;
@@ -221,4 +232,8 @@
   --sidebar-bg: #262628;
   --sidebar-selected: rgba(255, 255, 255, 0.1);
   --traffic-inactive: rgba(255, 255, 255, 0.16);
+}
+
+:root[data-apple] {
+  --trk: 0;
 }

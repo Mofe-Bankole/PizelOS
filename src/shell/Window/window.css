@@ -10,6 +10,8 @@
   border-radius: var(--window-radius);
   background: var(--win-bg);
   color: var(--window-text);
+  font-size: 13px;
+  letter-spacing: var(--track-13);
   box-shadow: var(--window-shadow);
   overflow: hidden;
   transform-origin: 0 0;
@@ -112,6 +114,7 @@
   margin: 0;
   font-size: var(--toolbar-title);
   font-weight: 700;
+  letter-spacing: var(--track-15);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -121,6 +124,7 @@
   display: block;
   font-size: 11px;
   font-weight: 500;
+  letter-spacing: var(--track-11);
   color: var(--window-text-dim);
 }
 
@@ -138,6 +142,8 @@
   align-items: center;
   justify-content: center;
   font-size: 11px;
+  letter-spacing: var(--track-11);
+  font-variant-numeric: tabular-nums;
   color: var(--window-text-dim);
   border-top: var(--hairline) solid var(--window-divider);
 }
@@ -167,6 +173,7 @@
   gap: 6px;
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: var(--track-12);
   color: var(--window-text);
   white-space: nowrap;
 }
@@ -229,6 +236,7 @@
   margin: 14px 8px 4px;
   font-size: 11px;
   font-weight: 600;
+  letter-spacing: var(--track-11);
   color: var(--window-text-dim);
 }
 
@@ -270,6 +278,7 @@
 .sb-count {
   margin-left: auto;
   font-size: 11px;
+  font-variant-numeric: tabular-nums;
   color: var(--window-text-dim);
 }
 
