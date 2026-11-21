@@ -1,0 +1,18 @@
+---
+import Desktop from "../../../shell/Desktop/Desktop.astro";
+import Layers from "../../../apps/layers/Layers.astro";
+import { getWorks } from "../../../lib/works";
+
+export async function getStaticPaths() {
+  return (await getWorks({ includeHidden: true }))
+    .filter(w => w.media.layers)
+    .map(w => {
+      const [project, piece] = w.id.split("/");
+      return { params: { project, piece }, props: { title: w.title } };
+    });
+}
+
+const { project, piece } = Astro.params;
+---
+
+<Desktop title={`${Astro.props.title} layers — Pizelxx`}><Layers id={`${project}/${piece}`} /></Desktop>

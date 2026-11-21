@@ -115,6 +115,16 @@ export function initMenuBar(bar: HTMLElement) {
   );
 
   startClock(bar.querySelector<HTMLTimeElement>("[data-clock]")!);
+
+  const appTitle = bar.querySelector<HTMLButtonElement>('[data-menu="app"]')!;
+  const names: Record<string, string> = {
+    work: "Work", preview: "Preview", gallery: "Gallery", layers: "Layers",
+    trophies: "Trophies", about: "About", contact: "Contact", trash: "Trash",
+  };
+  document.addEventListener("shell:focus", e => {
+    const detail = (e as CustomEvent<{ id: string } | null>).detail;
+    appTitle.textContent = detail ? names[detail.id] ?? "Pizelxx" : "Pizelxx";
+  });
 }
 
 function flash(item: HTMLElement): Promise<void> {

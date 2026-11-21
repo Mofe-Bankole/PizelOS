@@ -1,0 +1,40 @@
+.artwork {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: var(--ph) center / cover no-repeat;
+}
+
+.artwork picture {
+  display: contents;
+}
+
+.artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork.fit-contain,
+.artwork.fit-cover {
+  width: 100%;
+  height: 100%;
+}
+
+.artwork.fit-contain {
+  background: none;
+}
+
+.artwork.fit-contain img {
+  object-fit: contain;
+}
+
+.js .artwork img {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.js .artwork.is-loaded img {
+  opacity: 1;
+}

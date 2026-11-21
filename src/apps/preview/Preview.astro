@@ -1,0 +1,68 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import Artwork from "../../components/Artwork.astro";
+import { getWorks } from "../../lib/works";
+import { svg } from "../glyphs";
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+const works = await getWorks({ includeHidden: true });
+const work = works.find(w => w.id === id)!;
+const siblings = works.filter(w => w.project.id === work.project.id && !w.hidden);
+const index = siblings.findIndex(w => w.id === id);
+const prev = siblings[(index - 1 + siblings.length) % siblings.length];
+const next = siblings[(index + 1) % siblings.length];
+const fmt = (n?: number) => (n === undefined ? undefined : Intl.NumberFormat("en", { notation: "compact" }).format(n));
+const layered = !!work.media.layers;
+---
+
+<Window id="preview" app="work" url={`/work/${id}`} title={work.title} tone="dark">
+  <Fragment slot="toolbar">
+    <div class="preview-heading">
+      <h2 class="window-title">{work.title}</h2>
+      <span class="window-subtitle">{work.clientName}{work.year ? ` · ${work.year}` : ""}</span>
+    </div>
+    <span class="tb-spacer"></span>
+    <div class="tb-group">
+      <a class="tb-button" href={`/work/${prev.id}`} aria-label="Previous piece" set:html={svg("back")} data-key="ArrowLeft" />
+      <span class="preview-count">{index + 1} / {siblings.length}</span>
+      <a class="tb-button" href={`/work/${next.id}`} aria-label="Next piece" set:html={svg("forward")} data-key="ArrowRight" />
+    </div>
+    {layered && <a class="tb-button tb-solo" href={`/layers/${id}`}><Fragment set:html={svg("layers")} />Layers</a>}
+    <button type="button" class="tb-button tb-solo" data-toggle-inspector aria-pressed="true" aria-label="Show info" set:html={svg("info")} />
+  </Fragment>
+
+  <div class="preview" data-preview>
+    <div class="preview-stage">
+      <Artwork id={id} alt={`${work.title} for ${work.clientName}`} fit="contain" sizes="(max-width: 900px) 100vw, 70vw" priority />
+    </div>
+    <aside class="preview-inspector">
+      <dl>
+        <dt>Client</dt><dd>{work.clientName}</dd>
+        <dt>Project</dt><dd><a href={`/work/${work.project.id}`}>{work.project.name}</a></dd>
+        {work.year && <><dt>Year</dt><dd>{work.year}</dd></>}
+        {work.categories.length > 0 && <><dt>Type</dt><dd>{work.categories.join(", ")}</dd></>}
+        <dt>Size</dt><dd>{work.media.width} × {work.media.height}</dd>
+        {layered && <><dt>Layers</dt><dd>{work.media.layers!.items.length}</dd></>}
+      </dl>
+      {work.description && <p class="preview-desc">{work.description}</p>}
+      {work.award && (
+        <div class="preview-award">
+          <span set:html={svg("trophy")} />
+          <div><strong>{work.award.result ?? (work.award.type === "bounty" ? "Bounty entry" : "Contest entry")}</strong><br />{work.award.name}{work.award.prize ? ` · ${work.award.prize}` : ""}</div>
+        </div>
+      )}
+      {work.stats && (
+        <div class="preview-stats">
+          {work.stats.likes !== undefined && <div><strong>{fmt(work.stats.likes)}</strong>likes</div>}
+          {work.stats.reposts !== undefined && <div><strong>{fmt(work.stats.reposts)}</strong>reposts</div>}
+          {work.stats.views !== undefined && <div><strong>{fmt(work.stats.views)}</strong>views</div>}
+        </div>
+      )}
+      {work.tweet && <a class="preview-cta" href={work.tweet} target="_blank" rel="noopener"><Fragment set:html={svg("x")} />View post on X</a>}
+    </aside>
+  </div>
+</Window>

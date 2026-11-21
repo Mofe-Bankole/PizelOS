@@ -1,0 +1,16 @@
+---
+import Desktop from "../../../shell/Desktop/Desktop.astro";
+import Finder from "../../../apps/finder/Finder.astro";
+import { getProjects, getWorks } from "../../../lib/works";
+
+export async function getStaticPaths() {
+  const works = await getWorks();
+  return (await getProjects())
+    .filter(p => works.some(w => w.project.id === p.id))
+    .map(p => ({ params: { project: p.id }, props: { name: p.name } }));
+}
+
+const { project } = Astro.params;
+---
+
+<Desktop title={`${Astro.props.name} — Pizelxx`}><Finder project={project} /></Desktop>

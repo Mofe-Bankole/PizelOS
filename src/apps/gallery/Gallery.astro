@@ -1,0 +1,30 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import Artwork from "../../components/Artwork.astro";
+import { getProjects, getWorks } from "../../lib/works";
+
+const works = await getWorks();
+const projects = (await getProjects()).filter(p => works.some(w => w.project.id === p.id));
+---
+
+<Window id="gallery" app="gallery" url="/gallery" title="Gallery">
+  <Fragment slot="toolbar">
+    <h2 class="window-title">Gallery</h2>
+    <span class="tb-spacer"></span>
+    <div class="tb-group gallery-filters" role="toolbar" aria-label="Filter by project" data-no-drag>
+      <button type="button" class="tb-button" aria-pressed="true" data-filter="">All</button>
+      {projects.map(p => <button type="button" class="tb-button" aria-pressed="false" data-filter={p.id}>{p.name}</button>)}
+    </div>
+  </Fragment>
+
+  <div class="gallery" data-gallery>
+    {works.map((w, i) => (
+      <a class="gallery-item" href={`/work/${w.id}`} data-project={w.project.id}>
+        <Artwork id={w.id} alt={`${w.title} for ${w.clientName}`} sizes="(max-width: 760px) 50vw, 300px" priority={i < 8} />
+        <span class="gallery-caption"><strong>{w.title}</strong>{w.clientName}</span>
+      </a>
+    ))}
+  </div>
+
+  <Fragment slot="status"><span data-gallery-count>{works.length} pieces</span></Fragment>
+</Window>

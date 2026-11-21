@@ -24,9 +24,9 @@ import { apps, trash } from "../../icons/apps";
     ))}
     <li class="dock-separator" aria-hidden="true"></li>
     <li class="dock-item" data-app={trash.id}>
-      <button class="dock-button" type="button" aria-label={trash.name} data-name={trash.name}>
+      <a class="dock-button" href={trash.href} aria-label={trash.name} data-name={trash.name} draggable="false">
         <span class="dock-scale"><span class="dock-bounce"><AppIcon app={trash} /></span></span>
-      </button>
+      </a>
     </li>
   </ul>
   <div class="dock-tooltip glass glass-strong" role="tooltip" aria-hidden="true"></div>

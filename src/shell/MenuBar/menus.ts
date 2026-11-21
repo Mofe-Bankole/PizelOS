@@ -53,7 +53,7 @@ export const appMenus: MenuDef[] = [
       { label: "New Window", shortcut: "⌘N", href: "/work" },
       { label: "Open…", shortcut: "⌘O", href: "/work" },
       { type: "separator" },
-      { label: "Close Window", shortcut: "⌘W", action: "close-window", disabled: true },
+      { label: "Close Window", shortcut: "⌘W", action: "close-window" },
     ],
   },
   {
@@ -95,8 +95,8 @@ export const appMenus: MenuDef[] = [
     id: "window",
     label: "Window",
     items: [
-      { label: "Minimize", shortcut: "⌘M", disabled: true },
-      { label: "Zoom", disabled: true },
+      { label: "Minimize", shortcut: "⌘M", action: "minimize-window" },
+      { label: "Zoom", action: "zoom-window" },
       { type: "separator" },
       { label: "Bring All to Front", disabled: true },
     ],

@@ -1,0 +1,84 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import { getWorks } from "../../lib/works";
+import { mediaUrl, pick, srcset } from "../../lib/media";
+import { svg } from "../glyphs";
+
+interface Props {
+  id?: string;
+}
+
+const works = (await getWorks({ includeHidden: true })).filter(w => w.media.layers);
+const current = works.find(w => w.id === Astro.props.id) ?? works[0];
+const url = Astro.props.id ? `/layers/${Astro.props.id}` : "/layers";
+const layers = current?.media.layers;
+---
+
+<Window id="layers" app="layers" url={url} title={current ? `Layers — ${current.title}` : "Layers"} sidebar tone="dark">
+  <Fragment slot="sidebar">
+    <div class="sb-heading">Layered pieces</div>
+    {works.map(w => (
+      <a class:list={["sb-item", "layers-pick", { "is-current": w.id === current?.id }]} href={`/layers/${w.id}`}>
+        <img src={mediaUrl(pick(w.media.variants.webp, 480).src)} alt="" loading="lazy" />
+        <span>{w.title}</span>
+      </a>
+    ))}
+  </Fragment>
+
+  <Fragment slot="toolbar">
+    <div class="preview-heading">
+      <h2 class="window-title">{current?.title ?? "Layers"}</h2>
+      {current && <span class="window-subtitle">{current.clientName} · {layers!.items.length} layers</span>}
+    </div>
+    <span class="tb-spacer"></span>
+    {current && (
+      <>
+        <button type="button" class="tb-button tb-solo" data-layers-play><Fragment set:html={svg("play")} />Explode</button>
+        <label class="layers-slider" data-no-drag>
+          <span class="visually-hidden">Separation</span>
+          <input type="range" min="0" max="1000" value="0" data-layers-amount />
+        </label>
+        <a class="tb-button tb-solo" href={`/work/${current.id}`}>Open in Preview</a>
+      </>
+    )}
+  </Fragment>
+
+  {current && layers ? (
+    <div class="layers-app" data-layers>
+      <div class="layers-stage">
+        <div class="layers-stack" style={`aspect-ratio:${layers.canvas.w}/${layers.canvas.h};--ph:${current.media.color}`} data-layers-stack>
+          {layers.items.map((l, i) => (
+            <div class="layers-plane" data-layer-index={i} style={`z-index:${i}`}>
+              <img
+                src={mediaUrl(l.src)}
+                alt=""
+                decoding="async"
+                draggable="false"
+                style={`left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%;opacity:${l.opacity}${l.blend ? `;mix-blend-mode:${l.blend}` : ""}`}
+              />
+              <span class="layers-tag">{String(i + 1).padStart(2, "0")} {l.name}</span>
+            </div>
+          ))}
+          <picture class="layers-flat" style={`z-index:${layers.items.length}`} data-layers-flat>
+            <source type="image/avif" srcset={srcset(current.media.variants.avif)} sizes="60vh" />
+            <img src={mediaUrl(pick(current.media.variants.webp, 1600).src)} alt={`${current.title} for ${current.clientName}`} decoding="async" draggable="false" />
+          </picture>
+        </div>
+      </div>
+      <aside class="layers-panel">
+        <div class="layers-panel-head"><strong>Layers</strong><span>Normal · 100%</span></div>
+        <ul>
+          {[...layers.items].map((l, i) => ({ l, i })).reverse().map(({ l, i }) => (
+            <li class="layers-row" data-layer-row={i}>
+              <button type="button" class="layers-eye" aria-pressed="true" aria-label={`Toggle ${l.name}`} data-layer-toggle={i} set:html={svg("eye")} />
+              <span class="layers-thumb"><img src={mediaUrl(l.src)} alt="" loading="lazy" style={`left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%`} /></span>
+              <span class="layers-name">{l.name}</span>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  ) : (
+    <div class="empty-state"><strong>No layered pieces yet</strong>Add PSD ids to "layered" in assets.config.json and run npm run assets.</div>
+  )}
+</Window>

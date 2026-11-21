@@ -1,0 +1,59 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import profile from "../../data/profile.json";
+import { getProjects, getWorks } from "../../lib/works";
+
+const works = await getWorks();
+const clients = (await getProjects()).filter(p => p.kind === "client" && works.some(w => w.project.id === p.id));
+const notes = [
+  { id: "about", title: profile.name, preview: profile.role },
+  { id: "clients", title: "Clients & communities", preview: `${clients.length} projects` },
+  { id: "toolkit", title: "Toolkit", preview: profile.tools.join(", ") },
+  { id: "links", title: "Find me", preview: profile.handle },
+];
+---
+
+<Window id="about" app="about" url="/about" title="About" sidebar tone="paper">
+  <Fragment slot="sidebar">
+    <div class="sb-heading">Notes</div>
+    {notes.map((n, i) => (
+      <button type="button" class:list={["note-pick", { "is-current": i === 0 }]} data-note={n.id}>
+        <strong>{n.title}</strong>
+        <span>{n.preview}</span>
+      </button>
+    ))}
+  </Fragment>
+
+  <Fragment slot="toolbar">
+    <h2 class="window-title">About</h2>
+  </Fragment>
+
+  <div class="notes">
+    <article class="note" data-note-body="about">
+      <h1>{profile.name}</h1>
+      <p class="note-lede">{profile.role}{profile.available ? " · open for commissions" : ""}</p>
+      {profile.bio.map(p => <p>{p}</p>)}
+      <p>{works.length} pieces across {clients.length} clients and communities live in this Mac. Open <a href="/work">Work</a> to look around.</p>
+    </article>
+    <article class="note" data-note-body="clients" hidden>
+      <h1>Clients &amp; communities</h1>
+      <ul class="note-list">
+        {clients.map(c => <li><a href={`/work/${c.id}`}>{c.name}</a>{c.x && <> · <a href={c.x} target="_blank" rel="noopener">X</a></>}</li>)}
+      </ul>
+    </article>
+    <article class="note" data-note-body="toolkit" hidden>
+      <h1>Toolkit</h1>
+      <ul class="note-list">{profile.tools.map(t => <li>{t}</li>)}</ul>
+    </article>
+    <article class="note" data-note-body="links" hidden>
+      <h1>Find me</h1>
+      <ul class="note-list">
+        <li><a href={profile.x} target="_blank" rel="noopener">{profile.handle} on X</a></li>
+        {profile.telegram && <li><a href={profile.telegram} target="_blank" rel="noopener">Telegram</a></li>}
+        {profile.discord && <li>Discord: {profile.discord}</li>}
+        {profile.email && <li><a href={`mailto:${profile.email}`}>{profile.email}</a></li>}
+        <li><a href="/contact">Write a message</a></li>
+      </ul>
+    </article>
+  </div>
+</Window>

@@ -80,6 +80,7 @@ export const apps: AppDef[] = [
 export const trash: AppDef = {
   id: "trash",
   name: "Trash",
+  href: "/trash",
   gradient: ["rgba(255,255,255,.55)", "rgba(255,255,255,.18)"],
   glyph: `<path d="M30 30h40l-4 44c-.3 3-2.8 5-5.8 5H39.8c-3 0-5.5-2-5.8-5Z" fill="#fff" fill-opacity=".5" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
     <rect x="27" y="25" width="46" height="7" rx="3.5" fill="#fff" fill-opacity=".85"/>

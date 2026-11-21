@@ -1,0 +1,62 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import FolderIcon from "../finder/FolderIcon.astro";
+import { getProjects, getWorks } from "../../lib/works";
+import { svg } from "../glyphs";
+
+const works = await getWorks();
+const projects = await getProjects();
+const awarded = works.filter(w => w.award);
+const entries = projects
+  .filter(p => p.kind === "bounty" || p.kind === "contest" || p.award)
+  .map(p => ({ project: p, pieces: works.filter(w => w.project.id === p.id) }))
+  .filter(e => e.pieces.length);
+---
+
+<Window id="trophies" app="trophies" url="/trophies" title="Trophies">
+  <Fragment slot="toolbar">
+    <h2 class="window-title">Trophies</h2>
+    <span class="tb-spacer"></span>
+    <span class="window-subtitle">{awarded.length} awarded · {entries.length} {entries.length === 1 ? "bounty or contest" : "bounties & contests"}</span>
+  </Fragment>
+
+  <div class="trophies">
+    {awarded.length > 0 && (
+      <section>
+        <h3 class="trophies-heading">Wins</h3>
+        <ul class="trophy-list">
+          {awarded.map(w => (
+            <li>
+              <a class="trophy-card" href={`/work/${w.id}`}>
+                <span class="trophy-medal" set:html={svg("trophy")} />
+                <span class="trophy-text">
+                  <strong>{w.award!.result ?? "Entry"}</strong>
+                  <span>{w.award!.name}</span>
+                  <small>{w.title}{w.award!.prize ? ` · ${w.award!.prize}` : ""}</small>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+    <section>
+      <h3 class="trophies-heading">Bounties &amp; contests</h3>
+      {entries.length ? (
+        <ul class="trophy-entries">
+          {entries.map(e => (
+            <li>
+              <a class="trophy-entry" href={`/work/${e.project.id}`}>
+                <FolderIcon cover={e.pieces[0].id} uid={`t-${e.project.id}`} />
+                <strong>{e.project.name}</strong>
+                <small>{e.project.award?.result ?? (e.project.kind === "bounty" ? "Bounty" : "Contest")} · {e.pieces.length} pieces</small>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="empty-state">Mark a project's "kind" as bounty or contest, or add an "award", and it shows up here.</p>
+      )}
+    </section>
+  </div>
+</Window>

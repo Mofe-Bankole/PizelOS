@@ -1,32 +1,23 @@
 ---
-/**
- * One piece of work, loaded efficiently:
- * - AVIF with WebP fallback; the browser picks the width from `sizes`
- * - fixed aspect ratio, so the layout never jumps while images load
- * - dominant colour shows instantly, then the blurred thumbhash, then a fade to the real image
- * - lazy by default; pass `priority` only for what's on the first screen
- */
+import "./artwork.css";
 import { getMedia, mediaUrl, pick, srcset } from "../lib/media";
 
 interface Props {
   id: string;
   alt: string;
-  /** How wide the image renders. The default suits a 3-column grid; set it per layout. */
   sizes?: string;
   priority?: boolean;
+  fit?: "natural" | "contain" | "cover";
   class?: string;
 }
 
-const { id, alt, sizes = "(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw", priority = false, class: cls } = Astro.props;
+const { id, alt, sizes = "(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw", priority = false, fit = "natural", class: cls } = Astro.props;
 const m = getMedia(id);
 const fallback = pick(m.variants.webp, 960);
+const style = fit === "natural" ? `aspect-ratio:${m.width}/${m.height};--ph:${m.color}` : `--ph:${m.color}`;
 ---
 
-<figure
-  class:list={["artwork", cls]}
-  style={`aspect-ratio:${m.width}/${m.height};--ph:${m.color}`}
-  data-thumbhash={m.thumbhash}
->
+<figure class:list={["artwork", `fit-${fit}`, cls]} style={style} data-thumbhash={fit === "contain" ? undefined : m.thumbhash}>
   <picture>
     <source type="image/avif" srcset={srcset(m.variants.avif)} sizes={sizes} />
     <source type="image/webp" srcset={srcset(m.variants.webp)} sizes={sizes} />
@@ -38,29 +29,7 @@ const fallback = pick(m.variants.webp, 960);
       loading={priority ? "eager" : "lazy"}
       fetchpriority={priority ? "high" : "auto"}
       decoding="async"
+      draggable="false"
     />
   </picture>
 </figure>
-
-<style>
-  .artwork {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-    background: var(--ph) center / cover no-repeat;
-  }
-  .artwork img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* Fade in only when JS is running; without JS images just appear. */
-  :global(.js) .artwork img {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  :global(.js) .artwork:global(.is-loaded) img {
-    opacity: 1;
-  }
-</style>

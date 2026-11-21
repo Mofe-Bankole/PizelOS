@@ -1,0 +1,23 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import profile from "../../data/profile.json";
+import { svg } from "../glyphs";
+---
+
+<Window id="contact" app="contact" url="/contact" title="New Message">
+  <Fragment slot="toolbar">
+    <h2 class="window-title">New Message</h2>
+    <span class="tb-spacer"></span>
+    <button type="submit" form="compose" class="tb-button tb-solo tb-primary"><Fragment set:html={svg("send")} />Send</button>
+  </Fragment>
+
+  <form class="compose" id="compose" data-compose data-email={profile.email} data-x={profile.x} data-no-drag>
+    <div class="compose-row"><span>To:</span><span class="compose-to">{profile.name} <small>{profile.email || profile.handle}</small></span></div>
+    <label class="compose-row"><span>From:</span><input name="from" type="text" placeholder="Your name or @handle" autocomplete="name" required /></label>
+    <label class="compose-row"><span>Subject:</span><input name="subject" type="text" placeholder="Project, collab, commission…" required /></label>
+    <textarea name="body" placeholder="Tell Pizelxx what you have in mind: the project, the vibe, the deadline." required></textarea>
+    <p class="compose-note" data-compose-note>
+      {profile.email ? "Send opens your mail app with this message filled in." : "Send copies your message and opens Pizelxx's X profile so you can DM it."}
+    </p>
+  </form>
+</Window>

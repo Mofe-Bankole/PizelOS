@@ -2,6 +2,9 @@
 import "../../tokens/tokens.css";
 import "./global.css";
 import "../Glass/glass.css";
+import "../Window/window.css";
+import "../../components/artwork.css";
+import "../../apps/apps.css";
 import Wallpaper from "../Wallpaper/Wallpaper.astro";
 import MenuBar from "../MenuBar/MenuBar.astro";
 import Dock from "../Dock/Dock.astro";
@@ -38,6 +41,11 @@ const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
     </main>
     <Dock />
     {import.meta.env.DEV && <Overlay />}
+    <script>
+      import "../../apps/client";
+      import { initWindowManager } from "../Window/window-manager";
+      initWindowManager(document.getElementById("desktop")!);
+    </script>
   </body>
 </html>
 

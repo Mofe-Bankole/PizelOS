@@ -1,0 +1,16 @@
+---
+import Desktop from "../../../shell/Desktop/Desktop.astro";
+import Preview from "../../../apps/preview/Preview.astro";
+import { getWorks } from "../../../lib/works";
+
+export async function getStaticPaths() {
+  return (await getWorks({ includeHidden: true })).map(w => {
+    const [project, piece] = w.id.split("/");
+    return { params: { project, piece }, props: { title: w.title, client: w.clientName } };
+  });
+}
+
+const { project, piece } = Astro.params;
+---
+
+<Desktop title={`${Astro.props.title} — ${Astro.props.client} — Pizelxx`}><Preview id={`${project}/${piece}`} /></Desktop>

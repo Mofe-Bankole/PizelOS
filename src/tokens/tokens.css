@@ -90,9 +90,33 @@
   --dock-bounce-height: 0.45;
 
   --window-radius: 18px;
-  --window-shadow: 0 0 0 var(--hairline) rgba(0, 0, 0, 0.14), 0 10px 40px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.1);
+  --window-shadow: 0 0 0 var(--hairline) rgba(0, 0, 0, 0.14), 0 8px 28px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
+  --window-shadow-focus: 0 0 0 var(--hairline) rgba(0, 0, 0, 0.16), 0 14px 46px rgba(0, 0, 0, 0.32), 0 3px 10px rgba(0, 0, 0, 0.12);
+  --window-bg: #ffffff;
+  --window-paper: #fbf8f1;
+  --window-text: rgba(0, 0, 0, 0.86);
+  --window-text-dim: rgba(0, 0, 0, 0.45);
+  --window-divider: rgba(0, 0, 0, 0.09);
+  --window-cascade: 28px;
+  --toolbar-h: 52px;
+  --toolbar-title: 15px;
+  --toolbar-control-h: 32px;
+  --toolbar-control-bg: rgba(0, 0, 0, 0.035);
+  --toolbar-hover: rgba(0, 0, 0, 0.06);
+  --toolbar-active: rgba(0, 0, 0, 0.1);
+  --status-h: 26px;
+  --sidebar-w: 200px;
+  --sidebar-bg: #f1f0ef;
+  --sidebar-text: 13px;
+  --sidebar-row-h: 28px;
+  --sidebar-selected: rgba(0, 0, 0, 0.08);
   --traffic-size: 12px;
   --traffic-gap: 8px;
+  --traffic-top: 20px;
+  --traffic-left: 18px;
+  --traffic-inactive: rgba(0, 0, 0, 0.14);
+  --spring-window-stiffness: 260;
+  --spring-window-damping: 30;
   --traffic-close: #ff5f57;
   --traffic-minimize: #febc2e;
   --traffic-zoom: #28c840;
@@ -127,6 +151,17 @@
     --glass-text-dim: rgba(255, 255, 255, 0.3);
     --dock-separator: rgba(255, 255, 255, 0.22);
     --dock-indicator-color: rgba(255, 255, 255, 0.8);
+    --window-bg: #1e1e20;
+    --window-paper: #232220;
+    --window-text: rgba(255, 255, 255, 0.9);
+    --window-text-dim: rgba(255, 255, 255, 0.45);
+    --window-divider: rgba(255, 255, 255, 0.09);
+    --toolbar-control-bg: rgba(255, 255, 255, 0.05);
+    --toolbar-hover: rgba(255, 255, 255, 0.08);
+    --toolbar-active: rgba(255, 255, 255, 0.14);
+    --sidebar-bg: #262628;
+    --sidebar-selected: rgba(255, 255, 255, 0.1);
+    --traffic-inactive: rgba(255, 255, 255, 0.16);
   }
 }
 
@@ -147,4 +182,15 @@
   --glass-text-dim: rgba(255, 255, 255, 0.3);
   --dock-separator: rgba(255, 255, 255, 0.22);
   --dock-indicator-color: rgba(255, 255, 255, 0.8);
+  --window-bg: #1e1e20;
+  --window-paper: #232220;
+  --window-text: rgba(255, 255, 255, 0.9);
+  --window-text-dim: rgba(255, 255, 255, 0.45);
+  --window-divider: rgba(255, 255, 255, 0.09);
+  --toolbar-control-bg: rgba(255, 255, 255, 0.05);
+  --toolbar-hover: rgba(255, 255, 255, 0.08);
+  --toolbar-active: rgba(255, 255, 255, 0.14);
+  --sidebar-bg: #262628;
+  --sidebar-selected: rgba(255, 255, 255, 0.1);
+  --traffic-inactive: rgba(255, 255, 255, 0.16);
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:45:17.152Z",
+  "generatedAt": "2026-11-21T06:31:59.616Z",
   "base": "/media",
   "items": {
     "ads/audi-creative-ad-3": {
@@ -1013,6 +1013,104 @@
             "src": "durex-art/durex-fathers-day/1080.d8f400b7.webp"
           }
         ]
+      },
+      "layers": {
+        "source": {
+          "file": "durex art/DUREX-Fathers Day.psd",
+          "size": 4437249,
+          "mtimeMs": 1642530544000,
+          "hash": "d8f400b7"
+        },
+        "canvas": {
+          "w": 1080,
+          "h": 1200
+        },
+        "items": [
+          {
+            "name": "Rectangle 1",
+            "src": "durex-art/durex-fathers-day/layers/01-rectangle-1.d8f400b7.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 1
+          },
+          {
+            "name": "Layer 1",
+            "src": "durex-art/durex-fathers-day/layers/02-layer-1.d8f400b7.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 0.5882352941176471
+          },
+          {
+            "name": "159-1596030_condom-png",
+            "src": "durex-art/durex-fathers-day/layers/03-159-1596030-condom-png.d8f400b7.webp",
+            "x": 3.611,
+            "y": 3.167,
+            "w": 9.63,
+            "h": 3.833,
+            "opacity": 1
+          },
+          {
+            "name": "Rectangle 2",
+            "src": "durex-art/durex-fathers-day/layers/04-rectangle-2.d8f400b7.webp",
+            "x": 58.333,
+            "y": 33.417,
+            "w": 18.056,
+            "h": 3.333,
+            "opacity": 0.3803921568627451
+          },
+          {
+            "name": "beard-clip-art-beard-and-moustache-af4ac67df74445467165d2b333a7f605",
+            "src": "durex-art/durex-fathers-day/layers/05-beard-clip-art-beard-and-moustache-af4ac67df74445467165d2b333a7f605.d8f400b7.webp",
+            "x": 40.556,
+            "y": 48.417,
+            "w": 22.315,
+            "h": 16.083,
+            "opacity": 1
+          },
+          {
+            "name": "toppng.com-stylish-foldable-reading-glasses-black-izipizi-c-redi-957x491",
+            "src": "durex-art/durex-fathers-day/layers/06-toppng-com-stylish-foldable-reading-glasses-black-izipizi-c-redi-957x491.d8f400b7.webp",
+            "x": 37.778,
+            "y": 39,
+            "w": 26.019,
+            "h": 11.417,
+            "opacity": 1
+          },
+          {
+            "name": "To all those who use",
+            "src": "durex-art/durex-fathers-day/layers/07-to-all-those-who-use.d8f400b7.webp",
+            "x": 33.889,
+            "y": 29.25,
+            "w": 35.463,
+            "h": 2.417,
+            "opacity": 1
+          },
+          {
+            "name": "Happy Fathers Day",
+            "src": "durex-art/durex-fathers-day/layers/08-happy-fathers-day.d8f400b7.webp",
+            "x": 35.741,
+            "y": 70.667,
+            "w": 33.704,
+            "h": 2.833,
+            "opacity": 1
+          },
+          {
+            "name": "our Competitiors’ products",
+            "src": "durex-art/durex-fathers-day/layers/09-our-competitiors-products.d8f400b7.webp",
+            "x": 28.056,
+            "y": 33.5,
+            "w": 47.037,
+            "h": 3,
+            "opacity": 1
+          }
+        ],
+        "warnings": [
+          "9 top-level layers; 3–6 groups reads best in the breakdown"
+        ]
       }
     },
     "durex-art/durex-last-long-and-prosper": {
@@ -1142,6 +1240,76 @@
             "src": "durex-art/durex-no-loose-gurad/1080.5d39afd2.webp"
           }
         ]
+      },
+      "layers": {
+        "source": {
+          "file": "durex art/DUREX- No loose gurad.psd",
+          "size": 33091505,
+          "mtimeMs": 1642419322000,
+          "hash": "5d39afd2"
+        },
+        "canvas": {
+          "w": 1080,
+          "h": 1200
+        },
+        "items": [
+          {
+            "name": "Rectangle 1",
+            "src": "durex-art/durex-no-loose-gurad/layers/01-rectangle-1.5d39afd2.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 1
+          },
+          {
+            "name": "Layer 1",
+            "src": "durex-art/durex-no-loose-gurad/layers/02-layer-1.5d39afd2.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 0.5882352941176471
+          },
+          {
+            "name": "wallet",
+            "src": "durex-art/durex-no-loose-gurad/layers/03-wallet.5d39afd2.webp",
+            "x": 25.926,
+            "y": 32.333,
+            "w": 48.796,
+            "h": 37.75,
+            "opacity": 1
+          },
+          {
+            "name": "159-1596030_condom-png",
+            "src": "durex-art/durex-no-loose-gurad/layers/04-159-1596030-condom-png.5d39afd2.webp",
+            "x": 4.074,
+            "y": 3.167,
+            "w": 9.537,
+            "h": 3.833,
+            "opacity": 1
+          },
+          {
+            "name": "bag",
+            "src": "durex-art/durex-no-loose-gurad/layers/05-bag.5d39afd2.webp",
+            "x": 38.426,
+            "y": 31.417,
+            "w": 34.444,
+            "h": 54.917,
+            "opacity": 1
+          }
+        ],
+        "warnings": [
+          "\"wallet\": layer effects on \"WALLET\" (shadow/stroke/glow) not rendered",
+          "\"wallet\": blend mode \"multiply\" on \"DESIGN HERE\" flattened as normal",
+          "\"wallet\": blend mode \"multiply\" on \"-\" flattened as normal",
+          "\"wallet\": layer effects on \"Layer 5\" (shadow/stroke/glow) not rendered",
+          "\"wallet\": layer effects on \"Group 1\" (shadow/stroke/glow) not rendered",
+          "\"bag\": blend mode \"multiply\" on \"Layer 3\" flattened as normal",
+          "\"bag\": blend mode \"linear burn\" on \"Layer 2\" flattened as normal",
+          "\"bag\": blend mode \"linear dodge\" on \"Layer 2 copy\" flattened as normal",
+          "\"bag\": blend mode \"screen\" on \"Layer 2 copy 2\" flattened as normal"
+        ]
       }
     },
     "durex-art/durex-no-replacement-for-contraceptives": {
@@ -1227,6 +1395,77 @@
             "w": 1080,
             "src": "durex-art/durex-not-there/1080.be549387.webp"
           }
+        ]
+      },
+      "layers": {
+        "source": {
+          "file": "durex art/DUREX-Not there.psd",
+          "size": 3545252,
+          "mtimeMs": 1642530956000,
+          "hash": "be549387"
+        },
+        "canvas": {
+          "w": 1080,
+          "h": 1200
+        },
+        "items": [
+          {
+            "name": "Rectangle 1",
+            "src": "durex-art/durex-not-there/layers/01-rectangle-1.be549387.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 1
+          },
+          {
+            "name": "Layer 1",
+            "src": "durex-art/durex-not-there/layers/02-layer-1.be549387.webp",
+            "x": 0,
+            "y": 0,
+            "w": 100,
+            "h": 100,
+            "opacity": 0.5882352941176471
+          },
+          {
+            "name": "159-1596030_condom-png",
+            "src": "durex-art/durex-not-there/layers/03-159-1596030-condom-png.be549387.webp",
+            "x": 3.611,
+            "y": 3.167,
+            "w": 9.63,
+            "h": 3.833,
+            "opacity": 1
+          },
+          {
+            "name": "Rectangle 2",
+            "src": "durex-art/durex-not-there/layers/04-rectangle-2.be549387.webp",
+            "x": 44.444,
+            "y": 26.833,
+            "w": 11.111,
+            "h": 34.083,
+            "opacity": 0.14901960784313725
+          },
+          {
+            "name": "Carry on.....",
+            "src": "durex-art/durex-not-there/layers/05-carry-on.be549387.webp",
+            "x": 44.537,
+            "y": 71.083,
+            "w": 13.981,
+            "h": 2.25,
+            "opacity": 1
+          },
+          {
+            "name": "You won’t even know i’m there.",
+            "src": "durex-art/durex-not-there/layers/06-you-won-t-even-know-i-m-there.be549387.webp",
+            "x": 30.37,
+            "y": 75.75,
+            "w": 42.222,
+            "h": 1.833,
+            "opacity": 1
+          }
+        ],
+        "warnings": [
+          "\"Rectangle 2\": layer effects on \"Rectangle 2\" (shadow/stroke/glow) not rendered"
         ]
       }
     },

@@ -1,0 +1,53 @@
+---
+import { windowSizes } from "./sizes";
+
+interface Props {
+  id: string;
+  app: string;
+  url: string;
+  title: string;
+  sidebar?: boolean;
+  tone?: "default" | "dark" | "paper";
+}
+
+const { id, app, url, title, sidebar = false, tone = "default" } = Astro.props;
+const size = windowSizes[id] ?? windowSizes.work;
+const hasSidebar = sidebar && Astro.slots.has("sidebar");
+---
+
+<section
+  class:list={["window", `tone-${tone}`, { "has-sidebar": hasSidebar }]}
+  data-window={id}
+  data-app={app}
+  data-url={url}
+  data-title={title}
+  data-w={size.w}
+  data-h={size.h}
+  data-min-w={size.minW}
+  data-min-h={size.minH}
+  style={`--w:${size.w}px;--h:${size.h}px`}
+  role="dialog"
+  aria-label={title}
+>
+  <div class="traffic" data-no-drag>
+    <button type="button" class="traffic-light close" data-window-action="close" aria-label="Close"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 3.5l5 5M8.5 3.5l-5 5" /></svg></button>
+    <button type="button" class="traffic-light minimize" data-window-action="minimize" aria-label="Minimize"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.8 6h6.4" /></svg></button>
+    <button type="button" class="traffic-light zoom" data-window-action="zoom" aria-label="Zoom"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.3 3.3h3.6l-3.6 3.6zM8.7 8.7H5.1l3.6-3.6z" fill="currentColor" stroke="none" /></svg></button>
+  </div>
+  {hasSidebar && (
+    <aside class="window-sidebar" data-drag-region>
+      <slot name="sidebar" />
+    </aside>
+  )}
+  <div class="window-main">
+    <header class="window-toolbar" data-drag-region>
+      <slot name="toolbar">
+        <h2 class="window-title">{title}</h2>
+      </slot>
+    </header>
+    <div class="window-body">
+      <slot />
+    </div>
+    {Astro.slots.has("status") && <footer class="window-status"><slot name="status" /></footer>}
+  </div>
+</section>

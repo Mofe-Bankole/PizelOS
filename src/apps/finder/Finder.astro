@@ -1,0 +1,80 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import Artwork from "../../components/Artwork.astro";
+import FolderIcon from "./FolderIcon.astro";
+import { getProjects, getWorks } from "../../lib/works";
+import { svg } from "../glyphs";
+
+interface Props {
+  project?: string;
+}
+
+const { project } = Astro.props;
+const projects = await getProjects();
+const works = await getWorks();
+const byProject = new Map<string, typeof works>();
+for (const w of works) byProject.set(w.project.id, [...(byProject.get(w.project.id) ?? []), w]);
+const visibleProjects = projects.filter(p => !p.hidden && byProject.has(p.id));
+const current = project ? projects.find(p => p.id === project) : undefined;
+const items = project ? byProject.get(project) ?? [] : [];
+const title = current?.name ?? "Work";
+const url = project ? `/work/${project}` : "/work";
+---
+
+<Window id="work" app="work" url={url} title={title} sidebar>
+  <Fragment slot="sidebar">
+    <div class="sb-heading">Favorites</div>
+    <a class:list={["sb-item", { "is-current": !project }]} href="/work"><Fragment set:html={svg("folder")} />All Work<span class="sb-count">{works.length}</span></a>
+    <a class="sb-item" href="/gallery"><Fragment set:html={svg("grid")} />Gallery</a>
+    <a class="sb-item" href="/layers"><Fragment set:html={svg("layers")} />Layers</a>
+    <a class="sb-item" href="/trophies"><Fragment set:html={svg("trophy")} />Trophies</a>
+    <div class="sb-heading">Projects</div>
+    {visibleProjects.map(p => (
+      <a class:list={["sb-item", { "is-current": p.id === project }]} href={`/work/${p.id}`}>
+        <Fragment set:html={svg("folder")} />{p.name}<span class="sb-count">{byProject.get(p.id)!.length}</span>
+      </a>
+    ))}
+    <div class="sb-heading">Locations</div>
+    <a class="sb-item" href="/trash"><Fragment set:html={svg("trash")} />Trash</a>
+  </Fragment>
+
+  <Fragment slot="toolbar">
+    <div class="tb-group">
+      <button type="button" class="tb-button" data-history="back" aria-label="Back" set:html={svg("back")} />
+      <button type="button" class="tb-button" data-history="forward" aria-label="Forward" set:html={svg("forward")} />
+    </div>
+    <h2 class="window-title">{title}</h2>
+    <span class="tb-spacer"></span>
+    <label class="tb-search" data-no-drag>
+      <Fragment set:html={svg("search")} />
+      <input type="search" placeholder="Search" data-finder-search aria-label="Search this folder" />
+    </label>
+  </Fragment>
+
+  {project ? (
+    <ul class="finder-grid" data-finder-grid>
+      {items.map((w, i) => (
+        <li class="finder-item" data-name={`${w.title} ${w.clientName}`.toLowerCase()}>
+          <a href={`/work/${w.id}`} class="finder-link" data-open-on="dblclick">
+            <span class="finder-thumb"><Artwork id={w.id} alt="" fit="contain" sizes="140px" priority={i < 12} /></span>
+            <span class="finder-name">{w.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <ul class="finder-grid is-folders" data-finder-grid>
+      {visibleProjects.map(p => (
+        <li class="finder-item" data-name={p.name.toLowerCase()}>
+          <a href={`/work/${p.id}`} class="finder-link" data-open-on="dblclick">
+            <span class="finder-thumb"><FolderIcon cover={byProject.get(p.id)![0].id} uid={`f-${p.id}`} /></span>
+            <span class="finder-name">{p.name}</span>
+            <span class="finder-meta">{byProject.get(p.id)!.length} items</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <Fragment slot="status">{project ? `${items.length} items` : `${visibleProjects.length} folders · ${works.length} pieces`}</Fragment>
+</Window>

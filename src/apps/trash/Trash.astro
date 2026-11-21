@@ -1,0 +1,11 @@
+---
+import Window from "../../shell/Window/Window.astro";
+---
+
+<Window id="trash" app="trash" url="/trash" title="Trash">
+  <div class="empty-state">
+    <strong>Trash is empty</strong>
+    Every draft made it to the final.
+  </div>
+  <Fragment slot="status">0 items</Fragment>
+</Window>

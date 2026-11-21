@@ -148,8 +148,7 @@ export function initDock(dock: HTMLElement) {
     const external = button.getAttribute("target") === "_blank";
     if (!external && button.tagName === "A") e.preventDefault();
     bounce(item, external ? 1 : 2);
-    if (!external && item.dataset.app !== "trash") {
-      item.classList.add("is-running");
+    if (!external) {
       document.dispatchEvent(new CustomEvent("shell:open", { detail: { app: item.dataset.app, href: button.getAttribute("href") } }));
     }
   });
