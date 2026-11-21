@@ -1,12 +1,15 @@
 ---
+import { MONOGRAM } from "./monogram";
+
 interface Props {
   size?: number;
   class?: string;
 }
 const { size = 16, class: cls } = Astro.props;
+const p = MONOGRAM.pixel;
 ---
 
-<svg class={cls} viewBox="0 0 16 16" width={size} height={size} aria-hidden="true" fill="currentColor">
-  <path d="M3 1.5h7.25A3.75 3.75 0 0 1 14 5.25 3.75 3.75 0 0 1 10.25 9H6.5v5.5H3Zm3.5 3V6h3.5a.75.75 0 0 0 0-1.5Z" />
-  <rect x="11" y="11.5" width="3" height="3" rx=".6" />
+<svg class={cls} viewBox={`0 0 ${MONOGRAM.size} ${MONOGRAM.size}`} width={size} height={size} aria-hidden="true" fill="currentColor">
+  <path d={MONOGRAM.letter} />
+  <rect x={p.x} y={p.y} width={p.size} height={p.size} rx={p.radius} />
 </svg>

@@ -82,6 +82,21 @@ function focus(win: Win | null, updateUrl = true) {
     if (updateUrl && location.pathname !== win.el.dataset.url) history.replaceState({ url: win.el.dataset.url }, "", win.el.dataset.url);
   }
   document.dispatchEvent(new CustomEvent("shell:focus", { detail: win ? { app: win.app, id: win.id, title: win.el.dataset.title } : null }));
+  document.addEventListener("shell:booted", e => {
+    if ((e as CustomEvent).detail?.saveData) return;
+    const idle = (fn: () => void) => ("requestIdleCallback" in window ? requestIdleCallback(fn, { timeout: 2000 }) : setTimeout(fn, 300));
+    idle(() => {
+      loadPage("/work")
+        .then(doc => {
+          doc.querySelectorAll<SVGImageElement>(".folder-icon image").forEach(img => {
+            const href = img.getAttribute("href");
+            if (href) new Image().src = href;
+          });
+        })
+        .catch(() => {});
+    });
+  });
+
   syncDock();
 }
 
@@ -436,6 +451,21 @@ export function initWindowManager(root: HTMLElement) {
     const a = (e.target as Element).closest?.("a[href]") as HTMLAnchorElement | null;
     if (a && routable(a)) loadPage(new URL(a.href).pathname).catch(() => {});
   }, { passive: true });
+
+  document.addEventListener("shell:booted", e => {
+    if ((e as CustomEvent).detail?.saveData) return;
+    const idle = (fn: () => void) => ("requestIdleCallback" in window ? requestIdleCallback(fn, { timeout: 2000 }) : setTimeout(fn, 300));
+    idle(() => {
+      loadPage("/work")
+        .then(doc => {
+          doc.querySelectorAll<SVGImageElement>(".folder-icon image").forEach(img => {
+            const href = img.getAttribute("href");
+            if (href) new Image().src = href;
+          });
+        })
+        .catch(() => {});
+    });
+  });
 
   syncDock();
 }

@@ -6,6 +6,7 @@ import "../Window/window.css";
 import "../../components/artwork.css";
 import "../../apps/apps.css";
 import Wallpaper from "../Wallpaper/Wallpaper.astro";
+import Boot from "../Boot/Boot.astro";
 import MenuBar from "../MenuBar/MenuBar.astro";
 import Dock from "../Dock/Dock.astro";
 import Overlay from "../../dev/Overlay/Overlay.astro";
@@ -30,11 +31,11 @@ const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content={w.color} />
-    <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
     <script is:inline set:html={early} />
   </head>
   <body>
     <Wallpaper />
+    <Boot />
     <MenuBar />
     <main class="desktop" id="desktop">
       <slot />
@@ -45,6 +46,23 @@ const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
       import "../../apps/client";
       import { initWindowManager } from "../Window/window-manager";
       initWindowManager(document.getElementById("desktop")!);
+      if (import.meta.env.PROD && "serviceWorker" in navigator) {
+        const register = () =>
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(() => navigator.serviceWorker.ready)
+            .then(reg => {
+              const urls = performance
+                .getEntriesByType("resource")
+                .map(e => new URL(e.name))
+                .filter(u => u.origin === location.origin && /^\/(_astro|media|wallpaper|fonts)\//.test(u.pathname))
+                .map(u => u.pathname);
+              reg.active?.postMessage({ type: "cache", urls: [...new Set(urls)] });
+            })
+            .catch(() => {});
+        if (document.documentElement.dataset.boot === "none") register();
+        else document.addEventListener("shell:booted", register, { once: true });
+      }
     </script>
   </body>
 </html>

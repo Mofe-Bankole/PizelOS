@@ -10,7 +10,7 @@ const base = "/wallpaper/";
 const formats = w.formats ?? ["avif", "webp", "jpeg"];
 const fallbackFormat = formats[formats.length - 1];
 const sourceFormats = formats.slice(0, -1);
-const data = { base, aspect: w.aspect, variants: w.variants, fallback: fallbackFormat, pixel: !!w.pixel };
+const data = { base, aspect: w.aspect, variants: w.variants, fallback: fallbackFormat, pixel: !!w.pixel, formats };
 const fallback = w.variants.find(v => v.w >= 1920) ?? w.variants[0];
 ---
 

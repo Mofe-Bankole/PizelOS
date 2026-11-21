@@ -131,6 +131,34 @@
   --spring-bounce-damping: 10;
 
   --wallpaper-fade: 600ms;
+
+  --boot-bg: #000;
+  --boot-logo: 88px;
+  --boot-logo-cells: 44;
+  --boot-gap: 64px;
+  --boot-bar-w: 156px;
+  --boot-bar-h: 5px;
+  --boot-bar-track: rgba(255, 255, 255, 0.22);
+  --boot-bar-fill: #fff;
+  --boot-min-ms: 1200;
+  --boot-max-ms: 4000;
+  --boot-hold-ms: 150;
+  --boot-fade-ms: 520;
+  --boot-noise: 0.07;
+
+  --lock-top: 8.5vh;
+  --lock-date-size: clamp(17px, 2.3vh, 24px);
+  --lock-date-weight: 600;
+  --lock-clock-size: clamp(76px, 12.5vh, 132px);
+  --lock-clock-weight: 600;
+  --lock-clock-color: rgba(255, 255, 255, 0.78);
+  --lock-text-shadow: 0 1px 12px rgba(0, 0, 0, 0.12);
+  --lock-bottom: 9vh;
+  --lock-avatar: 46px;
+  --lock-name-size: 13px;
+  --lock-hint-size: 11px;
+  --lock-auto-ms: 900;
+  --lock-exit-ms: 460;
 }
 
 @media (prefers-color-scheme: dark) {

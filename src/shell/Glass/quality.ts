@@ -22,10 +22,23 @@ export function setTier(next: Tier, persist = true) {
       localStorage.setItem(KEY, next);
     } catch {}
   }
-  listeners.forEach(fn => fn(next));
+}
+
+let observed = false;
+function observe() {
+  if (observed) return;
+  observed = true;
+  let previous = tier();
+  new MutationObserver(() => {
+    const now = tier();
+    if (now === previous) return;
+    previous = now;
+    listeners.forEach(fn => fn(now));
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-glass"] });
 }
 
 export function onTierChange(fn: (tier: Tier) => void) {
+  observe();
   listeners.add(fn);
   return () => listeners.delete(fn);
 }

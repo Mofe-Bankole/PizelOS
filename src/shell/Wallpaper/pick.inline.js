@@ -42,7 +42,28 @@
   }
 
   img.addEventListener("load", loaded);
-  apply();
+
+  function useBlob(url, v) {
+    current = v.w;
+    sources.forEach(function (s) { s.removeAttribute("srcset"); });
+    img.src = url;
+    root.setAttribute("data-width", v.w);
+    pixelate(v);
+  }
+
+  function plan(avif) {
+    var v = pick();
+    var order = data.formats || ["avif", "webp", "jpeg"];
+    for (var i = 0; i < order.length; i++) {
+      var f = order[i];
+      if (!v[f]) continue;
+      if (f === "avif" && !avif) continue;
+      return { v: v, url: data.base + v[f], format: f };
+    }
+    return { v: v, url: data.base + v[data.fallback], format: data.fallback };
+  }
+
+  if (document.documentElement.getAttribute("data-boot") !== "boot") apply();
 
   var t;
   addEventListener("resize", function () {
@@ -57,5 +78,5 @@
     mq.addEventListener("change", function () { apply(); watchDpr(); }, { once: true });
   })();
 
-  window.__wallpaper = { width: function () { return current; }, image: img };
+  window.__wallpaper = { width: function () { return current; }, image: img, apply: apply, plan: plan, useBlob: useBlob };
 })();

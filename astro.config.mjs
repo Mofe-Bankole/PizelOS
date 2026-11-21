@@ -1,7 +1,9 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 
+const BUILD_ID = Date.now().toString(36);
+
 export default defineConfig({
-  // Images are pre-processed by `npm run assets`, so Astro's own image pipeline isn't used.
   build: { inlineStylesheets: "auto" },
+  vite: { define: { __BUILD_ID__: JSON.stringify(BUILD_ID) } },
 });

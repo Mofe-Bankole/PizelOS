@@ -1,0 +1,188 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import sharp from "sharp";
+import wallpapers from "../../data/wallpaper.json";
+import profile from "../../data/profile.json";
+import Monogram from "../../icons/Monogram.astro";
+import { monogramPaths } from "../../icons/monogram";
+import bootScript from "./boot.inline.js?raw";
+
+const pub = path.join(process.cwd(), "public");
+const size = (rel: string) => {
+  try {
+    return fs.statSync(path.join(pub, rel)).size;
+  } catch {
+    return 0;
+  }
+};
+
+const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items] as {
+  formats?: string[];
+  variants: ({ w: number } & Record<string, string | number>)[];
+};
+const formats = w.formats ?? ["avif", "webp", "jpeg"];
+const bytes: Record<string, number> = {};
+for (const v of w.variants) for (const f of formats) if (v[f]) bytes[`/wallpaper/${v[f]}`] = size(`wallpaper/${v[f]}`);
+
+const avifProbe = formats.includes("avif")
+  ? `data:image/avif;base64,${(await sharp({ create: { width: 1, height: 1, channels: 3, background: "#000" } }).avif().toBuffer()).toString("base64")}`
+  : null;
+
+const config = {
+  bytes,
+  font: { url: "/fonts/InterVariable.woff2", bytes: size("fonts/InterVariable.woff2") },
+  avifProbe,
+  monogram: monogramPaths(),
+  imageBytes: 140_000,
+};
+---
+
+<div class="boot" id="boot" data-config={JSON.stringify(config)} aria-hidden="true">
+  <canvas class="boot-logo" width="88" height="88"></canvas>
+  <div class="boot-bar"><div class="boot-fill"></div></div>
+</div>
+
+<div class="lock" id="lock" role="button" tabindex="-1" aria-label="Enter Pizelxx's desktop">
+  <div class="lock-time">
+    <div class="lock-date" data-lock-date></div>
+    <div class="lock-clock" data-lock-clock></div>
+  </div>
+  <div class="lock-user">
+    <div class="lock-avatar glass"><Monogram size={22} /></div>
+    <div class="lock-name">{profile.name}</div>
+    <div class="lock-hint">Click or press any key</div>
+  </div>
+</div>
+
+<script is:inline set:html={bootScript} />
+
+<style is:global>
+  .boot,
+  .lock {
+    display: none;
+  }
+
+  :root[data-boot="boot"] .boot {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: var(--boot-gap);
+    background: var(--boot-bg);
+    cursor: default;
+  }
+
+  .boot-logo {
+    width: var(--boot-logo);
+    height: var(--boot-logo);
+    image-rendering: pixelated;
+  }
+
+  .boot-bar {
+    width: var(--boot-bar-w);
+    height: var(--boot-bar-h);
+    border-radius: 999px;
+    background: var(--boot-bar-track);
+    overflow: hidden;
+  }
+
+  .boot-fill {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--boot-bar-fill);
+    transform-origin: left center;
+    transform: scaleX(0);
+  }
+
+  :root[data-boot="lock"] .lock {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: block;
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    outline: none;
+  }
+
+  .lock-time {
+    position: absolute;
+    top: var(--lock-top);
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-items: center;
+    text-shadow: var(--lock-text-shadow);
+  }
+
+  .lock-date {
+    font-size: var(--lock-date-size);
+    font-weight: var(--lock-date-weight);
+    color: var(--lock-clock-color);
+    mix-blend-mode: plus-lighter;
+  }
+
+  .lock-clock {
+    margin-top: -0.06em;
+    font-family: ui-rounded, "SF Pro Rounded", var(--font-ui);
+    font-size: var(--lock-clock-size);
+    font-weight: var(--lock-clock-weight);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    color: var(--lock-clock-color);
+    mix-blend-mode: plus-lighter;
+  }
+
+  .lock-user {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--lock-bottom);
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+  }
+
+  .lock-avatar {
+    width: var(--lock-avatar);
+    height: var(--lock-avatar);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+  }
+
+  .lock-name {
+    margin-top: 2px;
+    font-size: var(--lock-name-size);
+    font-weight: 600;
+    text-shadow: var(--lock-text-shadow);
+  }
+
+  .lock-hint {
+    font-size: var(--lock-hint-size);
+    color: rgba(255, 255, 255, 0.62);
+    text-shadow: var(--lock-text-shadow);
+  }
+
+  :root[data-boot="boot"] .menubar,
+  :root[data-boot="boot"] .dock,
+  :root[data-boot="boot"] .desktop,
+  :root[data-boot="lock"] .menubar,
+  :root[data-boot="lock"] .dock,
+  :root[data-boot="lock"] .desktop {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menubar,
+  .dock,
+  .desktop {
+    transition: opacity 0.42s ease;
+  }
+</style>
