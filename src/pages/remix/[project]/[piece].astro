@@ -1,0 +1,19 @@
+---
+import Desktop from "../../../shell/Desktop/Desktop.astro";
+import Remix from "../../../apps/remix/Remix.astro";
+import { getWorks } from "../../../lib/works";
+import { ogCard } from "../../../lib/media";
+
+export async function getStaticPaths() {
+  return (await getWorks()).map(w => {
+    const [project, piece] = w.id.split("/");
+    return { params: { project, piece }, props: { id: w.id, title: w.title } };
+  });
+}
+
+const { id, title } = Astro.props;
+---
+
+<Desktop title={`Remix ${title} — Pizelxx`} description={`Caption ${title} by Pizelxx, add stickers and post it.`} image={ogCard(id)}>
+  <Remix id={id} />
+</Desktop>

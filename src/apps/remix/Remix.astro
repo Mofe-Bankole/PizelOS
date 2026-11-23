@@ -1,0 +1,97 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import { getWorks } from "../../lib/works";
+import { mediaUrl, pick } from "../../lib/media";
+import { svg } from "../glyphs";
+import { stickers } from "./presets";
+
+interface Props {
+  id?: string;
+}
+
+const all = await getWorks({ includeHidden: true });
+const works = all.filter(w => !w.hidden && !w.project.hidden);
+const current = all.find(w => w.id === Astro.props.id) ?? works[0];
+const url = Astro.props.id ? `/remix/${Astro.props.id}` : "/remix";
+const full = (w: (typeof all)[number]) => mediaUrl(pick(w.media.variants.webp, 1600).src);
+---
+
+<Window id="remix" app="remix" url={url} title="Remix" sidebar tone="dark">
+  <Fragment slot="sidebar">
+    <div class="sb-heading">Pick a piece</div>
+    <div class="remix-picks">
+      {works.map(w => (
+        <a
+          class:list={["remix-pick", { "is-current": w.id === current.id }]}
+          href={`/remix/${w.id}`}
+          data-remix-pick={w.id}
+          data-reload
+          data-src={full(w)}
+          data-title={w.title}
+          data-client={w.clientName}
+          style={`--ph:${w.media.color}`}
+          title={`${w.title} · ${w.clientName}`}
+        >
+          <img src={mediaUrl(pick(w.media.variants.webp, 480).src)} alt={w.title} loading="lazy" decoding="async" draggable="false" />
+        </a>
+      ))}
+    </div>
+  </Fragment>
+
+  <Fragment slot="toolbar">
+    <div class="preview-heading">
+      <h2 class="window-title">Remix</h2>
+      <span class="window-subtitle" data-remix-subtitle>{current.title} · {current.clientName}</span>
+    </div>
+    <span class="tb-spacer"></span>
+    <button type="button" class="tb-button tb-solo" data-remix-shuffle><Fragment set:html={svg("shuffle")} />Random caption</button>
+    <button type="button" class="tb-button tb-solo" data-remix-copy><Fragment set:html={svg("copy")} />Copy</button>
+    <button type="button" class="tb-button tb-solo" data-remix-download><Fragment set:html={svg("download")} />Save PNG</button>
+    <button type="button" class="tb-button tb-solo tb-primary" data-remix-post><Fragment set:html={svg("x")} />Post</button>
+  </Fragment>
+
+  <div
+    class="remix"
+    data-remix
+    data-id={current.id}
+    data-src={full(current)}
+    data-title={current.title}
+    data-client={current.clientName}
+  >
+    <div class="remix-stage" data-remix-stage style={`--ph:${current.media.color}`}>
+      <canvas class="remix-canvas" data-remix-canvas aria-label={`Remix of ${current.title}`}></canvas>
+      <p class="remix-note" data-remix-note role="status"></p>
+    </div>
+
+    <aside class="remix-panel" data-no-drag>
+      <section class="remix-section">
+        <h3>Captions</h3>
+        <label class="remix-field"><span>Top</span><input type="text" maxlength="90" placeholder="gm" data-remix-top /></label>
+        <label class="remix-field"><span>Bottom</span><input type="text" maxlength="90" placeholder="wagmi" data-remix-bottom /></label>
+        <div class="remix-seg" role="radiogroup" aria-label="Caption style">
+          <button type="button" role="radio" aria-checked="true" data-remix-style="classic">Classic</button>
+          <button type="button" role="radio" aria-checked="false" data-remix-style="bar">Caption bar</button>
+        </div>
+        <label class="remix-range"><span>Text size</span><input type="range" min="40" max="160" value="100" data-remix-size /></label>
+      </section>
+
+      <section class="remix-section">
+        <h3>Stickers</h3>
+        <div class="remix-stickers">
+          {stickers.map(s => <button type="button" data-remix-sticker={s} aria-label={`Add ${s} sticker`}>{s}</button>)}
+        </div>
+        <div class="remix-selected" data-remix-selected>
+          <label class="remix-range"><span>Size</span><input type="range" min="4" max="45" value="16" disabled data-remix-sticker-size /></label>
+          <label class="remix-range"><span>Rotate</span><input type="range" min="-180" max="180" value="0" disabled data-remix-sticker-rotate /></label>
+          <button type="button" class="tb-button tb-solo" disabled data-remix-sticker-remove>Remove sticker</button>
+        </div>
+        <p class="remix-tip">Drag stickers to move them. Scroll over one to resize it, <kbd>Delete</kbd> removes it.</p>
+      </section>
+
+      <section class="remix-section remix-foot">
+        <button type="button" class="tb-button tb-solo" data-remix-reset><Fragment set:html={svg("reset")} />Clear all</button>
+        <p class="remix-tip">Every remix carries a small @Pizelxx credit.</p>
+      </section>
+    </aside>
+  </div>
+</Window>

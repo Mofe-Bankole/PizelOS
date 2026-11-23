@@ -1,0 +1,94 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import profile from "../../data/profile.json";
+import { svg } from "../glyphs";
+
+const needs = ["PFP / avatar", "Banner / header", "Meme pack", "Brand kit", "Poster / flyer", "Something else"];
+const budgets = ["Under $100", "$100–300", "$300–1k", "$1k+", "Let's talk"];
+const timelines = ["ASAP", "1–2 weeks", "This month", "Flexible"];
+const channels = [
+  profile.email && { id: "email", label: "Email", href: profile.email },
+  profile.telegram && { id: "telegram", label: "Telegram", href: profile.telegram },
+  { id: "x", label: "X DM", href: profile.x },
+].filter(Boolean) as { id: string; label: string; href: string }[];
+---
+
+<Window id="hire" app="hire" url="/hire" title="Hire Pizelxx">
+  <Fragment slot="toolbar">
+    <div class="preview-heading">
+      <h2 class="window-title">Hire Pizelxx</h2>
+      <span class="window-subtitle">Commission brief</span>
+    </div>
+    <span class="tb-spacer"></span>
+    <span class:list={["hire-status", { "is-open": profile.available }]}>{profile.available ? "Open for commissions" : "Fully booked"}</span>
+    <button type="submit" form="hire-form" class="tb-button tb-solo tb-primary"><Fragment set:html={svg("send")} />Send brief</button>
+  </Fragment>
+
+  <div class="hire">
+    <form class="hire-form" id="hire-form" data-hire data-no-drag novalidate>
+      <fieldset class="hire-group" data-hire-needs>
+        <legend>What do you need? <small>Pick any</small></legend>
+        <div class="hire-chips">
+          {needs.map(n => <label class="hire-chip"><input type="checkbox" name="need" value={n} /><span>{n}</span></label>)}
+        </div>
+        <p class="hire-error" data-hire-error="need">Pick at least one.</p>
+      </fieldset>
+
+      <fieldset class="hire-group">
+        <legend>Budget</legend>
+        <div class="hire-chips">
+          {budgets.map((b, i) => <label class="hire-chip"><input type="radio" name="budget" value={b} checked={i === budgets.length - 1} /><span>{b}</span></label>)}
+        </div>
+      </fieldset>
+
+      <fieldset class="hire-group">
+        <legend>Timeline</legend>
+        <div class="hire-chips">
+          {timelines.map((t, i) => <label class="hire-chip"><input type="radio" name="timeline" value={t} checked={i === timelines.length - 1} /><span>{t}</span></label>)}
+        </div>
+      </fieldset>
+
+      <div class="hire-fields">
+        <label class="hire-field">
+          <span>Your name or @handle</span>
+          <input name="from" type="text" autocomplete="name" placeholder="@yourhandle" required />
+          <em class="hire-error" data-hire-error="from">So Pizelxx knows who to reply to.</em>
+        </label>
+        <label class="hire-field">
+          <span>Project or community</span>
+          <input name="project" type="text" placeholder="e.g. a Magic Eden collection" />
+        </label>
+        <label class="hire-field hire-wide">
+          <span>Where to reply <small>(optional)</small></span>
+          <input name="reply" type="text" placeholder="Email, Telegram or X" />
+        </label>
+        <label class="hire-field hire-wide">
+          <span>References <small>(links, one per line)</small></span>
+          <textarea name="refs" rows="2" placeholder="https://x.com/…"></textarea>
+        </label>
+        <label class="hire-field hire-wide">
+          <span>Details</span>
+          <textarea name="details" rows="4" placeholder="The vibe, the size, how many pieces, anything that matters."></textarea>
+        </label>
+      </div>
+
+      <fieldset class="hire-group">
+        <legend>Send with</legend>
+        <div class="hire-chips">
+          {channels.map((c, i) => <label class="hire-chip"><input type="radio" name="via" value={c.id} data-href={c.href} checked={i === 0} /><span>{c.label}</span></label>)}
+        </div>
+      </fieldset>
+    </form>
+
+    <aside class="hire-preview">
+      <div class="hire-card">
+        <div class="hire-card-head">
+          <span>Brief preview</span>
+          <button type="button" class="tb-button tb-solo" data-hire-copy><Fragment set:html={svg("copy")} />Copy</button>
+        </div>
+        <pre class="hire-text" data-hire-text></pre>
+      </div>
+      <p class="hire-note" data-hire-note role="status"></p>
+    </aside>
+  </div>
+</Window>

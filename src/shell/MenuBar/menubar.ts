@@ -120,6 +120,7 @@ export function initMenuBar(bar: HTMLElement) {
   const names: Record<string, string> = {
     work: "Work", preview: "Preview", gallery: "Gallery", layers: "Layers",
     trophies: "Trophies", about: "About", contact: "Contact", trash: "Trash",
+    remix: "Remix", hire: "Hire", terminal: "Terminal",
   };
   document.addEventListener("shell:focus", e => {
     const detail = (e as CustomEvent<{ id: string } | null>).detail;

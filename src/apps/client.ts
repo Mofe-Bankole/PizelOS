@@ -1,6 +1,9 @@
 import { initArtwork, whenAllReady } from "../scripts/media-loader";
 import { open } from "../shell/Window/window-manager";
 import { Spring, reducedMotion } from "../shell/Motion/spring";
+import { initRemix } from "./remix/remix";
+import { initTerminal } from "./terminal/terminal";
+import { initHire } from "./hire/hire";
 
 const focusedWindow = (id: string) => document.querySelector<HTMLElement>(`.window.is-focused[data-window="${id}"]`);
 
@@ -402,5 +405,9 @@ function initLayers(win: HTMLElement) {
 document.addEventListener("window:mounted", e => {
   const win = (e as CustomEvent<HTMLElement>).detail;
   initArtwork(win);
-  if (win.dataset.window === "layers") initLayers(win);
+  const id = win.dataset.window;
+  if (id === "layers") initLayers(win);
+  if (id === "remix") initRemix(win);
+  if (id === "terminal") initTerminal(win);
+  if (id === "hire") initHire(win);
 });

@@ -1,0 +1,32 @@
+---
+import Window from "../../shell/Window/Window.astro";
+import profile from "../../data/profile.json";
+import { getProjects, getWorks } from "../../lib/works";
+
+const works = await getWorks();
+const projects = (await getProjects()).filter(p => works.some(w => w.project.id === p.id));
+const data = {
+  bio: profile.bio,
+  role: profile.role,
+  handle: profile.handle,
+  x: profile.x,
+  available: profile.available,
+  projects: projects.map(p => ({ id: p.id, name: p.name, kind: p.kind })),
+  works: works.map(w => ({ id: w.id, title: w.title, client: w.clientName, layers: !!w.media.layers, award: !!w.award })),
+};
+---
+
+<Window id="terminal" app="terminal" url="/terminal" title="guest — zsh">
+  <Fragment slot="toolbar">
+    <h2 class="window-title term-title">guest — zsh — 80×24</h2>
+  </Fragment>
+
+  <div class="term" data-terminal data-no-drag>
+    <div class="term-out" data-term-out aria-live="polite"></div>
+    <label class="term-line">
+      <span class="term-prompt" data-term-prompt>guest@pizelos ~ %</span>
+      <input type="text" class="term-input" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command" data-term-input />
+    </label>
+    <script type="application/json" data-term-data set:html={JSON.stringify(data).replace(/</g, "\\u003c")} />
+  </div>
+</Window>

@@ -41,6 +41,16 @@ export const apps: AppDef[] = [
       <path d="M22 58l28 12 28-12" fill="none" stroke="#c9d0ff" stroke-width="3" stroke-linejoin="round" stroke-opacity=".7"/>`,
   },
   {
+    id: "remix",
+    name: "Remix",
+    href: "/remix",
+    gradient: ["#ffe14d", "#ff4fa3"],
+    glyph: `<rect x="24" y="27" width="52" height="40" rx="8" fill="#fff"/>
+      <path d="M24 59l14-13 10 9 8-6 20 15v3c0 1.7-1.3 3-3 3H27c-1.7 0-3-1.3-3-3Z" fill="#ff4fa3" fill-opacity=".85"/>
+      <rect x="31" y="32" width="38" height="7" rx="2" fill="#1d1d1f"/>
+      <path d="M66 58l4.2 8.6 9.4 1.4-6.8 6.6 1.6 9.4-8.4-4.4-8.4 4.4 1.6-9.4-6.8-6.6 9.4-1.4Z" fill="#ffe14d" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>`,
+  },
+  {
     id: "trophies",
     name: "Trophies",
     href: "/trophies",
@@ -61,6 +71,16 @@ export const apps: AppDef[] = [
       <circle cx="68" cy="30" r="6" fill="#ff5a8a"/>`,
   },
   {
+    id: "hire",
+    name: "Hire Pizelxx",
+    href: "/hire",
+    gradient: ["#ff9f5a", "#ff5636"],
+    glyph: `<path d="M40 34v-4c0-2.2 1.8-4 4-4h12c2.2 0 4 1.8 4 4v4" fill="none" stroke="#fff" stroke-width="5"/>
+      <rect x="22" y="34" width="56" height="38" rx="8" fill="#fff"/>
+      <path d="M22 50h56" stroke="#ff7a45" stroke-width="3"/>
+      <rect x="45" y="46" width="10" height="9" rx="2.5" fill="#ff5636"/>`,
+  },
+  {
     id: "contact",
     name: "Contact",
     href: "/contact",
@@ -68,6 +88,16 @@ export const apps: AppDef[] = [
     glyph: `<path d="M24 48 74 26 62 74 50 58Z" fill="#fff"/>
       <path d="M50 58 74 26 44 52Z" fill="#cfeee5"/>
       <path d="M44 52l6 6-4 10Z" fill="#a8dccd"/>`,
+  },
+  {
+    id: "terminal",
+    name: "Terminal",
+    href: "/terminal",
+    gradient: ["#243b2c", "#07110b"],
+    glyph: `<rect x="20" y="24" width="60" height="52" rx="7" fill="#0b1a10" stroke="#3dff8a" stroke-opacity=".35" stroke-width="2"/>
+      <path d="M30 38h5v5h5v5h-5v5h-5v-5h5v-5h-5Z" fill="#3dff8a"/>
+      <rect x="45" y="58" width="16" height="5" fill="#3dff8a"/>
+      <rect x="64" y="58" width="5" height="5" fill="#3dff8a" fill-opacity=".45"/>`,
   },
   {
     id: "x",

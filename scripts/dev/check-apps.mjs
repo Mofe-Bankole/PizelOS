@@ -1,0 +1,143 @@
+import { launch } from "./cdp.mjs";
+
+const out = process.argv[2] ?? ".";
+const base = process.argv[3] ?? "http://localhost:4400";
+const b = await launch({ port: 9371 });
+const q = expr => b.eval(expr);
+const ok = (label, cond, detail = "") => console.log(`${cond ? "PASS" : "FAIL"}  ${label}${detail ? "  — " + detail : ""}`);
+const center = sel => q(`(() => { const e = document.querySelector(${JSON.stringify(sel)}); if (!e) return null; const r = e.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; })()`);
+const click = async (sel, modifiers = 0) => {
+  const c = await center(sel);
+  if (!c) throw new Error("missing " + sel);
+  await b.send("Input.dispatchMouseEvent", { type: "mouseMoved", x: c[0], y: c[1] });
+  await b.send("Input.dispatchMouseEvent", { type: "mousePressed", x: c[0], y: c[1], button: "left", clickCount: 1, modifiers });
+  await b.send("Input.dispatchMouseEvent", { type: "mouseReleased", x: c[0], y: c[1], button: "left", clickCount: 1, modifiers });
+  await b.sleep(200);
+};
+const key = async (k, code, vk, extra = {}) => {
+  await b.send("Input.dispatchKeyEvent", { type: "keyDown", key: k, code, windowsVirtualKeyCode: vk, ...extra });
+  await b.send("Input.dispatchKeyEvent", { type: "keyUp", key: k, code, windowsVirtualKeyCode: vk, ...extra });
+};
+const type = async text => {
+  await b.send("Input.insertText", { text });
+};
+const enter = () => key("Enter", "Enter", 13);
+const termOut = () => q(`document.querySelector('[data-term-out]').innerText`);
+const windows = () => q(`[...document.querySelectorAll('#desktop > .window')].map(w => w.dataset.window + (w.classList.contains('is-focused') ? '*' : '')).join(',')`);
+
+await b.goto(base + "/?boot=0&glass=medium", 3000);
+for (const app of ["remix", "hire", "terminal"]) ok(`dock has ${app}`, !!(await center(`.dock-item[data-app="${app}"] .dock-button`)));
+
+await click('.dock-item[data-app="terminal"] .dock-button');
+await b.sleep(1300);
+ok("terminal opens from dock", (await windows()).includes("terminal*"), await windows());
+ok("terminal input focused", await q(`document.activeElement?.matches('[data-term-input]')`));
+await type("ls");
+await enter();
+await b.sleep(100);
+let text = await termOut();
+ok("ls lists home", text.includes("Applications/") && text.includes("work/") && text.includes("about.txt"));
+await type("cd wo");
+await key("Tab", "Tab", 9);
+ok("tab completes paths", (await q(`document.querySelector('[data-term-input]').value`)) === "cd work/");
+await enter();
+ok("cd changes prompt", (await q(`document.querySelector('[data-term-prompt]').textContent`)).includes("~/work"));
+await type("ls");
+await enter();
+const projectCount = await q(`document.querySelectorAll('.term-ls')[1]?.children.length ?? 0`);
+ok("ls work lists projects as links", projectCount > 3 && (await q(`!!document.querySelector('.term-ls a.term-dir')`)), `${projectCount} projects`);
+await type("neofetch");
+await enter();
+await b.sleep(100);
+text = await termOut();
+ok("neofetch prints info", text.includes("PizelOS 27 Golden Gate") && /Pieces: \d+/.test(text));
+await type("sudo rm -rf /");
+await enter();
+await type("blah");
+await enter();
+text = await termOut();
+ok("easter eggs and unknown command", text.includes("sudoers") && text.includes("command not found: blah"));
+await type("cat ~/about.txt");
+await enter();
+ok("cat about.txt prints bio", (await termOut()).includes("@Pizelxx"));
+await key("ArrowUp", "ArrowUp", 38);
+ok("history recall", (await q(`document.querySelector('[data-term-input]').value`)) === "cat ~/about.txt");
+await q(`document.querySelector('[data-term-input]').value = ''`);
+await b.shot(`${out}/apps-terminal.png`);
+await type("open durex");
+await enter();
+await b.sleep(1500);
+ok("open fuzzy-matches a project", (await windows()).includes("work*") && (await q("location.pathname")).startsWith("/work/durex"), await q("location.pathname"));
+
+await click('.dock-item[data-app="remix"] .dock-button');
+await b.sleep(2200);
+ok("remix opens", (await windows()).includes("remix*"), await windows());
+const size0 = await q(`(() => { const c = document.querySelector('[data-remix-canvas]'); return [c.width, c.height] })()`);
+ok("remix canvas draws the piece", size0[0] > 300 && size0[1] > 300, size0.join("×"));
+const pixel = () => q(`(() => { const c = document.querySelector('[data-remix-canvas]'); const d = c.getContext('2d').getImageData(0, 0, c.width, Math.round(c.height * 0.2)).data; let h = 0; for (let i = 0; i < d.length; i += 97) h = (h * 31 + d[i]) >>> 0; return h })()`);
+const before = await pixel();
+await click("[data-remix-top]");
+await type("gm frens");
+await b.sleep(100);
+ok("typing a caption redraws the canvas", (await pixel()) !== before);
+await click('[data-remix-style="bar"]');
+const size1 = await q(`(() => { const c = document.querySelector('[data-remix-canvas]'); return [c.width, c.height] })()`);
+ok("caption bar adds height", size1[1] > size0[1], `${size0[1]} → ${size1[1]}`);
+await click('[data-remix-style="classic"]');
+await click('[data-remix-sticker="🔥"]');
+ok("adding a sticker selects it", !(await q(`document.querySelector('[data-remix-sticker-remove]').disabled`)));
+const st = await q(`(() => { const c = document.querySelector('[data-remix-canvas]'); const r = c.getBoundingClientRect(); return [r.left + r.width / 2 - r.width * 0.16, r.top + r.height / 2] })()`);
+await b.send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st[0], y: st[1] });
+await b.send("Input.dispatchMouseEvent", { type: "mousePressed", x: st[0], y: st[1], button: "left", clickCount: 1 });
+for (let k = 1; k <= 8; k++) {
+  await b.send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st[0] + k * 10, y: st[1] - k * 12, button: "left", buttons: 1 });
+  await b.sleep(16);
+}
+await b.send("Input.dispatchMouseEvent", { type: "mouseReleased", x: st[0] + 80, y: st[1] - 96, button: "left", clickCount: 1 });
+await b.sleep(100);
+await b.shot(`${out}/apps-remix.png`);
+await click('[data-remix-sticker="💎"]');
+const count = await q(`document.querySelector('[data-remix-sticker-size]').disabled ? -1 : 1`);
+await key("Delete", "Delete", 46);
+await b.sleep(100);
+ok("Delete removes the selected sticker", count === 1 && (await q(`document.querySelector('[data-remix-sticker-remove]').disabled`)));
+const pickHref = await q(`document.querySelectorAll('[data-remix-pick]')[3].dataset.remixPick`);
+await click(`[data-remix-pick="${pickHref}"]`);
+await b.sleep(1500);
+ok("picking a piece swaps it in place and keeps captions", (await q("location.pathname")) === `/remix/${pickHref}` && (await q(`document.querySelector('[data-remix-top]').value`)) === "gm frens", await q("location.pathname"));
+const blobSize = await q(`new Promise(r => document.querySelector('[data-remix-canvas]').toBlob(b => r(b.size), 'image/png'))`);
+ok("canvas exports a PNG (not tainted)", blobSize > 10000, `${Math.round(blobSize / 1024)} KB`);
+await b.shot(`${out}/apps-remix-2.png`);
+
+await click('.dock-item[data-app="hire"] .dock-button');
+await b.sleep(1300);
+ok("hire opens", (await windows()).includes("hire*"), await windows());
+await click('button[form="hire-form"]');
+ok("send without a name or need shows errors", await q(`[...document.querySelectorAll('.hire-error.is-visible')].length === 2`));
+await click('.hire-chip input[value="Meme pack"] + span');
+await click('input[name="from"]');
+await type("@tester");
+await click('.hire-chip input[value="1–2 weeks"] + span');
+await click('textarea[name="details"]');
+await type("Ten memes for a launch.");
+const brief = await q(`document.querySelector('[data-hire-text]').textContent`);
+ok("brief preview updates live", brief.includes("Need: Meme pack") && brief.includes("Timeline: 1–2 weeks") && brief.includes("— @tester") && brief.includes("Ten memes"), JSON.stringify(brief.split("\n").slice(2, 5)));
+ok("errors clear once fixed", await q(`document.querySelectorAll('.hire-error.is-visible').length === 0`));
+await b.shot(`${out}/apps-hire.png`);
+ok("draft saved", (await q(`localStorage.getItem('pizelos:hire-draft')`))?.includes("@tester"));
+
+await b.goto(base + "/hire?boot=0&glass=medium", 2500);
+ok("draft restored after reload", (await q(`document.querySelector('input[name="from"]').value`)) === "@tester");
+await b.goto(base + "/remix/" + pickHref + "?boot=0&glass=medium", 3000);
+ok("deep link opens remix on that piece", (await q(`document.querySelector('[data-remix]').dataset.id`)) === pickHref && (await q(`document.querySelector('[data-remix-canvas]').width`)) > 300);
+
+await b.goto(base + "/terminal?boot=0&glass=medium", 2500);
+for (let i = 0; i < 40 && !(await q(`document.activeElement?.matches('[data-term-input]') ?? false`)); i++) await b.sleep(50);
+await type("exit");
+await enter();
+await b.sleep(900);
+ok("exit closes terminal", !(await windows()).includes("terminal"), (await windows()) || "(none)");
+
+console.log("page errors:", JSON.stringify(b.logs));
+b.close();
+process.exit(0);

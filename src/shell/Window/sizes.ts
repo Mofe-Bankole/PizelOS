@@ -12,9 +12,12 @@ export const windowSizes: Record<string, WindowSize> = {
   layers: { w: 1100, h: 700, minW: 640, minH: 440 },
   trophies: { w: 780, h: 540, minW: 440, minH: 320 },
   about: { w: 780, h: 520, minW: 480, minH: 320 },
+  remix: { w: 1080, h: 700, minW: 640, minH: 440 },
+  hire: { w: 900, h: 620, minW: 520, minH: 420 },
+  terminal: { w: 700, h: 440, minW: 420, minH: 260 },
   contact: { w: 640, h: 540, minW: 420, minH: 380 },
   trash: { w: 560, h: 380, minW: 360, minH: 260 },
   notfound: { w: 520, h: 320, minW: 360, minH: 260 },
 };
 
-export const routeApps = ["work", "gallery", "layers", "trophies", "about", "contact", "trash"];
+export const routeApps = ["work", "gallery", "layers", "trophies", "about", "contact", "trash", "remix", "hire", "terminal"];
