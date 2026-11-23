@@ -38,6 +38,7 @@ const layers = current?.media.layers;
           <span class="visually-hidden">Separation</span>
           <input type="range" min="0" max="1000" value="0" data-layers-amount />
         </label>
+        <button type="button" class="tb-button tb-solo" data-layers-reset-view aria-label="Reset view"><Fragment set:html={svg("reset")} />Reset view</button>
         <a class="tb-button tb-solo" href={`/work/${current.id}`}>Open in Preview</a>
       </>
     )}
@@ -45,7 +46,7 @@ const layers = current?.media.layers;
 
   {current && layers ? (
     <div class="layers-app" data-layers>
-      <div class="layers-stage">
+      <div class="layers-stage" data-layers-stage>
         <div class="layers-stack" style={`aspect-ratio:${layers.canvas.w}/${layers.canvas.h};--ph:${current.media.color}`} data-layers-stack>
           {layers.items.map((l, i) => (
             <div class="layers-plane" data-layer-index={i} style={`z-index:${i}`}>
@@ -54,6 +55,8 @@ const layers = current?.media.layers;
                 alt=""
                 decoding="async"
                 draggable="false"
+                data-layer-img={i}
+                data-opacity={l.opacity}
                 style={`left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%;opacity:${l.opacity}${l.blend ? `;mix-blend-mode:${l.blend}` : ""}`}
               />
               <span class="layers-tag">{String(i + 1).padStart(2, "0")} {l.name}</span>
@@ -64,18 +67,35 @@ const layers = current?.media.layers;
             <img src={mediaUrl(pick(current.media.variants.webp, 1600).src)} alt={`${current.title} for ${current.clientName}`} decoding="async" draggable="false" />
           </picture>
         </div>
+        <p class="layers-hint" data-layers-hint>
+          Drag a layer to move it · drag the background to orbit · <kbd>Space</kbd> + drag to pan · scroll to zoom · double-click to reset
+        </p>
       </div>
       <aside class="layers-panel">
         <div class="layers-panel-head"><strong>Layers</strong><span>Normal · 100%</span></div>
         <ul>
           {[...layers.items].map((l, i) => ({ l, i })).reverse().map(({ l, i }) => (
             <li class="layers-row" data-layer-row={i}>
-              <button type="button" class="layers-eye" aria-pressed="true" aria-label={`Toggle ${l.name}`} data-layer-toggle={i} set:html={svg("eye")} />
-              <span class="layers-thumb"><img src={mediaUrl(l.src)} alt="" loading="lazy" style={`left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%`} /></span>
-              <span class="layers-name">{l.name}</span>
+              <button type="button" class="layers-eye" aria-pressed="true" aria-label={`Toggle ${l.name}. Alt-click to solo.`} data-layer-eye={i} set:html={svg("eye")} />
+              <button type="button" class="layers-select" data-layer-select={i}>
+                <span class="layers-thumb"><img src={mediaUrl(l.src)} alt="" loading="lazy" style={`left:${l.x}%;top:${l.y}%;width:${l.w}%;height:${l.h}%`} /></span>
+                <span class="layers-name">{l.name}</span>
+              </button>
             </li>
           ))}
         </ul>
+        <div class="layers-inspector" data-layers-inspector>
+          <div class="layers-inspector-name" data-layers-selected-name>No layer selected</div>
+          <label class="layers-opacity">
+            <span>Opacity</span>
+            <input type="range" min="0" max="100" value="100" disabled data-layers-opacity />
+            <output data-layers-opacity-value>100%</output>
+          </label>
+          <div class="layers-actions">
+            <button type="button" class="tb-button tb-solo" disabled data-layers-reset-layer>Reset layer</button>
+            <button type="button" class="tb-button tb-solo" data-layers-reset-all>Reset all</button>
+          </div>
+        </div>
       </aside>
     </div>
   ) : (

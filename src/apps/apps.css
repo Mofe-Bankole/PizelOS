@@ -318,12 +318,57 @@
 }
 
 .layers-stage {
+  position: relative;
   flex: 1;
   min-width: 0;
   display: grid;
   place-items: center;
   perspective: 1800px;
   overflow: hidden;
+  touch-action: none;
+  cursor: grab;
+}
+
+.layers-stage.is-space,
+.layers-stage.is-pan {
+  cursor: move;
+}
+
+.layers-stage.is-orbit {
+  cursor: grabbing;
+}
+
+.layers-stage.is-layer,
+.layers-stage.is-layer .layers-plane img {
+  cursor: grabbing;
+}
+
+.layers-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  translate: -50% 0;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+  letter-spacing: var(--track-11);
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.layers-hint.is-hidden {
+  opacity: 0;
+}
+
+.layers-hint kbd {
+  font: inherit;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .layers-stack {
@@ -343,6 +388,18 @@
   inset: 0;
   transform-style: preserve-3d;
   will-change: transform;
+  pointer-events: none;
+}
+
+.layers-plane.is-selected img {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.layers-plane.is-selected .layers-tag {
+  opacity: 1;
+  background: var(--accent);
+  color: #fff;
 }
 
 .layers-plane::before {
@@ -358,6 +415,10 @@
   position: absolute;
   display: block;
   max-width: none;
+  pointer-events: auto;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .layers-plane.is-off {
@@ -379,6 +440,11 @@
   opacity: var(--frame, 0);
 }
 
+.layers-flat {
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
 .layers-flat,
 .layers-flat img {
   position: absolute;
@@ -392,6 +458,8 @@
   flex: none;
   width: 240px;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   background: rgba(0, 0, 0, 0.25);
   border-left: var(--hairline) solid var(--window-divider);
@@ -424,6 +492,64 @@
   padding: 5px 6px;
   border-radius: 6px;
   border: 1px solid transparent;
+}
+
+.layers-row.is-selected {
+  background: color-mix(in srgb, var(--accent) 26%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+.layers-select {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+
+.layers-inspector {
+  margin-top: auto;
+  padding: 12px 4px 0;
+  border-top: var(--hairline) solid var(--window-divider);
+  display: grid;
+  gap: 10px;
+}
+
+.layers-inspector-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layers-opacity {
+  display: grid;
+  grid-template-columns: auto 1fr 36px;
+  align-items: center;
+  gap: 8px;
+  color: var(--window-text-dim);
+}
+
+.layers-opacity input {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.layers-opacity output {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--window-text);
+}
+
+.layers-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.layers-actions .tb-button {
+  padding: 0 6px;
 }
 
 .layers-row.is-active {

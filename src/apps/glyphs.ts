@@ -18,6 +18,7 @@ export const glyph = {
   x: xLogo(`x="2.5" y="2.5" width="11" height="11"`),
   send: `<path d="M2.5 7.5 13.5 2.5 9.5 13.5 7.8 8.8Z"/><path d="m7.8 8.8 5.7-6.3"/>`,
   star: `<path d="m8 2.3 1.7 3.6 3.9.5-2.9 2.7.8 3.9L8 11.1 4.5 13l.8-3.9-2.9-2.7 3.9-.5Z"/>`,
+  reset: `<path d="M3.2 8a4.8 4.8 0 1 0 1.5-3.5"/><path d="M3 2.6v3h3"/>`,
   sidebar: `<rect x="2" y="3" width="12" height="10" rx="2"/><path d="M6 3v10"/>`,
 };
 
