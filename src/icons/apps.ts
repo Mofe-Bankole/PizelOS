@@ -1,3 +1,5 @@
+import { xLogo } from "./x-logo";
+
 export interface AppDef {
   id: string;
   name: string;
@@ -73,7 +75,7 @@ export const apps: AppDef[] = [
     href: "https://x.com/Pizelxx",
     external: true,
     gradient: ["#2a2a2e", "#050506"],
-    glyph: `<path d="M30 28h11l10 13.5L63 28h6L54 44.6 71 72H60L49 57.2 36 72h-6l16-18.4Z" fill="#fff"/>`,
+    glyph: xLogo(`x="29" y="28.5" width="42" height="43"`, "#fff"),
   },
 ];
 

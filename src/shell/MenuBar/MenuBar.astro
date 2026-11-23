@@ -2,6 +2,7 @@
 import Menu from "../Menu/Menu.astro";
 import Monogram from "../../icons/Monogram.astro";
 import { appMenus, systemMenu } from "./menus";
+import { xLogo } from "../../icons/x-logo";
 import wallpapers from "../../data/wallpaper.json";
 
 const w = wallpapers.items[wallpapers.active as keyof typeof wallpapers.items];
@@ -36,7 +37,7 @@ const menus = [systemMenu, ...appMenus];
 
   <div class="menubar-right">
     <a class="menubar-status" href="https://x.com/Pizelxx" target="_blank" rel="noopener" aria-label="Pizelxx on X">
-      <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M1.5 1.5h4.1l3.2 4.4 3.8-4.4h1.7L9.6 6.8l5 7.7h-4.1L7.1 9.8l-4 4.7H1.4l4.9-5.6Z" /></svg>
+      <Fragment set:html={xLogo(`width="13" height="13"`)} />
     </a>
     <button class="menubar-status" type="button" aria-label="Search work" data-action="spotlight">
       <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.6" /><path d="m10.3 10.3 4 4" stroke-linecap="round" /></svg>

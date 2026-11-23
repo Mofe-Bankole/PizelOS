@@ -215,7 +215,7 @@
   font-weight: 600;
 }
 
-.preview-cta svg {
+.preview-cta > svg {
   width: 14px;
   height: 14px;
 }
